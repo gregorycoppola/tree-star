@@ -7,9 +7,35 @@ from typing import List, Dict, Tuple
 import numpy as np
 import sys
 import argparse
+import inspect
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+def print_type_info(obj, name="object", indent=0):
+    """Print detailed type information about an object."""
+    prefix = "  " * indent
+    print(f"{prefix}{name}:")
+    print(f"{prefix}  type: {type(obj)}")
+    
+    if isinstance(obj, dict):
+        print(f"{prefix}  keys: {list(obj.keys())}")
+        for k, v in obj.items():
+            print_type_info(v, f"  {k}", indent + 1)
+    elif isinstance(obj, list):
+        print(f"{prefix}  length: {len(obj)}")
+        if obj:
+            print(f"{prefix}  first item type: {type(obj[0])}")
+            print_type_info(obj[0], "  first item", indent + 1)
+    elif hasattr(obj, '__dict__'):
+        print(f"{prefix}  attributes: {dir(obj)}")
+        for attr in dir(obj):
+            if not attr.startswith('_'):
+                try:
+                    value = getattr(obj, attr)
+                    print_type_info(value, f"  {attr}", indent + 1)
+                except:
+                    pass
 
 def load_conll_file(file_path: str) -> List[Dict]:
     """Load a CoNLL file and return it as a list of documents."""
@@ -82,40 +108,45 @@ def evaluate_parsing(gold_docs: List[Dict], pred_docs: List[Dict]) -> Dict[str, 
 
 def main():
     # Set up argument parser
-    parser = argparse.ArgumentParser(description='Parse CoNLL file using Stanza and evaluate results')
+    parser = argparse.ArgumentParser(description='Print type information about CoNLL parsing')
     parser.add_argument('input_file', help='Path to input CoNLL file')
     args = parser.parse_args()
     
-    # Load gold standard data
+    # Load data
     logger.info(f"Loading data from {args.input_file}...")
-    gold_docs = load_conll_file(args.input_file)
+    docs = CoNLL.conll2dict(input_file=args.input_file)
+    
+    # Print information about the loaded document
+    print("\n=== CoNLL Document Structure ===")
+    print_type_info(docs, "docs")
+    
+    if docs:
+        print("\n=== First Document Structure ===")
+        print_type_info(docs[0], "first_doc")
+        
+        if docs[0]['tokens']:
+            print("\n=== First Token Structure ===")
+            print_type_info(docs[0]['tokens'][0], "first_token")
     
     # Initialize Stanza pipeline
-    logger.info("Initializing Stanza pipeline...")
+    logger.info("\nInitializing Stanza pipeline...")
     pipeline = setup_stanza_pipeline()
     
-    # Parse documents
-    logger.info("Parsing documents...")
-    pred_docs = []
-    for doc in gold_docs:
-        pred_doc = parse_with_stanza(pipeline, doc)
-        pred_docs.append(pred_doc)
-    
-    # Print predictions to screen
-    logger.info("Parsing Results:")
-    for doc in pred_docs:
-        for token in doc['tokens']:
-            print(f"{token['id']}\t{token['form']}\t{token['lemma']}\t{token['upos']}\t{token['xpos']}\t{token['feats']}\t{token['head']}\t{token['deprel']}\t{token['deps']}\t{token['misc']}")
-        print()  # Empty line between sentences
-    
-    # Evaluate
-    logger.info("Evaluating results...")
-    metrics = evaluate_parsing(gold_docs, pred_docs)
-    
-    # Print results
-    logger.info("Evaluation Results:")
-    for metric, value in metrics.items():
-        logger.info(f"{metric}: {value:.4f}")
+    # Parse a sample sentence
+    if docs and docs[0]['tokens']:
+        sample_text = ' '.join([token['form'] for token in docs[0]['tokens']])
+        parsed = pipeline(sample_text)
+        
+        print("\n=== Stanza Sentence Structure ===")
+        print_type_info(parsed, "parsed")
+        
+        if parsed.sentences:
+            print("\n=== First Stanza Sentence Structure ===")
+            print_type_info(parsed.sentences[0], "first_sentence")
+            
+            if parsed.sentences[0].words:
+                print("\n=== First Stanza Word Structure ===")
+                print_type_info(parsed.sentences[0].words[0], "first_word")
 
 if __name__ == "__main__":
     main() 
