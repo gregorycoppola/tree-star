@@ -21,8 +21,8 @@ def setup_stanza_pipeline(lang: str = 'en') -> stanza.Pipeline:
 
 def parse_with_stanza(pipeline: stanza.Pipeline, doc: Dict) -> Dict:
     """Parse a single document using Stanza."""
-    # Convert the document to text
-    text = ' '.join([token['text'] for token in doc['tokens']])
+    # Convert the document to text - CoNLL format uses 'form' for the text field
+    text = ' '.join([token['form'] for token in doc['tokens']])
     
     # Parse with Stanza
     parsed = pipeline(text)
@@ -33,7 +33,7 @@ def parse_with_stanza(pipeline: stanza.Pipeline, doc: Dict) -> Dict:
         for word in sent.words:
             conll_output.append({
                 'id': word.id,
-                'text': word.text,
+                'form': word.text,  # Changed from 'text' to 'form' to match CoNLL format
                 'lemma': word.lemma,
                 'upos': word.upos,
                 'xpos': word.xpos,
@@ -105,7 +105,7 @@ def main():
     logger.info("Parsing Results:")
     for doc in pred_docs:
         for token in doc['tokens']:
-            print(f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t{token['xpos']}\t{token['feats']}\t{token['head']}\t{token['deprel']}\t{token['deps']}\t{token['misc']}")
+            print(f"{token['id']}\t{token['form']}\t{token['lemma']}\t{token['upos']}\t{token['xpos']}\t{token['feats']}\t{token['head']}\t{token['deprel']}\t{token['deps']}\t{token['misc']}")
         print()  # Empty line between sentences
     
     # Evaluate
