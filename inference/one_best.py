@@ -9,7 +9,13 @@ import sys
 import argparse
 import time
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(message)s',  # Simplified format
+    handlers=[
+        logging.StreamHandler(sys.stdout)  # Force output to stdout
+    ]
+)
 logger = logging.getLogger(__name__)
 
 def load_conll_file(file_path: str) -> Tuple[List[List[List[Dict]]], ...]:
@@ -53,25 +59,25 @@ def format_token(token: Dict) -> str:
 
 def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int):
     """Show differences between gold and predicted parses."""
-    logger.info(f"\nDocument {doc_idx}, Sentence {sent_idx}:")
-    logger.info("Gold Standard:")
+    print(f"\nDocument {doc_idx}, Sentence {sent_idx}:")
+    print("Gold Standard:")
     for token in gold_sent:
-        logger.info(format_token(token))
+        print(format_token(token))
     
-    logger.info("\nPredicted Parse:")
+    print("\nPredicted Parse:")
     for token in pred_sent:
-        logger.info(format_token(token))
+        print(format_token(token))
     
     # Show specific differences
-    logger.info("\nDifferences:")
+    print("\nDifferences:")
     for gold_token, pred_token in zip(gold_sent, pred_sent):
         if gold_token['head'] != pred_token['head'] or gold_token['deprel'] != pred_token['deprel']:
-            logger.info(f"Token {gold_token['id']} ({gold_token['text']}):")
+            print(f"Token {gold_token['id']} ({gold_token['text']}):")
             if gold_token['head'] != pred_token['head']:
-                logger.info(f"  Head: {gold_token['head']} → {pred_token['head']}")
+                print(f"  Head: {gold_token['head']} → {pred_token['head']}")
             if gold_token['deprel'] != pred_token['deprel']:
-                logger.info(f"  Relation: {gold_token['deprel']} → {pred_token['deprel']}")
-    logger.info("-" * 80)
+                print(f"  Relation: {gold_token['deprel']} → {pred_token['deprel']}")
+    print("-" * 80)
 
 def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...], 
                     pred_docs: Tuple[List[List[List[Dict]]], ...]) -> Dict[str, float]:
@@ -82,13 +88,15 @@ def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...],
     correct_both = 0
     diff_count = 0
     
-    logger.info(f"Number of documents: {len(gold_docs)}")
+    print(f"Number of documents: {len(gold_docs)}")
     
     for doc_idx, (gold_doc, pred_doc) in enumerate(zip(gold_docs, pred_docs)):
-        logger.info(f"Document {doc_idx}: {len(gold_doc)} sentences")
+        print(f"Document {doc_idx}: {len(gold_doc)} sentences")
         
         for sent_idx, (gold_sent, pred_sent) in enumerate(zip(gold_doc, pred_doc)):
-            has_diff = False
+            sent_correct_heads = 0
+            sent_correct_deprels = 0
+            sent_correct_both = 0
             sent_tokens = 0
             
             for gold_token, pred_token in zip(gold_sent, pred_sent):
@@ -98,24 +106,29 @@ def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...],
                 # Compare head indices
                 if gold_token['head'] == pred_token['head']:
                     correct_heads += 1
+                    sent_correct_heads += 1
                 else:
-                    has_diff = True
-                    logger.info(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
+                    print(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
                 
                 # Compare dependency relations
                 if gold_token['deprel'] == pred_token['deprel']:
                     correct_deprels += 1
+                    sent_correct_deprels += 1
                 else:
-                    has_diff = True
-                    logger.info(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
+                    print(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
                 
                 # Compare both head and relation
                 if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
                     correct_both += 1
+                    sent_correct_both += 1
+            
+            # Print per-sentence metrics
+            print(f"Doc {doc_idx}, Sent {sent_idx}: heads={sent_correct_heads}/{sent_tokens} "
+                  f"deprels={sent_correct_deprels}/{sent_tokens} "
+                  f"both={sent_correct_both}/{sent_tokens}")
             
             # Show diff if there were any differences in this sentence
-            if has_diff:
-                logger.info(f"Found differences in doc {doc_idx}, sent {sent_idx} ({sent_tokens} tokens)")
+            if sent_correct_heads < sent_tokens or sent_correct_deprels < sent_tokens:
                 if diff_count < 10:  # Limit to first 10 diffs
                     show_parse_diff(gold_sent, pred_sent, doc_idx, sent_idx)
                     diff_count += 1
@@ -125,8 +138,11 @@ def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...],
     las = correct_deprels / total_tokens if total_tokens > 0 else 0
     complete = correct_both / total_tokens if total_tokens > 0 else 0
     
-    logger.info(f"Total tokens processed: {total_tokens}")
-    logger.info(f"Total differences found: {diff_count}")
+    print(f"\nTotal tokens processed: {total_tokens}")
+    print(f"Total differences found: {diff_count}")
+    print(f"Overall UAS: {uas:.4f}")
+    print(f"Overall LAS: {las:.4f}")
+    print(f"Overall Complete: {complete:.4f}")
     
     return {
         'UAS': uas,
