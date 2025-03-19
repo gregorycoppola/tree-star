@@ -82,37 +82,51 @@ def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...],
     correct_both = 0
     diff_count = 0
     
+    logger.info(f"Number of documents: {len(gold_docs)}")
+    
     for doc_idx, (gold_doc, pred_doc) in enumerate(zip(gold_docs, pred_docs)):
+        logger.info(f"Document {doc_idx}: {len(gold_doc)} sentences")
+        
         for sent_idx, (gold_sent, pred_sent) in enumerate(zip(gold_doc, pred_doc)):
             has_diff = False
+            sent_tokens = 0
+            
             for gold_token, pred_token in zip(gold_sent, pred_sent):
                 total_tokens += 1
+                sent_tokens += 1
                 
                 # Compare head indices
                 if gold_token['head'] == pred_token['head']:
                     correct_heads += 1
                 else:
                     has_diff = True
+                    logger.info(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
                 
                 # Compare dependency relations
                 if gold_token['deprel'] == pred_token['deprel']:
                     correct_deprels += 1
                 else:
                     has_diff = True
+                    logger.info(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
                 
                 # Compare both head and relation
                 if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
                     correct_both += 1
             
             # Show diff if there were any differences in this sentence
-            if has_diff and diff_count < 10:  # Limit to first 10 diffs
-                show_parse_diff(gold_sent, pred_sent, doc_idx, sent_idx)
-                diff_count += 1
+            if has_diff:
+                logger.info(f"Found differences in doc {doc_idx}, sent {sent_idx} ({sent_tokens} tokens)")
+                if diff_count < 10:  # Limit to first 10 diffs
+                    show_parse_diff(gold_sent, pred_sent, doc_idx, sent_idx)
+                    diff_count += 1
     
     # Calculate metrics
     uas = correct_heads / total_tokens if total_tokens > 0 else 0
     las = correct_deprels / total_tokens if total_tokens > 0 else 0
     complete = correct_both / total_tokens if total_tokens > 0 else 0
+    
+    logger.info(f"Total tokens processed: {total_tokens}")
+    logger.info(f"Total differences found: {diff_count}")
     
     return {
         'UAS': uas,
