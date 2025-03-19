@@ -79,75 +79,46 @@ def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, 
                 print(f"  Relation: {gold_token['deprel']} → {pred_token['deprel']}")
     print("-" * 80)
 
-def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...], 
-                    pred_docs: Tuple[List[List[List[Dict]]], ...]) -> Dict[str, float]:
-    """Evaluate the predicted parses against gold standard."""
-    total_tokens = 0
-    correct_heads = 0
-    correct_deprels = 0
-    correct_both = 0
-    diff_count = 0
+def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int) -> Dict[str, float]:
+    """Evaluate a single sentence parse against gold standard."""
+    sent_correct_heads = 0
+    sent_correct_deprels = 0
+    sent_correct_both = 0
+    sent_tokens = 0
     
-    print(f"Number of documents: {len(gold_docs)}")
-    
-    for doc_idx, (gold_doc, pred_doc) in enumerate(zip(gold_docs, pred_docs)):
-        print(f"Document {doc_idx}: {len(gold_doc)} sentences")
+    for gold_token, pred_token in zip(gold_sent, pred_sent):
+        sent_tokens += 1
         
-        for sent_idx, (gold_sent, pred_sent) in enumerate(zip(gold_doc, pred_doc)):
-            sent_correct_heads = 0
-            sent_correct_deprels = 0
-            sent_correct_both = 0
-            sent_tokens = 0
-            
-            for gold_token, pred_token in zip(gold_sent, pred_sent):
-                total_tokens += 1
-                sent_tokens += 1
-                
-                # Compare head indices
-                if gold_token['head'] == pred_token['head']:
-                    correct_heads += 1
-                    sent_correct_heads += 1
-                else:
-                    print(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
-                
-                # Compare dependency relations
-                if gold_token['deprel'] == pred_token['deprel']:
-                    correct_deprels += 1
-                    sent_correct_deprels += 1
-                else:
-                    print(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
-                
-                # Compare both head and relation
-                if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
-                    correct_both += 1
-                    sent_correct_both += 1
-            
-            # Print per-sentence metrics
-            print(f"Doc {doc_idx}, Sent {sent_idx}: heads={sent_correct_heads}/{sent_tokens} "
-                  f"deprels={sent_correct_deprels}/{sent_tokens} "
-                  f"both={sent_correct_both}/{sent_tokens}")
-            
-            # Show diff if there were any differences in this sentence
-            if sent_correct_heads < sent_tokens or sent_correct_deprels < sent_tokens:
-                if diff_count < 10:  # Limit to first 10 diffs
-                    show_parse_diff(gold_sent, pred_sent, doc_idx, sent_idx)
-                    diff_count += 1
+        # Compare head indices
+        if gold_token['head'] == pred_token['head']:
+            sent_correct_heads += 1
+        else:
+            print(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
+        
+        # Compare dependency relations
+        if gold_token['deprel'] == pred_token['deprel']:
+            sent_correct_deprels += 1
+        else:
+            print(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
+        
+        # Compare both head and relation
+        if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
+            sent_correct_both += 1
     
-    # Calculate metrics
-    uas = correct_heads / total_tokens if total_tokens > 0 else 0
-    las = correct_deprels / total_tokens if total_tokens > 0 else 0
-    complete = correct_both / total_tokens if total_tokens > 0 else 0
+    # Print per-sentence metrics
+    print(f"Doc {doc_idx}, Sent {sent_idx}: heads={sent_correct_heads}/{sent_tokens} "
+          f"deprels={sent_correct_deprels}/{sent_tokens} "
+          f"both={sent_correct_both}/{sent_tokens}")
     
-    print(f"\nTotal tokens processed: {total_tokens}")
-    print(f"Total differences found: {diff_count}")
-    print(f"Overall UAS: {uas:.4f}")
-    print(f"Overall LAS: {las:.4f}")
-    print(f"Overall Complete: {complete:.4f}")
+    # Show diff if there were any differences
+    if sent_correct_heads < sent_tokens or sent_correct_deprels < sent_tokens:
+        show_parse_diff(gold_sent, pred_sent, doc_idx, sent_idx)
     
     return {
-        'UAS': uas,
-        'LAS': las,
-        'Complete': complete
+        'tokens': sent_tokens,
+        'correct_heads': sent_correct_heads,
+        'correct_deprels': sent_correct_deprels,
+        'correct_both': sent_correct_both
     }
 
 def main():
@@ -157,45 +128,60 @@ def main():
     args = parser.parse_args()
     
     # Load data
-    logger.info(f"Loading data from {args.input_file}...")
+    print(f"Loading data from {args.input_file}...")
     docs = CoNLL.conll2dict(input_file=args.input_file)
     
     # Initialize Stanza pipeline
-    logger.info("Initializing Stanza pipeline...")
+    print("Initializing Stanza pipeline...")
     pipeline = setup_stanza_pipeline()
     
-    # Parse all sentences
-    logger.info("Starting parsing...")
+    # Parse and evaluate sentences
+    print("Starting parsing...")
     start_time = time.time()
     total_sentences = sum(len(doc) for doc in docs)
     processed_sentences = 0
     
-    parsed_docs = []
+    # Track overall metrics
+    total_tokens = 0
+    total_correct_heads = 0
+    total_correct_deprels = 0
+    total_correct_both = 0
+    
     for doc_idx, doc in enumerate(docs):
-        parsed_sentences = []
         for sent_idx, sentence in enumerate(doc):
+            # Parse sentence
             parsed = parse_with_stanza(pipeline, sentence)
-            parsed_sentences.append(parsed)
+            
+            # Evaluate immediately
+            metrics = evaluate_sentence(sentence, parsed, doc_idx, sent_idx)
+            
+            # Update overall metrics
+            total_tokens += metrics['tokens']
+            total_correct_heads += metrics['correct_heads']
+            total_correct_deprels += metrics['correct_deprels']
+            total_correct_both += metrics['correct_both']
             
             # Update progress
             processed_sentences += 1
             if processed_sentences % 100 == 0:
                 elapsed = time.time() - start_time
                 rate = processed_sentences / elapsed
-                logger.info(f"Processed {processed_sentences}/{total_sentences} sentences ({rate:.2f} sentences/sec)")
-        
-        parsed_docs.append(parsed_sentences)
+                print(f"Processed {processed_sentences}/{total_sentences} sentences ({rate:.2f} sentences/sec)")
     
     # Print final statistics
     total_time = time.time() - start_time
-    logger.info(f"\nParsing completed in {total_time:.2f} seconds")
-    logger.info(f"Average speed: {total_sentences/total_time:.2f} sentences/second")
+    print(f"\nParsing completed in {total_time:.2f} seconds")
+    print(f"Average speed: {total_sentences/total_time:.2f} sentences/second")
     
-    # Evaluate results
-    metrics = evaluate_parsing(docs, parsed_docs)
-    logger.info("\nEvaluation Results:")
-    for metric, value in metrics.items():
-        logger.info(f"{metric}: {value:.4f}")
+    # Print overall metrics
+    uas = total_correct_heads / total_tokens if total_tokens > 0 else 0
+    las = total_correct_deprels / total_tokens if total_tokens > 0 else 0
+    complete = total_correct_both / total_tokens if total_tokens > 0 else 0
+    
+    print("\nFinal Results:")
+    print(f"UAS: {uas:.4f}")
+    print(f"LAS: {las:.4f}")
+    print(f"Complete: {complete:.4f}")
 
 if __name__ == "__main__":
     main() 
