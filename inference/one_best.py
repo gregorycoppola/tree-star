@@ -120,21 +120,27 @@ def main():
     print("\n=== CoNLL Document Structure ===")
     print_type_info(docs, "docs")
     
-    if docs:
+    if docs and len(docs) > 0:
         print("\n=== First Document Structure ===")
         print_type_info(docs[0], "first_doc")
         
-        if docs[0]['tokens']:
-            print("\n=== First Token Structure ===")
-            print_type_info(docs[0]['tokens'][0], "first_token")
+        if docs[0] and len(docs[0]) > 0:
+            print("\n=== First Sentence Structure ===")
+            print_type_info(docs[0][0], "first_sentence")
+            
+            if docs[0][0] and len(docs[0][0]) > 0:
+                print("\n=== First Token Structure ===")
+                print_type_info(docs[0][0][0], "first_token")
     
     # Initialize Stanza pipeline
     logger.info("\nInitializing Stanza pipeline...")
     pipeline = setup_stanza_pipeline()
     
     # Parse a sample sentence
-    if docs and docs[0]['tokens']:
-        sample_text = ' '.join([token['form'] for token in docs[0]['tokens']])
+    if docs and len(docs) > 0 and len(docs[0]) > 0:
+        # Get the first sentence's tokens
+        first_sentence = docs[0][0]
+        sample_text = ' '.join([token['text'] for token in first_sentence])
         parsed = pipeline(sample_text)
         
         print("\n=== Stanza Sentence Structure ===")
