@@ -37,18 +37,18 @@ def print_type_info(obj, name="object", indent=0):
                 except:
                     pass
 
-def load_conll_file(file_path: str) -> List[Dict]:
-    """Load a CoNLL file and return it as a list of documents."""
+def load_conll_file(file_path: str) -> Tuple[List[List[List[Dict]]], ...]:
+    """Load a CoNLL file and return it as a tuple of documents."""
     return CoNLL.conll2dict(input_file=file_path)
 
 def setup_stanza_pipeline(lang: str = 'en') -> stanza.Pipeline:
     """Initialize the Stanza pipeline with dependency parsing enabled."""
     return stanza.Pipeline(lang=lang, processors='tokenize,pos,lemma,depparse')
 
-def parse_with_stanza(pipeline: stanza.Pipeline, doc: Dict) -> Dict:
-    """Parse a single document using Stanza."""
-    # Convert the document to text - CoNLL format uses 'form' for the text field
-    text = ' '.join([token['form'] for token in doc['tokens']])
+def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[Dict]:
+    """Parse a single sentence using Stanza."""
+    # Convert the sentence to text
+    text = ' '.join([token['text'] for token in sentence])
     
     # Parse with Stanza
     parsed = pipeline(text)
@@ -59,7 +59,7 @@ def parse_with_stanza(pipeline: stanza.Pipeline, doc: Dict) -> Dict:
         for word in sent.words:
             conll_output.append({
                 'id': word.id,
-                'form': word.text,  # Changed from 'text' to 'form' to match CoNLL format
+                'text': word.text,
                 'lemma': word.lemma,
                 'upos': word.upos,
                 'xpos': word.xpos,
@@ -70,9 +70,10 @@ def parse_with_stanza(pipeline: stanza.Pipeline, doc: Dict) -> Dict:
                 'misc': '_'
             })
     
-    return {'tokens': conll_output}
+    return conll_output
 
-def evaluate_parsing(gold_docs: List[Dict], pred_docs: List[Dict]) -> Dict[str, float]:
+def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...], 
+                    pred_docs: Tuple[List[List[List[Dict]]], ...]) -> Dict[str, float]:
     """Evaluate the predicted parses against gold standard."""
     total_tokens = 0
     correct_heads = 0
@@ -80,20 +81,21 @@ def evaluate_parsing(gold_docs: List[Dict], pred_docs: List[Dict]) -> Dict[str, 
     correct_both = 0
     
     for gold_doc, pred_doc in zip(gold_docs, pred_docs):
-        for gold_token, pred_token in zip(gold_doc['tokens'], pred_doc['tokens']):
-            total_tokens += 1
-            
-            # Compare head indices
-            if gold_token['head'] == pred_token['head']:
-                correct_heads += 1
-            
-            # Compare dependency relations
-            if gold_token['deprel'] == pred_token['deprel']:
-                correct_deprels += 1
-            
-            # Compare both head and relation
-            if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
-                correct_both += 1
+        for gold_sent, pred_sent in zip(gold_doc, pred_doc):
+            for gold_token, pred_token in zip(gold_sent, pred_sent):
+                total_tokens += 1
+                
+                # Compare head indices
+                if gold_token['head'] == pred_token['head']:
+                    correct_heads += 1
+                
+                # Compare dependency relations
+                if gold_token['deprel'] == pred_token['deprel']:
+                    correct_deprels += 1
+                
+                # Compare both head and relation
+                if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
+                    correct_both += 1
     
     # Calculate metrics
     uas = correct_heads / total_tokens if total_tokens > 0 else 0
