@@ -9,19 +9,28 @@ def read_conll_file(filepath):
     return sentences
 
 def parse_sentences(nlp, sentences):
-    parsed_conll_sentences = []
+    parsed_sentences = []
     for sentence in sentences:
-        words = [token['text'] for token in sentence[0]['tokens']]  # Access tokens correctly
+        print('====================================================================================================')
+        print('sentence')
+        print('----------------------------------------------------------------------------------------------------')
+        print(sentence)
+        print('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+        print('sentence type')
+        print('....................................................................................................')
+        print(type(sentence))
+        tokens = sentence[0]['tokens']  # CORRECT ACCESS
+        words = [token['text'] for token in tokens]
         doc = nlp(' '.join(words))
         conll_sentence = CoNLL.convert_dict(doc.to_dict())
-        parsed_conll_sentences.extend(conll_sentence)
-    return parsed_conll_sentences
+        parsed_sentences.extend(conll_sentence)
+    return parsed_sentences
 
 def compare_parses(gold_sentences, predicted_sentences):
     total, correct_heads, correct_deprels = 0, 0, 0
 
-    for gold, pred in zip(gold_sentences, predicted_sentences):
-        for gold_word, pred_word in zip(gold, pred):
+    for gold_sent, pred_sent in zip(gold_sentences, predicted_sentences):
+        for gold_word, pred_word in zip(gold_sent, pred_sent):
             total += 1
             if gold_word['head'] == pred_word['head']:
                 correct_heads += 1
