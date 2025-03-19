@@ -5,6 +5,8 @@ from stanza.utils.conll import CoNLL
 import logging
 from typing import List, Dict, Tuple
 import numpy as np
+import sys
+import argparse
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -79,13 +81,14 @@ def evaluate_parsing(gold_docs: List[Dict], pred_docs: List[Dict]) -> Dict[str, 
     }
 
 def main():
-    # Example usage
-    gold_file = "path/to/gold.conll"
-    output_file = "path/to/output.conll"
+    # Set up argument parser
+    parser = argparse.ArgumentParser(description='Parse CoNLL file using Stanza and evaluate results')
+    parser.add_argument('input_file', help='Path to input CoNLL file')
+    args = parser.parse_args()
     
     # Load gold standard data
-    logger.info("Loading gold standard data...")
-    gold_docs = load_conll_file(gold_file)
+    logger.info(f"Loading data from {args.input_file}...")
+    gold_docs = load_conll_file(args.input_file)
     
     # Initialize Stanza pipeline
     logger.info("Initializing Stanza pipeline...")
@@ -98,9 +101,12 @@ def main():
         pred_doc = parse_with_stanza(pipeline, doc)
         pred_docs.append(pred_doc)
     
-    # Save predictions
-    logger.info("Saving predictions...")
-    CoNLL.dict2conll(pred_docs, output_file)
+    # Print predictions to screen
+    logger.info("Parsing Results:")
+    for doc in pred_docs:
+        for token in doc['tokens']:
+            print(f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t{token['xpos']}\t{token['feats']}\t{token['head']}\t{token['deprel']}\t{token['deps']}\t{token['misc']}")
+        print()  # Empty line between sentences
     
     # Evaluate
     logger.info("Evaluating results...")
