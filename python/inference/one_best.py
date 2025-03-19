@@ -11,7 +11,7 @@ def read_conll_file(filepath):
 def parse_sentences(nlp, sentences):
     parsed_conll_sentences = []
     for sentence in sentences:
-        words = [word['text'] for word in sentence]
+        words = [token['text'] for token in sentence[0]['tokens']]  # Access tokens correctly
         doc = nlp(' '.join(words))
         conll_sentence = CoNLL.convert_dict(doc.to_dict())
         parsed_conll_sentences.extend(conll_sentence)
