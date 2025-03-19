@@ -47,6 +47,32 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
     
     return conll_output
 
+def format_token(token: Dict) -> str:
+    """Format a token for display."""
+    return f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t{token['xpos']}\t{token['feats']}\t{token['head']}\t{token['deprel']}\t{token['deps']}\t{token['misc']}"
+
+def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int):
+    """Show differences between gold and predicted parses."""
+    logger.info(f"\nDocument {doc_idx}, Sentence {sent_idx}:")
+    logger.info("Gold Standard:")
+    for token in gold_sent:
+        logger.info(format_token(token))
+    
+    logger.info("\nPredicted Parse:")
+    for token in pred_sent:
+        logger.info(format_token(token))
+    
+    # Show specific differences
+    logger.info("\nDifferences:")
+    for gold_token, pred_token in zip(gold_sent, pred_sent):
+        if gold_token['head'] != pred_token['head'] or gold_token['deprel'] != pred_token['deprel']:
+            logger.info(f"Token {gold_token['id']} ({gold_token['text']}):")
+            if gold_token['head'] != pred_token['head']:
+                logger.info(f"  Head: {gold_token['head']} → {pred_token['head']}")
+            if gold_token['deprel'] != pred_token['deprel']:
+                logger.info(f"  Relation: {gold_token['deprel']} → {pred_token['deprel']}")
+    logger.info("-" * 80)
+
 def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...], 
                     pred_docs: Tuple[List[List[List[Dict]]], ...]) -> Dict[str, float]:
     """Evaluate the predicted parses against gold standard."""
@@ -54,23 +80,34 @@ def evaluate_parsing(gold_docs: Tuple[List[List[List[Dict]]], ...],
     correct_heads = 0
     correct_deprels = 0
     correct_both = 0
+    diff_count = 0
     
-    for gold_doc, pred_doc in zip(gold_docs, pred_docs):
-        for gold_sent, pred_sent in zip(gold_doc, pred_doc):
+    for doc_idx, (gold_doc, pred_doc) in enumerate(zip(gold_docs, pred_docs)):
+        for sent_idx, (gold_sent, pred_sent) in enumerate(zip(gold_doc, pred_doc)):
+            has_diff = False
             for gold_token, pred_token in zip(gold_sent, pred_sent):
                 total_tokens += 1
                 
                 # Compare head indices
                 if gold_token['head'] == pred_token['head']:
                     correct_heads += 1
+                else:
+                    has_diff = True
                 
                 # Compare dependency relations
                 if gold_token['deprel'] == pred_token['deprel']:
                     correct_deprels += 1
+                else:
+                    has_diff = True
                 
                 # Compare both head and relation
                 if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
                     correct_both += 1
+            
+            # Show diff if there were any differences in this sentence
+            if has_diff and diff_count < 10:  # Limit to first 10 diffs
+                show_parse_diff(gold_sent, pred_sent, doc_idx, sent_idx)
+                diff_count += 1
     
     # Calculate metrics
     uas = correct_heads / total_tokens if total_tokens > 0 else 0
