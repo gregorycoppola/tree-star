@@ -39,16 +39,16 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
     for sent in parsed.sentences:
         for word in sent.words:
             conll_output.append({
-                'id': word.id,
+                'id': (word.id,),  # Convert to tuple to match input format
                 'text': word.text,
                 'lemma': word.lemma,
                 'upos': word.upos,
                 'xpos': word.xpos,
-                'Feats': '_',  # Match the capitalization in input
-                'head': word.head,
+                'Feats': '_',
+                'head': (word.head,) if word.head > 0 else 0,  # Convert head to tuple except for root (0)
                 'deprel': word.deprel,
-                'Deps': '_',   # Match the capitalization in input
-                'Misc': '_'    # Match the capitalization in input
+                'Deps': '_',
+                'Misc': '_'
             })
     
     return conll_output
@@ -96,8 +96,12 @@ def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int
     for gold_token, pred_token in zip(gold_sent, pred_sent):
         sent_tokens += 1
         
+        # Get head values, handling both tuple and integer formats
+        gold_head = gold_token['head'] if isinstance(gold_token['head'], int) else gold_token['head'][0]
+        pred_head = pred_token['head'] if isinstance(pred_token['head'], int) else pred_token['head'][0]
+        
         # Compare head indices
-        if gold_token['head'] == pred_token['head']:
+        if gold_head == pred_head:
             sent_correct_heads += 1
         else:
             print(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
@@ -109,7 +113,7 @@ def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int
             print(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
         
         # Compare both head and relation
-        if gold_token['head'] == pred_token['head'] and gold_token['deprel'] == pred_token['deprel']:
+        if gold_head == pred_head and gold_token['deprel'] == pred_token['deprel']:
             sent_correct_both += 1
     
     # Print per-sentence metrics
