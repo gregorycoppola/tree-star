@@ -30,7 +30,7 @@ def send_to_openai(prompt: str, client: openai.OpenAI, live_run: bool) -> str:
     if live_run:
         try:
             response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-4o-mini",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0
             )
