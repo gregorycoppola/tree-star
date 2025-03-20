@@ -44,18 +44,25 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
                 'lemma': word.lemma,
                 'upos': word.upos,
                 'xpos': word.xpos,
-                'feats': '_',
+                'Feats': '_',  # Match the capitalization in input
                 'head': word.head,
                 'deprel': word.deprel,
-                'deps': '_',
-                'misc': '_'
+                'Deps': '_',   # Match the capitalization in input
+                'Misc': '_'    # Match the capitalization in input
             })
     
     return conll_output
 
 def format_token(token: Dict) -> str:
     """Format a token for display."""
-    return f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t{token['xpos']}\t{token['feats']}\t{token['head']}\t{token['deprel']}\t{token['deps']}\t{token['misc']}"
+    # Handle different field names in CoNLL format
+    feats = token.get('feats', token.get('Feats', '_'))  # Try both capitalizations
+    deps = token.get('deps', token.get('Deps', '_'))
+    misc = token.get('misc', token.get('Misc', '_'))
+    
+    return (f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t"
+            f"{token['xpos']}\t{feats}\t{token['head']}\t{token['deprel']}\t"
+            f"{deps}\t{misc}")
 
 def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int):
     """Show differences between gold and predicted parses."""
