@@ -52,14 +52,15 @@ def load_conll_file(file_path: str) -> List[List[Dict]]:
 
 
 def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI, live_run: bool) -> str:
-    """Send a request to ChatGPT asking about token dependencies with explicit indexing."""
-    indexed_sentence = " ".join(f"{token['id'][0]} {token['text']}" for token in sentence)
+    """Send a request to ChatGPT asking about token dependencies without explicit indexing."""
+    sentence_text = " ".join(token['text'] for token in sentence)
     prompt = (
-        f"Given the sentence '{indexed_sentence}', "
-        f"according to CoNLL guidelines, which word would '{focus_token['text']}' (token {focus_token['id'][0]}) modify? "
-        "Respond with the index and word it modifies (e.g., '2 loves'). If it's the root, reply '0 root'."
+        f"Given the sentence '{sentence_text}', "
+        f"according to CoNLL guidelines, which word does '{focus_token['text']}' modify? "
+        "Respond with only the word it modifies. If it's the root, reply 'root'."
     )
     return send_to_openai(prompt, client, live_run)
+
 
 
 def evaluate_sentences(sentences: List[List[Dict]], client: openai.OpenAI, live_run: bool) -> List[List[Dict]]:
