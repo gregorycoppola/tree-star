@@ -1,0 +1,12 @@
+1	How	_	ADV	WRB	_	4	advmod	_	ChatGPTHead=0 root
+2	do	_	AUX	VBP	_	4	aux	_	ChatGPTHead=2 look
+3	people	_	NOUN	NNS	_	4	nsubj	_	ChatGPTHead=0 root
+4	look	_	VERB	VB	_	0	root	_	ChatGPTHead=4 look modifies 3 people.
+5	at	_	ADP	IN	_	8	case	_	ChatGPTHead=5 at modifies 4 look.
+6	and	_	CCONJ	CC	_	7	cc	_	ChatGPTHead=6 and modifies 8 art.
+7	experience	_	VERB	VB	_	4	conj	_	ChatGPTHead=7 experience 8 art
+8	art	_	NOUN	NN	_	4	obl	_	ChatGPTHead=8 experience
+9	?	_	PUNCT	.	_	4	punct	_	ChatGPTHead=0 root
+
+
+
