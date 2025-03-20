@@ -46,7 +46,7 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
                 'xpos': word.xpos,
                 'Feats': '_',
                 'head': (word.head,) if word.head > 0 else 0,  # Convert head to tuple except for root (0)
-                'deprel': word.deprel,
+                'deprel': word.deprel.lower(),  # Store lowercase to match input format
                 'Deps': '_',
                 'Misc': '_'
             })
@@ -104,6 +104,10 @@ def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int
         gold_head = gold_token.get('head', gold_token.get('Head', 0))
         pred_head = pred_token.get('head', pred_token.get('Head', 0))
         
+        # Get deprel values, handling both cases
+        gold_deprel = gold_token.get('deprel', gold_token.get('Deprel', '')).lower()
+        pred_deprel = pred_token.get('deprel', pred_token.get('Deprel', '')).lower()
+        
         # Convert to integers for comparison
         gold_head_val = gold_head[0] if isinstance(gold_head, tuple) else gold_head
         pred_head_val = pred_head[0] if isinstance(pred_head, tuple) else pred_head
@@ -115,13 +119,13 @@ def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int
             print(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
         
         # Compare dependency relations
-        if gold_token['deprel'] == pred_token['deprel']:
+        if gold_deprel == pred_deprel:
             sent_correct_deprels += 1
         else:
             print(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
         
         # Compare both head and relation
-        if gold_head_val == pred_head_val and gold_token['deprel'] == pred_token['deprel']:
+        if gold_head_val == pred_head_val and gold_deprel == pred_deprel:
             sent_correct_both += 1
     
     # Print per-sentence metrics
