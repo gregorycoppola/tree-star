@@ -14,9 +14,16 @@ def setup_args():
     parser = argparse.ArgumentParser(description='Query OpenAI API with prompts')
     parser.add_argument('--live_run', action='store_true', 
                        help='If set, actually send requests to OpenAI. Otherwise, just print prompts')
+    parser.add_argument('--output_file', 
+                       help='File to save responses (required for live run)')
     parser.add_argument('input_file', help='Input CoNLL file path')
-    parser.add_argument('output_file', help='Output CoNLL file path')
-    return parser.parse_args()
+    args = parser.parse_args()
+    
+    # Check if output_file is provided when doing a live run
+    if args.live_run and not args.output_file:
+        parser.error("--output_file is required when using --live_run")
+    
+    return args
 
 def send_to_openai(prompt: str, live_run: bool) -> str:
     """Send prompt to OpenAI API or simulate it."""
@@ -124,7 +131,7 @@ def main():
     logger = logging.getLogger(__name__)
 
     if args.live_run:
-        logger.info("Running in LIVE mode - will send requests to OpenAI")
+        logger.info(f"Running in LIVE mode - will send requests to OpenAI and save to {args.output_file}")
     else:
         logger.info("Running in DRY RUN mode - will only print prompts")
     
