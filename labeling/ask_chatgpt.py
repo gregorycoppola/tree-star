@@ -106,8 +106,9 @@ def save_results(sentences: List[List[Dict]], output_path: str):
 
 
 def main():
+    global logger
     args = setup_args()
-    
+
     logging.basicConfig(
         level=logging.INFO,
         format='%(message)s',
@@ -115,12 +116,11 @@ def main():
     )
     logger = logging.getLogger(__name__)
 
-    # Initialize OpenAI client if doing a live run
     client = None
     if args.live_run:
         api_key = os.environ.get('OPENAI_API_KEY')
         if not api_key:
-            print("Error: Please set the OPENAI_API_KEY environment variable")
+            logger.error("Error: Please set the OPENAI_API_KEY environment variable")
             sys.exit(1)
         client = openai.OpenAI(api_key=api_key)
 
@@ -128,10 +128,13 @@ def main():
         logger.info(f"Running in LIVE mode - will send requests to OpenAI and save to {args.output_file}")
     else:
         logger.info("Running in DRY RUN mode - will only print prompts")
-    
+
     sentences = load_conll_file(args.input_file)
-    evaluated_sentences = evaluate_sentences(sentences)
-    save_results(evaluated_sentences, args.output_file)
+    evaluated_sentences = evaluate_sentences(sentences, client, args.live_run)
+
+    if args.live_run:
+        save_results(evaluated_sentences, args.output_file)
+
 
 
 if __name__ == "__main__":
