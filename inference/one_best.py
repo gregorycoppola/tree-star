@@ -56,12 +56,16 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
 def format_token(token: Dict) -> str:
     """Format a token for display."""
     # Handle different field names in CoNLL format
-    feats = token.get('feats', token.get('Feats', '_'))  # Try both capitalizations
+    feats = token.get('feats', token.get('Feats', '_'))
     deps = token.get('deps', token.get('Deps', '_'))
     misc = token.get('misc', token.get('Misc', '_'))
+    head = token.get('head', token.get('Head', 0))  # Try both cases for head
+    
+    # Convert head to same format for display
+    head_str = f"({head[0]},)" if isinstance(head, tuple) else str(head)
     
     return (f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t"
-            f"{token['xpos']}\t{feats}\t{token['head']}\t{token['deprel']}\t"
+            f"{token['xpos']}\t{feats}\t{head_str}\t{token['deprel']}\t"
             f"{deps}\t{misc}")
 
 def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int):
@@ -96,12 +100,16 @@ def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int
     for gold_token, pred_token in zip(gold_sent, pred_sent):
         sent_tokens += 1
         
-        # Get head values, handling both tuple and integer formats
-        gold_head = gold_token['head'] if isinstance(gold_token['head'], int) else gold_token['head'][0]
-        pred_head = pred_token['head'] if isinstance(pred_token['head'], int) else pred_token['head'][0]
+        # Get head values, handling both cases and formats
+        gold_head = gold_token.get('head', gold_token.get('Head', 0))
+        pred_head = pred_token.get('head', pred_token.get('Head', 0))
+        
+        # Convert to integers for comparison
+        gold_head_val = gold_head[0] if isinstance(gold_head, tuple) else gold_head
+        pred_head_val = pred_head[0] if isinstance(pred_head, tuple) else pred_head
         
         # Compare head indices
-        if gold_head == pred_head:
+        if gold_head_val == pred_head_val:
             sent_correct_heads += 1
         else:
             print(f"Found head difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
@@ -113,7 +121,7 @@ def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int
             print(f"Found deprel difference in doc {doc_idx}, sent {sent_idx}, token {gold_token['id']}")
         
         # Compare both head and relation
-        if gold_head == pred_head and gold_token['deprel'] == pred_token['deprel']:
+        if gold_head_val == pred_head_val and gold_token['deprel'] == pred_token['deprel']:
             sent_correct_both += 1
     
     # Print per-sentence metrics
