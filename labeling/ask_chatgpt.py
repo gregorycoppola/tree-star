@@ -51,7 +51,7 @@ def load_conll_file(file_path: str) -> List[List[Dict]]:
     return [sentence for doc_sentences in doc for sentence in doc_sentences]
 
 
-def query_chatgpt(sentence: List[Dict], focus_token: Dict) -> str:
+def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI, live_run: bool) -> str:
     """Send a request to ChatGPT asking about token dependencies."""
     sentence_text = " ".join(token['text'] for token in sentence)
     prompt = (
@@ -59,18 +59,9 @@ def query_chatgpt(sentence: List[Dict], focus_token: Dict) -> str:
         f"according to CoNLL guidelines, which word would '{focus_token['text']}' modify? "
         "Respond with only the word it modifies. If it's the root, reply 'root'."
     )
+    return send_to_openai(prompt, client, live_run)
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
-    )
-
-    result = response.choices[0].message.content.strip()
-    return result
-
-
-def evaluate_sentences(sentences: List[List[Dict]]) -> List[List[Dict]]:
+def evaluate_sentences(sentences: List[List[Dict]], client: openai.OpenAI, live_run: bool) -> List[List[Dict]]:
     """Evaluate each token using ChatGPT and calculate accuracy."""
     correct = 0
     total = 0
@@ -80,19 +71,21 @@ def evaluate_sentences(sentences: List[List[Dict]]) -> List[List[Dict]]:
             gold_head_idx = token['head'][0] if isinstance(token['head'], tuple) else token['head']
             gold_head_word = sentence[gold_head_idx - 1]['text'] if gold_head_idx > 0 else 'root'
 
-            chatgpt_prediction = query_chatgpt(sentence, token)
-            token['chatgpt_head'] = chatgpt_prediction
+            chatgpt_prediction = query_chatgpt(sentence, token, client, live_run)
+            token['chatgpt_head'] = chatgpt_prediction if chatgpt_prediction else "None"
 
-            if chatgpt_prediction == gold_head_word:
-                correct += 1
-            total += 1
+            if live_run and chatgpt_prediction:
+                if chatgpt_prediction == gold_head_word:
+                    correct += 1
+                total += 1
 
-            logger.info(f"Token: {token['text']} | Gold: {gold_head_word} | ChatGPT: {chatgpt_prediction}")
+                logger.info(f"Token: {token['text']} | Gold: {gold_head_word} | ChatGPT: {chatgpt_prediction}")
 
-            time.sleep(0.5)  # Basic rate limiting
+                time.sleep(0.5)  # Rate limit
 
-    accuracy = correct / total * 100
-    logger.info(f"Accuracy: {accuracy:.2f}%")
+    if live_run and total > 0:
+        accuracy = correct / total * 100
+        logger.info(f"Accuracy: {accuracy:.2f}%")
 
     return sentences
 
