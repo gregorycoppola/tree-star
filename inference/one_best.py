@@ -87,12 +87,24 @@ def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, 
     # Show specific differences
     print("\nDifferences:")
     for gold_token, pred_token in zip(gold_sent, pred_sent):
-        if gold_token['head'] != pred_token['head'] or gold_token['deprel'] != pred_token['deprel']:
+        # Get head values with fallbacks
+        gold_head = gold_token.get('head', gold_token.get('Head', 0))
+        pred_head = pred_token.get('head', pred_token.get('Head', 0))
+        
+        # Get deprel values with fallbacks
+        gold_deprel = gold_token.get('deprel', gold_token.get('Deprel', '')).lower()
+        pred_deprel = pred_token.get('deprel', pred_token.get('Deprel', '')).lower()
+        
+        # Convert head values for comparison
+        gold_head_val = gold_head[0] if isinstance(gold_head, tuple) else gold_head
+        pred_head_val = pred_head[0] if isinstance(pred_head, tuple) else pred_head
+        
+        if gold_head_val != pred_head_val or gold_deprel != pred_deprel:
             print(f"Token {gold_token['id']} ({gold_token['text']}):")
-            if gold_token['head'] != pred_token['head']:
-                print(f"  Head: {gold_token['head']} → {pred_token['head']}")
-            if gold_token['deprel'] != pred_token['deprel']:
-                print(f"  Relation: {gold_token['deprel']} → {pred_token['deprel']}")
+            if gold_head_val != pred_head_val:
+                print(f"  Head: {gold_head} → {pred_head}")
+            if gold_deprel != pred_deprel:
+                print(f"  Relation: {gold_deprel} → {pred_deprel}")
     print("-" * 80)
 
 def evaluate_sentence(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int) -> Dict[str, float]:
