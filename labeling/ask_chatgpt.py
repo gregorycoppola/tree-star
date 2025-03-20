@@ -10,22 +10,41 @@ import json
 from stanza.utils.conll import CoNLL
 from typing import List, Dict
 
-# Get API key from environment variable
-api_key = os.environ.get('OPENAI_API_KEY')
-if not api_key:
-    print("Error: Please set the OPENAI_API_KEY environment variable")
-    sys.exit(1)
+def setup_args():
+    parser = argparse.ArgumentParser(description='Query OpenAI API with prompts')
+    parser.add_argument('--live_run', action='store_true', 
+                       help='If set, actually send requests to OpenAI. Otherwise, just print prompts')
+    parser.add_argument('input_file', help='Input CoNLL file path')
+    parser.add_argument('output_file', help='Output CoNLL file path')
+    return parser.parse_args()
 
-# Set OpenAI API key from environment
-openai.api_key = api_key
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)]
-)
-logger = logging.getLogger(__name__)
-
+def send_to_openai(prompt: str, live_run: bool) -> str:
+    """Send prompt to OpenAI API or simulate it."""
+    if live_run:
+        # Check for API key only if we're doing a live run
+        api_key = os.environ.get('OPENAI_API_KEY')
+        if not api_key:
+            print("Error: Please set the OPENAI_API_KEY environment variable")
+            sys.exit(1)
+        
+        openai.api_key = api_key
+        
+        # Actually send to OpenAI
+        try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}]
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            logger.error(f"Error calling OpenAI API: {e}")
+            return None
+    else:
+        # Just print what would be sent
+        print("\n=== PROMPT THAT WOULD BE SENT ===")
+        print(prompt)
+        print("=== END PROMPT ===\n")
+        return None
 
 def load_conll_file(file_path: str) -> List[List[Dict]]:
     """Load sentences from a CoNLL file."""
@@ -94,13 +113,25 @@ def save_results(sentences: List[List[Dict]], output_path: str):
             f.write('\n')
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('input_file', help='Input CoNLL file path')
-    parser.add_argument('output_file', help='Output CoNLL file path')
+def main():
+    args = setup_args()
+    
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(message)s',
+        handlers=[logging.StreamHandler(sys.stdout)]
+    )
+    logger = logging.getLogger(__name__)
 
-    args = parser.parse_args()
-
+    if args.live_run:
+        logger.info("Running in LIVE mode - will send requests to OpenAI")
+    else:
+        logger.info("Running in DRY RUN mode - will only print prompts")
+    
     sentences = load_conll_file(args.input_file)
     evaluated_sentences = evaluate_sentences(sentences)
     save_results(evaluated_sentences, args.output_file)
+
+
+if __name__ == "__main__":
+    main()
