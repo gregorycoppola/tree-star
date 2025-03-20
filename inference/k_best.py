@@ -70,10 +70,14 @@ def format_token(token: Dict) -> str:
         token['Misc']
     ])
 
-# Example usage:
 if __name__ == '__main__':
-    example_sentence = [{'text': 'This'}, {'text': 'is'}, {'text': 'a'}, {'text': 'test'}, {'text': '.'}]
-    k_parses = generate_k_best_parses(example_sentence, k=3)
+    example_sentence = [
+        {'text': 'Although'}, {'text': 'the'}, {'text': 'project'}, {'text': 'was'}, {'text': 'challenging'}, 
+        {'text': ','}, {'text': 'the'}, {'text': 'team'}, {'text': 'completed'}, {'text': 'it'}, 
+        {'text': 'successfully'}, {'text': 'before'}, {'text': 'the'}, {'text': 'deadline'}, {'text': '.'}
+    ]
+    
+    k_parses = generate_k_best_parses(example_sentence, k=3, dropout=0.2)
 
     for idx, parse in enumerate(k_parses):
         logger.info(f"\n--- Parse {idx + 1} ---")
