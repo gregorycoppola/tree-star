@@ -25,24 +25,16 @@ def setup_args():
     
     return args
 
-def send_to_openai(prompt: str, live_run: bool) -> str:
+def send_to_openai(prompt: str, client: openai.OpenAI, live_run: bool) -> str:
     """Send prompt to OpenAI API or simulate it."""
     if live_run:
-        # Check for API key only if we're doing a live run
-        api_key = os.environ.get('OPENAI_API_KEY')
-        if not api_key:
-            print("Error: Please set the OPENAI_API_KEY environment variable")
-            sys.exit(1)
-        
-        openai.api_key = api_key
-        
-        # Actually send to OpenAI
         try:
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0
             )
-            return response.choices[0].message.content
+            return response.choices[0].message.content.strip()
         except Exception as e:
             logger.error(f"Error calling OpenAI API: {e}")
             return None
@@ -129,6 +121,15 @@ def main():
         handlers=[logging.StreamHandler(sys.stdout)]
     )
     logger = logging.getLogger(__name__)
+
+    # Initialize OpenAI client if doing a live run
+    client = None
+    if args.live_run:
+        api_key = os.environ.get('OPENAI_API_KEY')
+        if not api_key:
+            print("Error: Please set the OPENAI_API_KEY environment variable")
+            sys.exit(1)
+        client = openai.OpenAI(api_key=api_key)
 
     if args.live_run:
         logger.info(f"Running in LIVE mode - will send requests to OpenAI and save to {args.output_file}")
