@@ -50,16 +50,30 @@ def load_conll_file(file_path: str) -> List[List[Dict]]:
     doc = CoNLL.conll2dict(input_file=file_path)
     return [sentence for doc_sentences in doc for sentence in doc_sentences]
 
-
 def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI, live_run: bool) -> str:
-    """Send a request to ChatGPT asking about token dependencies without explicit indexing."""
+    """Send a request to ChatGPT asking for POS tags according to CoNLL guidelines."""
     sentence_text = " ".join(token['text'] for token in sentence)
-    prompt = (
-        f"Given the sentence '{sentence_text}', "
-        f"according to CoNLL guidelines, which word does '{focus_token['text']}' modify? "
-        "Respond with only the word it modifies. If it's the root, reply 'root'."
+    allowed_pos_tags = (
+        "ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN, NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X"
     )
+
+    prompt = (
+        f"Given the sentence '{sentence_text}', assign a Universal Part-of-Speech (UPOS) tag "
+        f"to the word '{focus_token['text']}'. Allowed tags are: {allowed_pos_tags}. "
+        "Respond with only the UPOS tag."
+    )
+
     return send_to_openai(prompt, client, live_run)
+
+# def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI, live_run: bool) -> str:
+#     """Send a request to ChatGPT asking about token dependencies without explicit indexing."""
+#     sentence_text = " ".join(token['text'] for token in sentence)
+#     prompt = (
+#         f"Given the sentence '{sentence_text}', "
+#         f"according to CoNLL guidelines, which word does '{focus_token['text']}' modify? "
+#         "Respond with only the word it modifies. If it's the root, reply 'root'."
+#     )
+#     return send_to_openai(prompt, client, live_run)
 
 
 
