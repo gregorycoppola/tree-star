@@ -165,63 +165,108 @@ def main():
     # Set up argument parser
     parser = argparse.ArgumentParser(description='Parse CoNLL file using Stanza')
     parser.add_argument('input_file', help='Path to input CoNLL file')
+    parser.add_argument('base_output_file', help='Base path for output files (will append _gold.conllu and _pred.conllu)')
     args = parser.parse_args()
     
-    # Load data
-    print(f"Loading data from {args.input_file}...")
-    docs = CoNLL.conll2dict(input_file=args.input_file)
+    # Open output files
+    gold_file = open(f"{args.base_output_file}_gold.conllu", 'w')
+    pred_file = open(f"{args.base_output_file}_pred.conllu", 'w')
     
-    # Initialize Stanza pipeline
-    print("Initializing Stanza pipeline...")
-    pipeline = setup_stanza_pipeline()
+    # Parameters
+    max_diffs_to_find = 100
+    diff_count = 0
     
-    # Parse and evaluate sentences
-    print("Starting parsing...")
-    start_time = time.time()
-    total_sentences = sum(len(doc) for doc in docs)
-    processed_sentences = 0
+    try:
+        # Load data
+        print(f"Loading data from {args.input_file}...")
+        docs = CoNLL.conll2dict(input_file=args.input_file)
+        
+        # Initialize Stanza pipeline
+        print("Initializing Stanza pipeline...")
+        pipeline = setup_stanza_pipeline()
+        
+        # Parse and evaluate sentences
+        print("Starting parsing...")
+        start_time = time.time()
+        total_sentences = sum(len(doc) for doc in docs)
+        processed_sentences = 0
+        
+        # Track overall metrics
+        total_tokens = 0
+        total_correct_heads = 0
+        total_correct_deprels = 0
+        total_correct_both = 0
+        
+        for doc_idx, doc in enumerate(docs):
+            for sent_idx, sentence in enumerate(doc):
+                # Parse sentence
+                parsed = parse_with_stanza(pipeline, sentence)
+                
+                # Check for differences in heads
+                has_head_diff = False
+                for gold_token, pred_token in zip(sentence, parsed):
+                    gold_head = gold_token.get('head', gold_token.get('Head', 0))
+                    pred_head = pred_token.get('head', pred_token.get('Head', 0))
+                    gold_head_val = gold_head[0] if isinstance(gold_head, tuple) else gold_head
+                    pred_head_val = pred_head[0] if isinstance(pred_head, tuple) else pred_head
+                    
+                    if gold_head_val != pred_head_val:
+                        has_head_diff = True
+                        break
+                
+                # If there's a difference and we haven't hit our limit, save to files
+                if has_head_diff and diff_count < max_diffs_to_find:
+                    # Write gold sentence
+                    for token in sentence:
+                        gold_file.write(format_token(token) + '\n')
+                    gold_file.write('\n')
+                    
+                    # Write predicted sentence
+                    for token in parsed:
+                        pred_file.write(format_token(token) + '\n')
+                    pred_file.write('\n')
+                    
+                    diff_count += 1
+                    if diff_count >= max_diffs_to_find:
+                        print(f"\nFound {max_diffs_to_find} differences, stopping...")
+                        return
+                
+                # Evaluate and update metrics
+                metrics = evaluate_sentence(sentence, parsed, doc_idx, sent_idx)
+                
+                # Update overall metrics
+                total_tokens += metrics['tokens']
+                total_correct_heads += metrics['correct_heads']
+                total_correct_deprels += metrics['correct_deprels']
+                total_correct_both += metrics['correct_both']
+                
+                # Update progress
+                processed_sentences += 1
+                if processed_sentences % 100 == 0:
+                    elapsed = time.time() - start_time
+                    rate = processed_sentences / elapsed
+                    print(f"Processed {processed_sentences}/{total_sentences} sentences ({rate:.2f} sentences/sec)")
+        
+        # Print final statistics
+        total_time = time.time() - start_time
+        print(f"\nParsing completed in {total_time:.2f} seconds")
+        print(f"Average speed: {total_sentences/total_time:.2f} sentences/second")
+        
+        # Print overall metrics
+        uas = total_correct_heads / total_tokens if total_tokens > 0 else 0
+        las = total_correct_deprels / total_tokens if total_tokens > 0 else 0
+        complete = total_correct_both / total_tokens if total_tokens > 0 else 0
+        
+        print("\nFinal Results:")
+        print(f"UAS: {uas:.4f}")
+        print(f"LAS: {las:.4f}")
+        print(f"Complete: {complete:.4f}")
+        print(f"\nWrote {diff_count} differing sentences to {args.base_output_file}_gold.conllu and {args.base_output_file}_pred.conllu")
     
-    # Track overall metrics
-    total_tokens = 0
-    total_correct_heads = 0
-    total_correct_deprels = 0
-    total_correct_both = 0
-    
-    for doc_idx, doc in enumerate(docs):
-        for sent_idx, sentence in enumerate(doc):
-            # Parse sentence
-            parsed = parse_with_stanza(pipeline, sentence)
-            
-            # Evaluate immediately
-            metrics = evaluate_sentence(sentence, parsed, doc_idx, sent_idx)
-            
-            # Update overall metrics
-            total_tokens += metrics['tokens']
-            total_correct_heads += metrics['correct_heads']
-            total_correct_deprels += metrics['correct_deprels']
-            total_correct_both += metrics['correct_both']
-            
-            # Update progress
-            processed_sentences += 1
-            if processed_sentences % 100 == 0:
-                elapsed = time.time() - start_time
-                rate = processed_sentences / elapsed
-                print(f"Processed {processed_sentences}/{total_sentences} sentences ({rate:.2f} sentences/sec)")
-    
-    # Print final statistics
-    total_time = time.time() - start_time
-    print(f"\nParsing completed in {total_time:.2f} seconds")
-    print(f"Average speed: {total_sentences/total_time:.2f} sentences/second")
-    
-    # Print overall metrics
-    uas = total_correct_heads / total_tokens if total_tokens > 0 else 0
-    las = total_correct_deprels / total_tokens if total_tokens > 0 else 0
-    complete = total_correct_both / total_tokens if total_tokens > 0 else 0
-    
-    print("\nFinal Results:")
-    print(f"UAS: {uas:.4f}")
-    print(f"LAS: {las:.4f}")
-    print(f"Complete: {complete:.4f}")
+    finally:
+        # Close files
+        gold_file.close()
+        pred_file.close()
 
 if __name__ == "__main__":
     main() 
