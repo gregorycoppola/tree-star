@@ -3,14 +3,21 @@
 import openai
 import logging
 import sys
+import os
 import argparse
 import time
 import json
 from stanza.utils.conll import CoNLL
 from typing import List, Dict
 
-# Set your OpenAI API key
-openai.api_key = "YOUR_OPENAI_API_KEY"
+# Get API key from environment variable
+api_key = os.environ.get('OPENAI_API_KEY')
+if not api_key:
+    print("Error: Please set the OPENAI_API_KEY environment variable")
+    sys.exit(1)
+
+# Set OpenAI API key from environment
+openai.api_key = api_key
 
 logging.basicConfig(
     level=logging.INFO,
