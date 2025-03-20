@@ -39,28 +39,52 @@ def load_conll_file(file_path: str) -> List[List[Dict]]:
     
     return sentences
 
+def get_token_by_head(sent: List[Dict], head_idx: str) -> Dict:
+    """Get token by its index (accounting for different index formats)."""
+    head_idx = head_idx.strip('(,)')
+    if head_idx == '0':
+        return {'text': 'ROOT', 'upos': 'ROOT'}
+    for token in sent:
+        if token['id'].strip('(,)') == head_idx:
+            return token
+    return {'text': 'UNKNOWN', 'upos': 'UNKNOWN'}
+
 def analyze_head_errors(gold_sents: List[List[Dict]], pred_sents: List[List[Dict]]):
     """Analyze and print head prediction errors."""
-    print("Analyzing head prediction errors...")
-    print("Format: Sentence #, Token #: Word (Gold head → Predicted head)")
-    print("-" * 80)
-    
     total_errors = 0
     error_types = {}  # Dictionary to track frequency of error types
     
     for sent_idx, (gold_sent, pred_sent) in enumerate(zip(gold_sents, pred_sents)):
-        for token_idx, (gold_token, pred_token) in enumerate(zip(gold_sent, pred_sent)):
-            # Clean up head values (remove tuple notation if present)
-            gold_head = gold_token['head'].strip('(,)')
-            pred_head = pred_token['head'].strip('(,)')
+        # First, check if there are any errors in this sentence
+        has_errors = False
+        for g, p in zip(gold_sent, pred_sent):
+            if g['head'].strip('(,)') != p['head'].strip('(,)'):
+                has_errors = True
+                break
+        
+        if has_errors:
+            # Print sentence text
+            print(f"\nSentence {sent_idx + 1}:")
+            print(' '.join(token['text'] for token in gold_sent))
+            print("Errors:")
             
-            if gold_head != pred_head:
-                total_errors += 1
-                error_pattern = f"{gold_head}→{pred_head}"
-                error_types[error_pattern] = error_types.get(error_pattern, 0) + 1
+            # Then show each error
+            for token_idx, (gold_token, pred_token) in enumerate(zip(gold_sent, pred_sent)):
+                gold_head = gold_token['head'].strip('(,)')
+                pred_head = pred_token['head'].strip('(,)')
                 
-                print(f"Sent {sent_idx + 1}, Token {token_idx + 1}: "
-                      f"'{gold_token['text']}' (head: {gold_head} → {pred_head})")
+                if gold_head != pred_head:
+                    total_errors += 1
+                    error_pattern = f"{gold_head}→{pred_head}"
+                    error_types[error_pattern] = error_types.get(error_pattern, 0) + 1
+                    
+                    # Get the head words
+                    gold_head_token = get_token_by_head(gold_sent, gold_head)
+                    pred_head_token = get_token_by_head(gold_sent, pred_head)
+                    
+                    print(f"  {gold_token['text']} → {gold_head_token['text']} (gold)")
+                    print(f"  {gold_token['text']} → {pred_head_token['text']} (pred)")
+                    print()
 
     print("\nError Statistics:")
     print(f"Total head errors: {total_errors}")
