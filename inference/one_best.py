@@ -41,12 +41,12 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
             conll_output.append({
                 'id': (word.id,),  # Convert to tuple to match input format
                 'text': word.text,
-                'lemma': word.lemma,
+                'Lemma': word.lemma,  # Match capitalization in input
                 'upos': word.upos,
                 'xpos': word.xpos,
                 'Feats': '_',
-                'head': (word.head,) if word.head > 0 else 0,  # Convert head to tuple except for root (0)
-                'deprel': word.deprel.lower(),  # Store lowercase to match input format
+                'head': (word.head,) if word.head > 0 else 0,
+                'deprel': word.deprel.lower(),
                 'Deps': '_',
                 'Misc': '_'
             })
@@ -55,17 +55,22 @@ def parse_with_stanza(pipeline: stanza.Pipeline, sentence: List[Dict]) -> List[D
 
 def format_token(token: Dict) -> str:
     """Format a token for display."""
-    # Handle different field names in CoNLL format
+    # Handle different field names in CoNLL format with fallbacks
     feats = token.get('feats', token.get('Feats', '_'))
     deps = token.get('deps', token.get('Deps', '_'))
     misc = token.get('misc', token.get('Misc', '_'))
-    head = token.get('head', token.get('Head', 0))  # Try both cases for head
+    head = token.get('head', token.get('Head', 0))
+    lemma = token.get('lemma', token.get('Lemma', '_'))
+    text = token.get('text', token.get('Text', '_'))
+    upos = token.get('upos', token.get('UPOS', '_'))
+    xpos = token.get('xpos', token.get('XPOS', '_'))
+    deprel = token.get('deprel', token.get('Deprel', '_'))
     
     # Convert head to same format for display
     head_str = f"({head[0]},)" if isinstance(head, tuple) else str(head)
     
-    return (f"{token['id']}\t{token['text']}\t{token['lemma']}\t{token['upos']}\t"
-            f"{token['xpos']}\t{feats}\t{head_str}\t{token['deprel']}\t"
+    return (f"{token['id']}\t{text}\t{lemma}\t{upos}\t"
+            f"{xpos}\t{feats}\t{head_str}\t{deprel}\t"
             f"{deps}\t{misc}")
 
 def show_parse_diff(gold_sent: List[Dict], pred_sent: List[Dict], doc_idx: int, sent_idx: int):
