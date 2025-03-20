@@ -78,30 +78,29 @@ def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI
 
 
 def evaluate_sentences(sentences: List[List[Dict]], client: openai.OpenAI, live_run: bool) -> List[List[Dict]]:
-    """Evaluate each token using ChatGPT and calculate accuracy."""
+    """Evaluate each token's POS tag using ChatGPT and calculate accuracy."""
     correct = 0
     total = 0
 
     for sentence in sentences:
         for token in sentence:
-            gold_head_idx = token['head'][0] if isinstance(token['head'], tuple) else token['head']
-            gold_head_word = sentence[gold_head_idx - 1]['text'] if gold_head_idx > 0 else 'root'
+            gold_upos = token.get('upos', '_')
 
             chatgpt_prediction = query_chatgpt(sentence, token, client, live_run)
-            token['chatgpt_head'] = chatgpt_prediction if chatgpt_prediction else "None"
+            token['chatgpt_upos'] = chatgpt_prediction if chatgpt_prediction else "None"
 
             if live_run and chatgpt_prediction:
-                if chatgpt_prediction == gold_head_word:
+                if chatgpt_prediction == gold_upos:
                     correct += 1
                 total += 1
 
-                logger.info(f"Token: {token['text']} | Gold: {gold_head_word} | ChatGPT: {chatgpt_prediction}")
+                logger.info(f"Token: {token['text']} | Gold POS: {gold_upos} | ChatGPT POS: {chatgpt_prediction}")
 
                 time.sleep(0.5)  # Rate limit
 
     if live_run and total > 0:
         accuracy = correct / total * 100
-        logger.info(f"Accuracy: {accuracy:.2f}%")
+        logger.info(f"POS Tagging Accuracy: {accuracy:.2f}%")
 
     return sentences
 
