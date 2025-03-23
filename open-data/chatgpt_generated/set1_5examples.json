@@ -1,0 +1,28 @@
+[
+  {
+    "sentence": "She played the song for her friend with the guitar.",
+    "ambiguous_phrase": "with the guitar",
+    "correct_attachment": "played"
+  },
+  {
+    "sentence": "The detective interviewed the witness in the red dress.",
+    "ambiguous_phrase": "in the red dress",
+    "correct_attachment": "witness"
+  },
+  {
+    "sentence": "He opened the letter from his friend in the kitchen.",
+    "ambiguous_phrase": "in the kitchen",
+    "correct_attachment": "opened"
+  },
+  {
+    "sentence": "She drew a picture of the dog with the red collar.",
+    "ambiguous_phrase": "with the red collar",
+    "correct_attachment": "dog"
+  },
+  {
+    "sentence": "They delivered the package to the neighbor with the broken gate.",
+    "ambiguous_phrase": "with the broken gate",
+    "correct_attachment": "neighbor"
+  }
+]
+
