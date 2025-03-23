@@ -1,0 +1,42 @@
+{
+  "total_examples": 5,
+  "correct": 0,
+  "accuracy": 0.0,
+  "detailed_results": [
+    {
+      "sentence": "She played the song for her friend with the guitar.",
+      "ambiguous_phrase": "with the guitar",
+      "predicted_head": "guitar",
+      "expected_head": "played",
+      "correct": false
+    },
+    {
+      "sentence": "The detective interviewed the witness in the red dress.",
+      "ambiguous_phrase": "in the red dress",
+      "predicted_head": "dress",
+      "expected_head": "witness",
+      "correct": false
+    },
+    {
+      "sentence": "He opened the letter from his friend in the kitchen.",
+      "ambiguous_phrase": "in the kitchen",
+      "predicted_head": "kitchen",
+      "expected_head": "opened",
+      "correct": false
+    },
+    {
+      "sentence": "She drew a picture of the dog with the red collar.",
+      "ambiguous_phrase": "with the red collar",
+      "predicted_head": "collar",
+      "expected_head": "dog",
+      "correct": false
+    },
+    {
+      "sentence": "They delivered the package to the neighbor with the broken gate.",
+      "ambiguous_phrase": "with the broken gate",
+      "predicted_head": "gate",
+      "expected_head": "neighbor",
+      "correct": false
+    }
+  ]
+}

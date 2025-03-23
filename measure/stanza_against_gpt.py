@@ -38,7 +38,8 @@ def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
     sentence = doc.sentences[0]
 
     phrase_words = example["ambiguous_phrase"].split()
-    predicted_head = find_head_token(phrase_words, sentence.words)
+    # predicted_head = find_head_token(phrase_words, sentence.words)
+    predicted_head = find_attachment_head(example["ambiguous_phrase"], sentence.words)
     expected_head = example["correct_attachment"]
 
     return {
@@ -48,6 +49,23 @@ def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
         "expected_head": expected_head,
         "correct": predicted_head.lower() == expected_head.lower() if predicted_head else False
     }
+
+def find_attachment_head(phrase: str, sentence_tokens: List) -> str:
+    """
+    Given a phrase and sentence tokens from Stanza, find the word that the phrase attaches to.
+    """
+    phrase_lower = phrase.lower()
+    
+    # Find the first token of the phrase in the sentence
+    for token in sentence_tokens:
+        if token.text.lower() in phrase_lower and token.deprel in {"case", "mark", "obl", "nmod"}:
+            # Found the preposition or head of the phrase
+            # Now follow its head to find the attachment point
+            head_id = token.head
+            for t in sentence_tokens:
+                if t.id == head_id:
+                    return t.text
+    return None
 
 def main():
     args = setup_args()
