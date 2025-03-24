@@ -46,6 +46,8 @@ def analyze_phrase_attachment(phrase: str, sentence_tokens: List) -> Dict[str, O
         next((t for t in sentence_tokens if t.id == phrase_head_token.head), None)
         if phrase_head_token else None
     )
+    print(f"[DEBUG] Phrase: '{phrase}' → head: '{phrase_head_token.text if phrase_head_token else None}', attachment: '{attachment_token.text if attachment_token else None}'")
+
 
     return {
         "phrase_head": phrase_head_token.text if phrase_head_token else None,
