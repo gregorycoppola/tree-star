@@ -1,5 +1,5 @@
 # text = She played the song for her friend with the guitar.
-# predicted_head = song, expected_head = played
+# predicted_head = played, expected_head = played
 1	She	she	PRON	PRP	_	2	nsubj	_	_
 2	played	play	VERB	VBD	_	0	root	_	_
 3	the	the	DET	DT	_	4	det	_	_
@@ -13,7 +13,7 @@
 11	.	.	PUNCT	.	_	2	punct	_	_
 
 # text = The detective interviewed the witness in the red dress.
-# predicted_head = detective, expected_head = witness
+# predicted_head = interviewed, expected_head = witness
 1	The	the	DET	DT	_	2	det	_	_
 2	detective	detective	NOUN	NN	_	3	nsubj	_	_
 3	interviewed	interview	VERB	VBD	_	0	root	_	_
@@ -26,7 +26,7 @@
 10	.	.	PUNCT	.	_	3	punct	_	_
 
 # text = He opened the letter from his friend in the kitchen.
-# predicted_head = letter, expected_head = opened
+# predicted_head = opened, expected_head = opened
 1	He	he	PRON	PRP	_	2	nsubj	_	_
 2	opened	open	VERB	VBD	_	0	root	_	_
 3	the	the	DET	DT	_	4	det	_	_
@@ -40,7 +40,7 @@
 11	.	.	PUNCT	.	_	2	punct	_	_
 
 # text = She drew a picture of the dog with the red collar.
-# predicted_head = dog, expected_head = dog
+# predicted_head = drew, expected_head = dog
 1	She	she	PRON	PRP	_	2	nsubj	_	_
 2	drew	draw	VERB	VBD	_	0	root	_	_
 3	a	a	DET	DT	_	4	det	_	_
@@ -55,7 +55,7 @@
 12	.	.	PUNCT	.	_	2	punct	_	_
 
 # text = They delivered the package to the neighbor with the broken gate.
-# predicted_head = package, expected_head = neighbor
+# predicted_head = delivered, expected_head = neighbor
 1	They	they	PRON	PRP	_	2	nsubj	_	_
 2	delivered	deliver	VERB	VBD	_	0	root	_	_
 3	the	the	DET	DT	_	4	det	_	_

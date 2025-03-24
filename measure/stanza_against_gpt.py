@@ -21,44 +21,45 @@ def setup_args():
 
     return args
 
-def analyze_phrase_attachment(phrase: str, sentence_tokens: List) -> Dict[str, Optional[str]]:
-    """
-    Analyze a phrase to find:
-    - the head word *within* the phrase
-    - the word the phrase is *attached to* (outside the phrase)
-    """
-    phrase_words = set(phrase.lower().split())
-    phrase_tokens = [t for t in sentence_tokens if t.text.lower() in phrase_words]
+def analyze_phrase_attachment(phrase: str, sentence_tokens: List, full_sentence: str) -> Dict[str, Optional[str]]:
+    phrase = phrase.strip()
+    phrase_start = full_sentence.lower().find(phrase.lower())
+    phrase_end = phrase_start + len(phrase)
+
+    phrase_tokens = [
+        t for t in sentence_tokens
+        if t.start_char is not None and t.end_char is not None
+        and t.start_char >= phrase_start and t.end_char <= phrase_end
+    ]
+
     phrase_token_ids = {t.id for t in phrase_tokens}
 
     if not phrase_tokens:
         return {"phrase_head": None, "attachment_head": None}
 
-    # Phrase head = token whose head is outside the phrase
     phrase_head_token = None
     for t in phrase_tokens:
         if t.head not in phrase_token_ids:
             phrase_head_token = t
             break
 
-    # External attachment
     attachment_token = (
         next((t for t in sentence_tokens if t.id == phrase_head_token.head), None)
         if phrase_head_token else None
     )
-    print(f"[DEBUG] Phrase: '{phrase}' → head: '{phrase_head_token.text if phrase_head_token else None}', attachment: '{attachment_token.text if attachment_token else None}'")
-
 
     return {
         "phrase_head": phrase_head_token.text if phrase_head_token else None,
         "attachment_head": attachment_token.text if attachment_token else None
     }
 
+
 def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
     doc = nlp(example["sentence"])
     sentence = doc.sentences[0]
 
-    analysis = analyze_phrase_attachment(example["ambiguous_phrase"], sentence.words)
+    # analysis = analyze_phrase_attachment(example["ambiguous_phrase"], sentence.words)
+    analysis = analyze_phrase_attachment(example["ambiguous_phrase"], sentence.words, example["sentence"])
     predicted_head = analysis["attachment_head"]
     expected_head = example["correct_attachment"]
 
