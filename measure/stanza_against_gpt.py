@@ -13,7 +13,7 @@ def setup_args():
     parser.add_argument('--live_run', action='store_true',
                        help='If set, download and run Stanza. Otherwise, just print examples')
     parser.add_argument('--output_file',
-                       help='File to save detailed results (required for live run)')
+                       help='File to save CoNLL-U output (required for live run)')
     args = parser.parse_args()
     
     # Check if output_file is provided when doing a live run
@@ -38,8 +38,7 @@ def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
     sentence = doc.sentences[0]
 
     phrase_words = example["ambiguous_phrase"].split()
-    # predicted_head = find_head_token(phrase_words, sentence.words)
-    predicted_head = find_attachment_head(example["ambiguous_phrase"], sentence.words)
+    predicted_head = find_head_token(phrase_words, sentence.words)
     expected_head = example["correct_attachment"]
 
     return {
@@ -95,34 +94,31 @@ def main():
         stanza.download('en')
         nlp = stanza.Pipeline(lang='en', processors='tokenize,pos,lemma,depparse')
         
-        results = []
         correct = 0
         total = len(examples)
 
-        for i, example in enumerate(examples, 1):
-            result = evaluate_example(nlp, example)
-            results.append(result)
-            
-            if result["correct"]:
-                correct += 1
-            
-            # Print progress
-            logger.info(f"\nExample {i}/{total}:")
-            logger.info(f"Sentence: {result['sentence']}")
-            logger.info(f"→ Phrase: '{result['ambiguous_phrase']}' → predicted: '{result['predicted_head']}', expected: '{result['expected_head']}'")
+        # Save CoNLL-U formatted output
+        with open(args.output_file, 'w') as f:
+            for i, example in enumerate(examples, 1):
+                # Parse and evaluate
+                result = evaluate_example(nlp, example)
+                if result["correct"]:
+                    correct += 1
+                
+                # Print progress
+                logger.info(f"\nExample {i}/{total}:")
+                logger.info(f"Sentence: {result['sentence']}")
+                logger.info(f"→ Phrase: '{result['ambiguous_phrase']}' → predicted: '{result['predicted_head']}', expected: '{result['expected_head']}'")
+                
+                # Write CoNLL-U output
+                doc = nlp(example["sentence"])
+                for sentence in doc.sentences:
+                    f.write(sentence.to_conll())
+                    f.write("\n")  # Separate sentences with a blank line
         
         # Print final accuracy
         accuracy = correct / total
         logger.info(f"\nFinal Accuracy: {correct}/{total} = {accuracy:.2%}")
-        
-        # Save detailed results
-        with open(args.output_file, 'w') as f:
-            json.dump({
-                "total_examples": total,
-                "correct": correct,
-                "accuracy": accuracy,
-                "detailed_results": results
-            }, f, indent=2)
             
     else:
         logger.info("Running in DRY RUN mode - will only print examples")
