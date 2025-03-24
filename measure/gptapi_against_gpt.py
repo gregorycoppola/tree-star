@@ -5,16 +5,23 @@ import argparse
 import logging
 import sys
 import openai
+import os
 from typing import Dict
-
-# Set your OpenAI API key
-openai.api_key = "your-api-key-here"
 
 def setup_args():
     parser = argparse.ArgumentParser(description='Evaluate LLM attachment decisions on ambiguous phrases')
     parser.add_argument('input_file', help='Input JSON file with examples')
-    parser.add_argument('--output_file', help='Optional file to save outputs')
-    return parser.parse_args()
+    parser.add_argument('--live_run', action='store_true',
+                       help='If set, actually query OpenAI API. Otherwise, just print examples')
+    parser.add_argument('--output_file',
+                       help='File to save results (required for live run)')
+    args = parser.parse_args()
+    
+    # Check if output_file is provided when doing a live run
+    if args.live_run and not args.output_file:
+        parser.error("--output_file is required when using --live_run")
+    
+    return args
 
 def make_prompt(sentence: str, phrase: str) -> str:
     return (
@@ -56,9 +63,22 @@ def evaluate_example(example: Dict) -> Dict:
 
 def main():
     args = setup_args()
-
-    logging.basicConfig(level=logging.INFO, format='%(message)s', handlers=[logging.StreamHandler(sys.stdout)])
+    
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(message)s',
+        handlers=[logging.StreamHandler(sys.stdout)]
+    )
     logger = logging.getLogger(__name__)
+
+    # Initialize OpenAI client if doing a live run
+    client = None
+    if args.live_run:
+        api_key = os.environ.get('OPENAI_API_KEY')
+        if not api_key:
+            print("Error: Please set the OPENAI_API_KEY environment variable")
+            sys.exit(1)
+        client = openai.OpenAI(api_key=api_key)
 
     logger.info(f"Loading examples from {args.input_file}")
     with open(args.input_file) as f:
