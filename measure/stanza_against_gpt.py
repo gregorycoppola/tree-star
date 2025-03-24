@@ -22,16 +22,6 @@ def setup_args():
     
     return args
 
-def find_head_token(phrase_tokens: List[str], sentence_tokens: List) -> str:
-    """Return the head word in the dependency parse for the phrase tokens."""
-    token_ids = [t.id for t in sentence_tokens if t.text in phrase_tokens]
-    heads = [t.head for t in sentence_tokens if t.id in token_ids]
-    head_id = max(set(heads), key=heads.count)  # most common head
-    for t in sentence_tokens:
-        if t.id == head_id:
-            return t.text
-    return None
-
 def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
     """Evaluate a single example and return results."""
     doc = nlp(example["sentence"])
@@ -48,6 +38,17 @@ def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
         "expected_head": expected_head,
         "correct": predicted_head.lower() == expected_head.lower() if predicted_head else False
     }
+
+def find_head_token(phrase_tokens: List[str], sentence_tokens: List) -> str:
+    """Return the head word in the dependency parse for the phrase tokens."""
+    token_ids = [t.id for t in sentence_tokens if t.text in phrase_tokens]
+    heads = [t.head for t in sentence_tokens if t.id in token_ids]
+    head_id = max(set(heads), key=heads.count)  # most common head
+    for t in sentence_tokens:
+        if t.id == head_id:
+            return t.text
+    return None
+
 
 def find_attachment_head(phrase: str, sentence_tokens: List) -> str:
     """
