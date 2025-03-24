@@ -113,8 +113,9 @@ def main():
                 # Write CoNLL-U output
                 doc = nlp(example["sentence"])
                 for sentence in doc.sentences:
-                    f.write(sentence.to_conll())
-                    f.write("\n")  # Separate sentences with a blank line
+                    for word in sentence.words:
+                        f.write(f"{word.id}\t{word.text}\t{word.lemma}\t{word.upos}\t{word.xpos}\t_\t{word.head}\t{word.deprel}\t_\t_\n")
+                    f.write("\n")  # Separate sentences
         
         # Print final accuracy
         accuracy = correct / total
