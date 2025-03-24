@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
+from openai import OpenAI
 import json
 import argparse
 import logging
 import sys
-import openai
 import os
-from typing import Dict
+from typing import List, Dict
 
 def setup_args():
-    parser = argparse.ArgumentParser(description='Evaluate LLM attachment decisions on ambiguous phrases')
+    parser = argparse.ArgumentParser(description='Evaluate GPT API dependency parsing on ambiguous attachments')
     parser.add_argument('input_file', help='Input JSON file with examples')
     parser.add_argument('--live_run', action='store_true',
                        help='If set, actually query OpenAI API. Otherwise, just print examples')
@@ -23,18 +23,16 @@ def setup_args():
     
     return args
 
-def make_prompt(sentence: str, phrase: str) -> str:
-    return (
+def get_llm_attachment_head(client: OpenAI, sentence: str, phrase: str) -> str:
+    """Query GPT to find the syntactic head that a phrase attaches to."""
+    prompt = (
         f"In the sentence: \"{sentence}\"\n"
         f"What word does the phrase \"{phrase}\" attach to syntactically?\n"
         f"Return only the head word."
     )
 
-def get_llm_attachment_head(sentence: str, phrase: str) -> str:
-    prompt = make_prompt(sentence, phrase)
-
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are a linguist helping analyze syntactic attachments."},
@@ -42,15 +40,15 @@ def get_llm_attachment_head(sentence: str, phrase: str) -> str:
             ],
             temperature=0,
         )
-        answer = response["choices"][0]["message"]["content"].strip()
-        # Normalize answer: grab the first word, lowercase
+        answer = response.choices[0].message.content.strip()
         return answer.split()[0].lower()
     except Exception as e:
         logging.error(f"Error calling OpenAI API: {e}")
         return None
 
-def evaluate_example(example: Dict) -> Dict:
-    predicted_head = get_llm_attachment_head(example["sentence"], example["ambiguous_phrase"])
+def evaluate_example(client: OpenAI, example: Dict) -> Dict:
+    """Evaluate a single example using GPT."""
+    predicted_head = get_llm_attachment_head(client, example["sentence"], example["ambiguous_phrase"])
     expected_head = example["correct_attachment"].lower()
 
     return {
@@ -58,7 +56,7 @@ def evaluate_example(example: Dict) -> Dict:
         "ambiguous_phrase": example["ambiguous_phrase"],
         "predicted_head": predicted_head,
         "expected_head": expected_head,
-        "correct": predicted_head == expected_head
+        "correct": predicted_head == expected_head if predicted_head else False
     }
 
 def main():
@@ -71,39 +69,47 @@ def main():
     )
     logger = logging.getLogger(__name__)
 
-    # Initialize OpenAI client if doing a live run
-    client = None
-    if args.live_run:
-        api_key = os.environ.get('OPENAI_API_KEY')
-        if not api_key:
-            print("Error: Please set the OPENAI_API_KEY environment variable")
-            sys.exit(1)
-        client = openai.OpenAI(api_key=api_key)
-
+    # Load input data
     logger.info(f"Loading examples from {args.input_file}")
     with open(args.input_file) as f:
         examples = json.load(f)
 
-    results = []
-    correct = 0
+    if args.live_run:
+        logger.info("Running in LIVE mode - will query OpenAI API")
+        # Initialize OpenAI client (assumes OPENAI_API_KEY is set in environment)
+        client = OpenAI()
+        
+        correct = 0
+        total = len(examples)
 
-    for i, example in enumerate(examples, 1):
-        result = evaluate_example(example)
-        results.append(result)
-        if result["correct"]:
-            correct += 1
-
-        logger.info(f"\nExample {i}:")
-        logger.info(f"Sentence: {result['sentence']}")
-        logger.info(f"→ Phrase: '{result['ambiguous_phrase']}' → predicted: '{result['predicted_head']}', expected: '{result['expected_head']}'")
-
-    accuracy = correct / len(examples)
-    logger.info(f"\nFinal Accuracy: {correct}/{len(examples)} = {accuracy:.2%}")
-
-    if args.output_file:
+        # Process examples and save results
         with open(args.output_file, 'w') as f:
-            json.dump(results, f, indent=2)
-        logger.info(f"Saved results to {args.output_file}")
+            for i, example in enumerate(examples, 1):
+                # Get prediction and evaluate
+                result = evaluate_example(client, example)
+                if result["correct"]:
+                    correct += 1
+                
+                # Print progress
+                logger.info(f"\nExample {i}/{total}:")
+                logger.info(f"Sentence: {result['sentence']}")
+                logger.info(f"→ Phrase: '{result['ambiguous_phrase']}' → predicted: '{result['predicted_head']}', expected: '{result['expected_head']}'")
+                
+                # Write result
+                json.dump(result, f)
+                f.write('\n')
+        
+        # Print final accuracy
+        accuracy = correct / total
+        logger.info(f"\nFinal Accuracy: {correct}/{total} = {accuracy:.2%}")
+            
+    else:
+        logger.info("Running in DRY RUN mode - will only print examples")
+        for i, example in enumerate(examples, 1):
+            logger.info(f"\nExample {i}:")
+            logger.info(f"Sentence: {example['sentence']}")
+            logger.info(f"Ambiguous phrase: {example['ambiguous_phrase']}")
+            logger.info(f"Expected head: {example['correct_attachment']}")
 
 if __name__ == "__main__":
     main()
