@@ -51,26 +51,31 @@ def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
 
 def find_attachment_head(phrase: str, sentence_tokens: List) -> str:
     """
-    Follow the dependency chain of a token in the phrase until we reach the root verb (or similar).
+    Identify which word in the sentence the ambiguous phrase is attached to,
+    by finding the head of the phrase and following its HEAD link.
     """
-    phrase_lower = phrase.lower()
+    phrase_words = set(phrase.lower().split())
 
-    # Step 1: Find the head noun of the phrase (typically nmod or obl)
-    for token in sentence_tokens:
-        if token.text.lower() in phrase_lower and token.deprel in {"obl", "nmod"}:
-            current = token
-            # Step 2: Follow heads upward until we hit the root or a verb
-            while True:
-                next_id = current.head
-                if next_id == 0:
-                    return current.text  # Reached root
-                parent = next((t for t in sentence_tokens if t.id == next_id), None)
-                if parent is None:
-                    return current.text
-                if parent.upos.startswith("VERB"):
-                    return parent.text
-                current = parent
-    return None
+    # Step 1: Find candidate tokens in the phrase
+    candidate_tokens = [t for t in sentence_tokens if t.text.lower() in phrase_words]
+
+    # Step 2: Find the head token of the phrase (the one others point to)
+    phrase_token_ids = {t.id for t in candidate_tokens}
+    head_token = None
+
+    for t in candidate_tokens:
+        # If the head of this token is outside the phrase, then this token is the root of the phrase
+        if t.head not in phrase_token_ids:
+            head_token = t
+            break
+
+    if not head_token:
+        return None
+
+    # Step 3: Return the token it attaches to (outside the phrase)
+    parent = next((t for t in sentence_tokens if t.id == head_token.head), None)
+    return parent.text if parent else None
+
 
 
 def main():
