@@ -52,20 +52,27 @@ def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
 
 def find_attachment_head(phrase: str, sentence_tokens: List) -> str:
     """
-    Given a phrase and sentence tokens from Stanza, find the word that the phrase attaches to.
+    Follow the dependency chain of a token in the phrase until we reach the root verb (or similar).
     """
     phrase_lower = phrase.lower()
-    
-    # Find the first token of the phrase in the sentence
+
+    # Step 1: Find the head noun of the phrase (typically nmod or obl)
     for token in sentence_tokens:
-        if token.text.lower() in phrase_lower and token.deprel in {"case", "mark", "obl", "nmod"}:
-            # Found the preposition or head of the phrase
-            # Now follow its head to find the attachment point
-            head_id = token.head
-            for t in sentence_tokens:
-                if t.id == head_id:
-                    return t.text
+        if token.text.lower() in phrase_lower and token.deprel in {"obl", "nmod"}:
+            current = token
+            # Step 2: Follow heads upward until we hit the root or a verb
+            while True:
+                next_id = current.head
+                if next_id == 0:
+                    return current.text  # Reached root
+                parent = next((t for t in sentence_tokens if t.id == next_id), None)
+                if parent is None:
+                    return current.text
+                if parent.upos.startswith("VERB"):
+                    return parent.text
+                current = parent
     return None
+
 
 def main():
     args = setup_args()
