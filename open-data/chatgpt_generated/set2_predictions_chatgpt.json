@@ -1,0 +1,20 @@
+{"sentence": "The boy saw the man with the telescope.", "ambiguous_phrase": "with the telescope", "predicted_head": "saw", "expected_head": "saw", "correct": true}
+{"sentence": "She served the guest with the silver tray.", "ambiguous_phrase": "with the silver tray", "predicted_head": "served", "expected_head": "served", "correct": true}
+{"sentence": "He admired the painting of the girl with the umbrella.", "ambiguous_phrase": "with the umbrella", "predicted_head": "girl", "expected_head": "girl", "correct": true}
+{"sentence": "They filmed the actor in the leather jacket.", "ambiguous_phrase": "in the leather jacket", "predicted_head": "actor", "expected_head": "actor", "correct": true}
+{"sentence": "The scientist examined the sample from the cave.", "ambiguous_phrase": "from the cave", "predicted_head": "sample", "expected_head": "sample", "correct": true}
+{"sentence": "She greeted the teacher with a smile.", "ambiguous_phrase": "with a smile", "predicted_head": "greeted", "expected_head": "greeted", "correct": true}
+{"sentence": "He read the book about the artist in Paris.", "ambiguous_phrase": "in Paris", "predicted_head": "artist", "expected_head": "artist", "correct": true}
+{"sentence": "The photographer shot the model on the rooftop.", "ambiguous_phrase": "on the rooftop", "predicted_head": "shot", "expected_head": "shot", "correct": true}
+{"sentence": "She painted the vase with the blue flowers.", "ambiguous_phrase": "with the blue flowers", "predicted_head": "painted", "expected_head": "vase", "correct": false}
+{"sentence": "The chef cooked the meat in the oven.", "ambiguous_phrase": "in the oven", "predicted_head": "cooked", "expected_head": "cooked", "correct": true}
+{"sentence": "He spotted the bird with the red feathers.", "ambiguous_phrase": "with the red feathers", "predicted_head": "bird", "expected_head": "bird", "correct": true}
+{"sentence": "They arrested the man in the dark alley.", "ambiguous_phrase": "in the dark alley", "predicted_head": "arrested", "expected_head": "arrested", "correct": true}
+{"sentence": "The artist sketched the statue with the broken arm.", "ambiguous_phrase": "with the broken arm", "predicted_head": "statue", "expected_head": "statue", "correct": true}
+{"sentence": "She decorated the cake with strawberries.", "ambiguous_phrase": "with strawberries", "predicted_head": "decorated", "expected_head": "decorated", "correct": true}
+{"sentence": "The woman watched the dog with binoculars.", "ambiguous_phrase": "with binoculars", "predicted_head": "watched", "expected_head": "watched", "correct": true}
+{"sentence": "He chased the thief through the park with the fountain.", "ambiguous_phrase": "with the fountain", "predicted_head": "park", "expected_head": "park", "correct": true}
+{"sentence": "She held the child with the dirty hands.", "ambiguous_phrase": "with the dirty hands", "predicted_head": "child", "expected_head": "child", "correct": true}
+{"sentence": "The mechanic fixed the car in the garage.", "ambiguous_phrase": "in the garage", "predicted_head": "fixed", "expected_head": "fixed", "correct": true}
+{"sentence": "The cat scratched the couch with the torn cover.", "ambiguous_phrase": "with the torn cover", "predicted_head": "couch", "expected_head": "couch", "correct": true}
+{"sentence": "They photographed the building with the cracked windows.", "ambiguous_phrase": "with the cracked windows", "predicted_head": "building", "expected_head": "building", "correct": true}
