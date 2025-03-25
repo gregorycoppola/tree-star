@@ -1,0 +1,103 @@
+[
+  {
+    "sentence": "The boy saw the man with the telescope.",
+    "ambiguous_phrase": "with the telescope",
+    "correct_attachment": "saw"
+  },
+  {
+    "sentence": "She served the guest with the silver tray.",
+    "ambiguous_phrase": "with the silver tray",
+    "correct_attachment": "served"
+  },
+  {
+    "sentence": "He admired the painting of the girl with the umbrella.",
+    "ambiguous_phrase": "with the umbrella",
+    "correct_attachment": "girl"
+  },
+  {
+    "sentence": "They filmed the actor in the leather jacket.",
+    "ambiguous_phrase": "in the leather jacket",
+    "correct_attachment": "actor"
+  },
+  {
+    "sentence": "The scientist examined the sample from the cave.",
+    "ambiguous_phrase": "from the cave",
+    "correct_attachment": "sample"
+  },
+  {
+    "sentence": "She greeted the teacher with a smile.",
+    "ambiguous_phrase": "with a smile",
+    "correct_attachment": "greeted"
+  },
+  {
+    "sentence": "He read the book about the artist in Paris.",
+    "ambiguous_phrase": "in Paris",
+    "correct_attachment": "artist"
+  },
+  {
+    "sentence": "The photographer shot the model on the rooftop.",
+    "ambiguous_phrase": "on the rooftop",
+    "correct_attachment": "shot"
+  },
+  {
+    "sentence": "She painted the vase with the blue flowers.",
+    "ambiguous_phrase": "with the blue flowers",
+    "correct_attachment": "vase"
+  },
+  {
+    "sentence": "The chef cooked the meat in the oven.",
+    "ambiguous_phrase": "in the oven",
+    "correct_attachment": "cooked"
+  },
+  {
+    "sentence": "He spotted the bird with the red feathers.",
+    "ambiguous_phrase": "with the red feathers",
+    "correct_attachment": "bird"
+  },
+  {
+    "sentence": "They arrested the man in the dark alley.",
+    "ambiguous_phrase": "in the dark alley",
+    "correct_attachment": "arrested"
+  },
+  {
+    "sentence": "The artist sketched the statue with the broken arm.",
+    "ambiguous_phrase": "with the broken arm",
+    "correct_attachment": "statue"
+  },
+  {
+    "sentence": "She decorated the cake with strawberries.",
+    "ambiguous_phrase": "with strawberries",
+    "correct_attachment": "decorated"
+  },
+  {
+    "sentence": "The woman watched the dog with binoculars.",
+    "ambiguous_phrase": "with binoculars",
+    "correct_attachment": "watched"
+  },
+  {
+    "sentence": "He chased the thief through the park with the fountain.",
+    "ambiguous_phrase": "with the fountain",
+    "correct_attachment": "park"
+  },
+  {
+    "sentence": "She held the child with the dirty hands.",
+    "ambiguous_phrase": "with the dirty hands",
+    "correct_attachment": "child"
+  },
+  {
+    "sentence": "The mechanic fixed the car in the garage.",
+    "ambiguous_phrase": "in the garage",
+    "correct_attachment": "fixed"
+  },
+  {
+    "sentence": "The cat scratched the couch with the torn cover.",
+    "ambiguous_phrase": "with the torn cover",
+    "correct_attachment": "couch"
+  },
+  {
+    "sentence": "They photographed the building with the cracked windows.",
+    "ambiguous_phrase": "with the cracked windows",
+    "correct_attachment": "building"
+  }
+]
+
