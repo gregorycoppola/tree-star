@@ -6,6 +6,7 @@ import argparse
 import logging
 import sys
 import os
+from pathlib import Path
 from typing import List, Dict
 
 def setup_args():
@@ -13,15 +14,27 @@ def setup_args():
     parser.add_argument('input_file', help='Input JSON file with examples')
     parser.add_argument('--live_run', action='store_true',
                        help='If set, actually query OpenAI API. Otherwise, just print examples')
-    parser.add_argument('--output_file',
-                       help='File to save results (required for live run)')
+    parser.add_argument('--output_base', 
+                       help='Base directory for output files (required for live run)')
     args = parser.parse_args()
     
-    # Check if output_file is provided when doing a live run
-    if args.live_run and not args.output_file:
-        parser.error("--output_file is required when using --live_run")
+    # Check if output_base is provided when doing a live run
+    if args.live_run and not args.output_base:
+        parser.error("--output_base is required when using --live_run")
     
     return args
+
+def get_output_path(input_file: str, output_base: str) -> Path:
+    """Generate output path based on input filename and output directory."""
+    input_path = Path(input_file)
+    output_dir = Path(output_base)
+    
+    # Create output directory if it doesn't exist
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Use input filename but with .jsonl extension
+    output_filename = input_path.stem + '.jsonl'
+    return output_dir / output_filename
 
 def get_llm_attachment_head(client: OpenAI, sentence: str, phrase: str) -> str:
     """Query GPT to find the syntactic head that a phrase attaches to."""
@@ -79,11 +92,15 @@ def main():
         # Initialize OpenAI client (assumes OPENAI_API_KEY is set in environment)
         client = OpenAI()
         
+        # Get output path
+        output_file = get_output_path(args.input_file, args.output_base)
+        logger.info(f"Will save results to {output_file}")
+        
         correct = 0
         total = len(examples)
 
         # Process examples and save results
-        with open(args.output_file, 'w') as f:
+        with open(output_file, 'w') as f:
             for i, example in enumerate(examples, 1):
                 # Get prediction and evaluate
                 result = evaluate_example(client, example)
