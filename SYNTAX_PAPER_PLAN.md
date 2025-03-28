@@ -12,8 +12,6 @@
 - POS tags, head indices, and dependency labels from ChatGPT (in one go).
 - Metrics: UAS, LAS, POS accuracy.
 
-> 📝 Confirm if the earlier results were illustrative or from actual runs.
-
 ---
 
 ### 2. **Decomposed Subtasks Evaluation**
