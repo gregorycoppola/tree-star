@@ -12,6 +12,13 @@
 - POS tags, head indices, and dependency labels from ChatGPT (in one go).
 - Metrics: UAS, LAS, POS accuracy.
 
+
+```bash
+python laeling/ask_chatgpt_oneshot.py \
+  --input_file test_sentences.txt \
+  --output_file results/full_parse/metrics.json
+```
+
 ---
 
 ### 2. **Decomposed Subtasks Evaluation**
