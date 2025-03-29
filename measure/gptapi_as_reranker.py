@@ -13,8 +13,7 @@ from typing import List, Dict, Optional
 def setup_args():
     parser = argparse.ArgumentParser(description='Run Stanza + ChatGPT to evaluate parses for attachment errors')
     parser.add_argument('input_file', help='Input JSON file with sentence examples')
-    parser.add_argument('--live_run', action='store_true', help='If set, calls OpenAI API')
-    parser.add_argument('--output_file', required=True, help='Path to save output JSONL results')
+    parser.add_argument('--output_file', help='If set, will call OpenAI and write results to this file')
     return parser.parse_args()
 
 
@@ -59,8 +58,8 @@ def analyze_attachment(sentence_tokens, phrase: str, full_sentence: str) -> Dict
     }
 
 
-def get_chatgpt_judgment(client: OpenAI, conllu: str) -> str:
-    prompt = (
+def build_prompt(conllu: str) -> str:
+    return (
         "Here is a dependency parse of a sentence in CoNLL-U format.\n"
         "Do you see any errors in this parse?\n\n"
         "1. If no errors, respond only with \"no\".\n"
@@ -68,6 +67,8 @@ def get_chatgpt_judgment(client: OpenAI, conllu: str) -> str:
         f"{conllu}"
     )
 
+
+def get_chatgpt_judgment(client: OpenAI, prompt: str) -> str:
     try:
         response = client.chat.completions.create(
             model="gpt-4",
@@ -95,22 +96,31 @@ def main():
     stanza.download('en')
     nlp = stanza.Pipeline(lang='en', processors='tokenize,pos,lemma,depparse')
 
-    if args.live_run:
-        client = OpenAI()
-
+    use_live_api = args.output_file is not None
+    client = OpenAI() if use_live_api else None
     results = []
 
     for i, example in enumerate(examples, 1):
         doc = nlp(example["sentence"])
         sentence = doc.sentences[0]
         conllu = stanza_to_conllu(sentence, example["sentence"])
+        prompt = build_prompt(conllu)
 
         analysis = analyze_attachment(sentence.words, example["ambiguous_phrase"], example["sentence"])
         predicted = analysis["attachment_head"]
         expected = example["correct_attachment"]
         correct = predicted and predicted.lower() == expected.lower()
 
-        chatgpt_response = get_chatgpt_judgment(client, conllu) if args.live_run else "no"
+        if use_live_api:
+            chatgpt_response = get_chatgpt_judgment(client, prompt)
+        else:
+            logger.info(f"\nExample {i} (DRY RUN)")
+            logger.info(f"Sentence: {example['sentence']}")
+            logger.info(f"→ Predicted: {predicted}, Expected: {expected} → Correct: {correct}")
+            logger.info("\n----- Prompt to ChatGPT -----\n")
+            logger.info(prompt)
+            logger.info("\n-----------------------------\n")
+            chatgpt_response = "no"
 
         results.append({
             "index": i,
@@ -122,15 +132,11 @@ def main():
             "chatgpt_response": chatgpt_response
         })
 
-        logger.info(f"\nExample {i}")
-        logger.info(f"Sentence: {example['sentence']}")
-        logger.info(f"→ Predicted: {predicted}, Expected: {expected} → Correct: {correct}")
-        logger.info(f"ChatGPT response: {chatgpt_response}")
-
-    with open(args.output_file, 'w') as f:
-        for r in results:
-            json.dump(r, f)
-            f.write('\n')
+    if use_live_api:
+        with open(args.output_file, 'w') as f:
+            for r in results:
+                json.dump(r, f)
+                f.write('\n')
 
 
 if __name__ == "__main__":
