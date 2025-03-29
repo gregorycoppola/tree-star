@@ -33,7 +33,6 @@ python laeling/ask_chatgpt_oneshot.py \
 **Output:**
 - Accuracy for each subtask.
   
-> 📝 Make sure input-output pairs are clear and format is consistent across examples.
 
 ---
 
