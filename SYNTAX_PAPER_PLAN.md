@@ -67,7 +67,9 @@ python3 labeling/ask_chatgpt_rels.py \
 - Accuracy (correct head prediction).
 - Statistical significance (binomial test, confidence intervals).
 
-> 📝 Could automate prompt-response parsing and error matching.
+```bash
+python measure/gptapi_against_gpt.py open-data/chatgpt_generated/set2_20examples.json --live_run --output_file open-data/chatgpt_generated/set2_predictions_chatgpt.json
+```
 
 ---
 
