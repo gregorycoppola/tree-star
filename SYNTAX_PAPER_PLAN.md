@@ -1,4 +1,3 @@
-
 # 🧪 Experiment Plan: LLM's as Syntactic Annotation Labelers for Logical IR
 
 
@@ -32,7 +31,26 @@ python laeling/ask_chatgpt_oneshot.py \
   - Dependency label prediction (with gold head)  
 **Output:**
 - Accuracy for each subtask.
-  
+
+```bash
+# 1. POS Tagging
+python3 labeling/ask_chatgpt_tags.py \
+    --live_run \
+    --output_file results/pos_tagged.conllu \
+    data/input.conllu
+
+# 2. Head Prediction (with gold POS)
+python3 labeling/ask_chatgpt_arcs.py \
+    --live_run \
+    --output_file results/heads_predicted.conllu \
+    data/input.conllu
+
+# 3. Dependency Label Prediction (with gold heads)
+python3 labeling/ask_chatgpt_rels.py \
+    --live_run \
+    --output_file results/labels_predicted.conllu \
+    data/input.conllu
+```
 
 ---
 
@@ -55,7 +73,7 @@ python laeling/ask_chatgpt_oneshot.py \
 
 ### 4. **Parse Critique (Error Detection)**
 **Section:** 4.4  
-**Goal:** Evaluate ChatGPT’s ability to detect errors in Stanford parses.  
+**Goal:** Evaluate ChatGPT's ability to detect errors in Stanford parses.  
 **Tasks:**
 - [ ] Use same set of ambiguous sentences from above.
 - [ ] For each sentence:
