@@ -8,8 +8,11 @@ def format_sentence(sentence):
     return ' '.join(token['text'] for token in sentence)
 
 def load_conll_file(file_path: str):
-    doc = CoNLL.conll2dict(input_file=file_path)
-    return [sentence for doc_sentences in doc for sentence in doc_sentences]
+    docs = CoNLL.conll2dict(input_file=file_path)
+    doc = docs[0]
+    print('doc', doc)
+    # return [sentence for doc_sentences in doc for sentence in doc_sentences]
+    return doc
 
 def main():
     parser = argparse.ArgumentParser(description="Print and validate each sentence in a CoNLL file.")
