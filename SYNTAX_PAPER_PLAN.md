@@ -95,6 +95,9 @@ python measure/gptapi_against_gpt.py open-data/chatgpt_generated/set2_20examples
 - Binary classification accuracy
 - Explanation accuracy (manual)
 
+```bash
+python measure/gptapi_as_reranker.py open-data/chatgpt_generated/set2_20examples.json --output_file open-data/chatgpt_generated/set2_20examples.getapi_as_reranker_2.json
+```
 ---
 
 ### 5. **Iterative Parse Repair**
