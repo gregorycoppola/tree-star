@@ -5,10 +5,10 @@ To provide the dependency parse of the sentence "How do people look at and exper
 1	How	how	ADV	WRB	_	5	advmod	_	_
 2	do	do	AUX	VBP	_	5	aux	_	_
 3	people	people	NOUN	NNS	_	5	nsubj	_	_
-4	look	look	VERB	VB	_	5	compound:prt	_	_
+4	look	look	VERB	VB	_	5	conj	_	_
 5	experience	experience	VERB	VB	_	0	root	_	_
-6	at	at	ADP	IN	_	5	compound:prt	_	_
-7	and	and	CCONJ	CC	_	5	cc	_	_
+6	at	at	ADP	IN	_	4	compound:prt	_	_
+7	and	and	CCONJ	CC	_	4	cc	_	_
 8	art	art	NOUN	NN	_	5	obj	_	_
 9	?	?	PUNCT	.	_	5	punct	_	_
 ```
@@ -17,12 +17,9 @@ Explanation:
 - "How" is an adverb modifying the main verb "experience."
 - "do" is an auxiliary verb supporting the main verb "experience."
 - "people" is the subject of the main verb "experience."
-- "look" and "at" form a phrasal verb with "experience," indicating the actions people perform.
+- "look" is a verb that is part of a compound verb phrase with "experience," connected by the conjunction "and."
+- "at" is a particle associated with "look," forming a phrasal verb "look at."
 - "and" is a coordinating conjunction connecting "look at" and "experience."
 - "art" is the object of the main verb "experience."
 - "?" is punctuation marking the end of the sentence.
-
-Of course! Please provide the sentence you'd like me to parse, and I'll generate the dependency parse in CoNLL-U format for you.
-
-Of course! Please provide the sentence you'd like parsed, and I'll generate the dependency parse in CoNLL-U format for you.
 

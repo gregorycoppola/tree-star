@@ -21,7 +21,8 @@ def setup_args():
 
 def load_conll_sentences(path):
     docs = CoNLL.conll2dict(input_file=path)
-    return [s for doc in docs for s in doc]
+    # return [s for doc in docs for s in doc]
+    return docs[0]
 
 def format_as_text(sentence):
     return " ".join(tok["text"] for tok in sentence)
