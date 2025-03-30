@@ -25,7 +25,7 @@ def main():
     for doc_idx, doc in enumerate(docs):
         for sent_idx, sentence in enumerate(doc):
             total_sentences += 1
-            print(f"Sentence {total_sentences}: {format_sentence(sentence)}")
+            print(f"Sentence {doc_idx},{sent_idx} {total_sentences}: {format_sentence(sentence)}")
 
     print(f"\n📝 Total sentences: {total_sentences}")
 
