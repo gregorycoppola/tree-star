@@ -32,22 +32,13 @@ python python/preliminary/ask_chatgpt_oneshot.py data/input/sanity/examples1.con
 
 ```bash
 # 1. POS Tagging
-python3 labeling/ask_chatgpt_tags.py \
-    --live_run \
-    --output_file results/pos_tagged.conllu \
-    data/input.conllu
+python python/preliminary/ask_chatgpt_tags.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_tags
 
 # 2. Head Prediction (with gold POS)
-python3 labeling/ask_chatgpt_arcs.py \
-    --live_run \
-    --output_file results/heads_predicted.conllu \
-    data/input.conllu
+python python/preliminary/ask_chatgpt_arcs.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_arcs
 
 # 3. Dependency Label Prediction (with gold heads)
-python3 labeling/ask_chatgpt_rels.py \
-    --live_run \
-    --output_file results/labels_predicted.conllu \
-    data/input.conllu
+python python/preliminary/ask_chatgpt_rels.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_rels
 ```
 
 ---
