@@ -30,6 +30,11 @@ def save_sentence(sentence: List[Dict], output_file):
         output_file.write('\t'.join(fields) + '\n')
     output_file.write('\n')
 
+def is_valid_sentence(sentence: List[Dict]) -> bool:
+    """Check that all required fields are present in all tokens."""
+    required_fields = ['id', 'text', 'head', 'deprel']
+    return all(isinstance(tok, dict) and all(f in tok for f in required_fields) for tok in sentence)
+
 def main():
     parser = argparse.ArgumentParser(description='Interactively select sentences from a CoNLL file.')
     parser.add_argument("input_file", help="Path to input .conllu file")
@@ -45,10 +50,16 @@ def main():
         for doc in docs:
             for sentence in doc:
                 total_sentences += 1
+                
+                if not is_valid_sentence(sentence):
+                    print(f"⚠️ Skipping malformed sentence {total_sentences}")
+                    continue
+                    
                 print("\n" * 2)
                 print(f"Sentence {total_sentences}:")
                 print(format_sentence(sentence))
                 print()
+
 
                 while True:
                     response = input("Is this interesting? (y/n): ").strip().lower()
