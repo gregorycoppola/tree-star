@@ -1,0 +1,12 @@
+1	How	_	ADV	WRB	_	4	advmod	_	ChatGPTDeprel=advmod
+2	do	_	AUX	VBP	_	4	aux	_	ChatGPTDeprel=aux
+3	people	_	NOUN	NNS	_	4	nsubj	_	ChatGPTDeprel=nsubj
+4	look	_	VERB	VB	_	0	root	_	ChatGPTDeprel=ccomp
+5	at	_	ADP	IN	_	8	case	_	ChatGPTDeprel=obl
+6	and	_	CCONJ	CC	_	7	cc	_	ChatGPTDeprel=cc
+7	experience	_	VERB	VB	_	4	conj	_	ChatGPTDeprel=xcomp
+8	art	_	NOUN	NN	_	4	obl	_	ChatGPTDeprel=nmod
+9	?	_	PUNCT	.	_	4	punct	_	ChatGPTDeprel=advmod
+
+
+
