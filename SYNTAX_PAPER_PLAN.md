@@ -100,22 +100,3 @@ python measure/gptapi_as_reranker.py open-data/chatgpt_generated/set2_20examples
 ```
 ---
 
-### 5. **Iterative Parse Repair**
-**Section:** 4.5  
-**Goal:** Re-run or replicate the iterative parse repair loop with 100+ sentences.  
-**Tasks:**
-- [ ] Input Stanford CoNLL-U parses.
-- [ ] Loop:
-  1. ChatGPT critiques a parse.
-  2. ChatGPT revises parse.
-  3. Repeat until no changes.
-- [ ] Track:
-  - Number of edits
-  - LAS before and after (using gold parses)
-  - Accuracy of changes (manual or semi-automatic eval)  
-**Metrics:**
-- % sentences modified
-- % arcs modified
-- Change accuracy
-- LAS delta
-
