@@ -80,17 +80,32 @@ python measure/gptapi_against_gpt.py open-data/chatgpt_generated/set2_20examples
 
 ---
 
-### 4. **Parse Critique (Error Detection)**
+Absolutely — here’s the fully unified and flowing section for **Section 4.4: Parse Critique**, integrating both the general and targeted experiments, using your original formatting and tone:
+
+---
+
+### 4. **Parse Critique (Error Detection)**  
 **Section:** 4.4  
-**Goal:** Evaluate ChatGPT's ability to detect errors in Stanford parses.  
+**Goal:** Evaluate ChatGPT's ability to detect errors in Stanford dependency parses.  
+
+We conduct two complementary experiments:
+
+---
+
+#### 4.4.1 **General Parse Critique**  
+**Goal:** Assess whether ChatGPT can detect *any* error in a given dependency parse, without being guided to a specific construction.
+
 **Tasks:**
 - [ ] Use same set of ambiguous sentences from above.
 - [ ] For each sentence:
-  - Present Stanford parse.
-  - Ask ChatGPT to identify errors related to the preposition.
+  - Parse using Stanford Stanza (CoNLL-U).
+  - Present the full parse.
+  - Ask ChatGPT:  
+    *“Here is a dependency parse of the sentence ‘[sentence]’. Do you see any problems with this parse?”*
 - [ ] Manually evaluate:
   - Binary correctness (error/no error).
-  - Explanation plausibility.  
+  - Explanation plausibility.
+
 **Metrics:**
 - Binary classification accuracy
 - Explanation accuracy (manual)
@@ -98,5 +113,30 @@ python measure/gptapi_against_gpt.py open-data/chatgpt_generated/set2_20examples
 ```bash
 python measure/gptapi_as_reranker.py open-data/chatgpt_generated/set2_20examples.json --output_file open-data/chatgpt_generated/set2_20examples.getapi_as_reranker_2.json
 ```
+
+**Note:** ChatGPT tends to default to "no error" responses in this setting, even when parses are incorrect.
+
 ---
+
+#### 4.4.2 **Targeted Attachment Critique**  
+**Goal:** Evaluate ChatGPT’s ability to detect *specific* errors in PP-attachment decisions.
+
+**Tasks:**
+- [ ] Use same set of ambiguous sentences from above.
+- [ ] For each sentence:
+  - Parse using Stanford Stanza (CoNLL-U).
+  - Identify the ambiguous prepositional phrase (e.g., “with the telescope”).
+  - Ask ChatGPT:  
+    *“Do you see any problem with the attachment of the phrase ‘[XYZ]’ in this parse?”*
+- [ ] Manually evaluate:
+  - Binary correctness (error/no error).
+  - Explanation plausibility.
+
+**Metrics:**
+- Targeted classification accuracy
+- Explanation accuracy (manual)
+
+```bash
+python measure/gptapi_attachment_critique.py open-data/chatgpt_generated/set2_20examples.json --output_file open-data/chatgpt_generated/set2_20examples.attachment_critique.json
+```
 
