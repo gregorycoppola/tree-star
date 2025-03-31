@@ -7,16 +7,21 @@ import logging
 import sys
 import time
 from stanza.utils.conll import CoNLL
+from collections import Counter
 
 def setup_args():
     parser = argparse.ArgumentParser(description='Send sentences to ChatGPT for zero-shot dependency parsing.')
     parser.add_argument('--live_run', action='store_true', help='Actually send requests to OpenAI')
     parser.add_argument('--output_file', help='Where to save the CoNLL-U outputs')
     parser.add_argument('input_file', help='Input .conllu file')
+    parser.add_argument('--eval', action='store_true', help='Evaluate the predictions against a gold CoNLL-U file')
+    parser.add_argument('--gold_file', help='Path to the gold .conllu file for evaluation (required if --eval is set)')
     args = parser.parse_args()
 
     if args.live_run and not args.output_file:
         parser.error("--output_file is required in live mode")
+    if args.eval and not args.gold_file:
+        parser.error("--gold_file is required when --eval is set")
     return args
 
 def load_conll_sentences(path):
@@ -50,6 +55,65 @@ def query_chatgpt_parse(sentence, client, live):
     )
     return send_to_chatgpt(prompt, client, live)
 
+def evaluate_conllu(gold_sentences, pred_blocks):
+    """Evaluate predicted parses against gold standard."""
+    correct_heads = 0
+    correct_labels = 0
+    correct_pos = 0
+    total = 0
+
+    for gold, pred_block in zip(gold_sentences, pred_blocks):
+        if pred_block.startswith("# FAILED"):
+            continue
+
+        pred_lines = [line for line in pred_block.strip().splitlines() if not line.startswith("#")]
+        gold_tokens = [tok for tok in gold if '-' not in str(tok['id']) and '.' not in str(tok['id'])]
+        
+        if len(gold_tokens) != len(pred_lines):
+            logging.warning("⚠️  Length mismatch, skipping sentence.")
+            continue
+
+        for gold_tok, pred_line in zip(gold_tokens, pred_lines):
+            parts = pred_line.split('\t')
+            if len(parts) != 10:
+                continue
+            _, _, _, upos, _, _, head, deprel, _, _ = parts
+            
+            # Convert head to match gold format (handle both string and tuple formats)
+            gold_head = str(gold_tok["head"]).strip('(),')
+            
+            # Compare heads
+            if head == gold_head:
+                correct_heads += 1
+                # Only check label if head is correct
+                if deprel.lower() == gold_tok["deprel"].lower():
+                    correct_labels += 1
+            
+            # Compare POS tags
+            if upos.upper() == gold_tok["upos"].upper():
+                correct_pos += 1
+            
+            total += 1
+
+    # Calculate metrics
+    uas = correct_heads / total * 100 if total else 0
+    las = correct_labels / total * 100 if total else 0
+    pos_acc = correct_pos / total * 100 if total else 0
+
+    # Print results
+    print(f"\n📊 Evaluation Results:")
+    print(f"Total tokens: {total}")
+    print(f"POS Accuracy: {pos_acc:.2f}%")
+    print(f"UAS: {uas:.2f}%")
+    print(f"LAS: {las:.2f}%")
+
+    return {
+        "pos_accuracy": pos_acc,
+        "uas": uas,
+        "las": las,
+        "total_tokens": total
+    }
+
 def main():
     args = setup_args()
     logging.basicConfig(level=logging.INFO)
@@ -81,6 +145,10 @@ def main():
             for block in results:
                 f.write(block.strip() + "\n\n")
         logging.info(f"Saved results to {args.output_file}")
+
+    if args.eval:
+        gold_sentences = load_conll_sentences(args.gold_file)
+        metrics = evaluate_conllu(gold_sentences, results)
 
 if __name__ == "__main__":
     main()
