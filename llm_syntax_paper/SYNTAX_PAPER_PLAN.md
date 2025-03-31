@@ -100,7 +100,7 @@ We conduct two complementary experiments:
 - Explanation accuracy (manual)
 
 ```bash
-python measure/gptapi_as_reranker.py open-data/chatgpt_generated/set2_20examples.json --output_file open-data/chatgpt_generated/set2_20examples.getapi_as_reranker_2.json
+python python/reranker/gptapi_as_reranker.py data/input/systematic_pp/chatgpt_generated_20.json --output_file data/output/reranker/chatgpt_generated_20.reranker.json
 ```
 
 **Note:** ChatGPT tends to default to "no error" responses in this setting, even when parses are incorrect.
