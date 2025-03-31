@@ -105,7 +105,8 @@ def main():
         doc = nlp(example["sentence"])
         sentence = doc.sentences[0]
         conllu = stanza_to_conllu(sentence, example["sentence"])
-        prompt = build_prompt(conllu)
+        prompt = build_prompt(conllu, example["ambiguous_phrase"])
+        # prompt = build_prompt(conllu)
 
         analysis = analyze_attachment(sentence.words, example["ambiguous_phrase"], example["sentence"])
         predicted = analysis["attachment_head"]

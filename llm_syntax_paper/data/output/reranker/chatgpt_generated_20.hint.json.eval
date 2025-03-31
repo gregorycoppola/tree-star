@@ -1,0 +1,68 @@
+Nice — this is really insightful data! Let's evaluate **how well ChatGPT performed** given the focused prompt and the gold labels.
+
+I'll go line by line, check:
+
+- If ChatGPT said **"yes"** and the gold label says the prediction is correct ✅.
+- If ChatGPT said **"no"** and it agrees with the gold label that it's incorrect ❌.
+- Or if there’s a **mismatch**, which is the most interesting.
+
+---
+
+### 🔍 GPT Judgments vs. Gold Labels:
+
+| # | Sentence Summary | Gold `correct` | GPT Judgment | 🧠 GPT Right? | Notes |
+|--:|------------------|----------------|--------------|---------------|-------|
+| 1 | telescope attached to **saw** | ✅ | Yes | ✅ | Correct and aligned |
+| 2 | tray with **served** | ✅ | Yes | ✅ | Correct |
+| 3 | umbrella → **girl**, GPT said **admired** is wrong | ❌ | No | ✅ | GPT caught the error |
+| 4 | jacket → **actor**, GPT said "Yes" | ❌ | ❌ | GPT missed this one |
+| 5 | cave → **sample**, GPT said "No" | ❌ | ✅ | GPT caught the error |
+| 6 | smile → **greeted** | ✅ | Yes | ✅ | Good |
+| 7 | Paris → **artist** | ✅ | Yes | ✅ | Good |
+| 8 | rooftop → **shot** | ✅ | Yes | ✅ | Good |
+| 9 | blue flowers → **vase**, GPT said "Yes" (predicted head = painted) | ❌ | ❌ | GPT missed this |
+| 10 | oven → **cooked** | ✅ | Yes | ✅ | Correct |
+| 11 | red feathers → **bird**, GPT said "No" | ❌ | ✅ | GPT caught error |
+| 12 | alley → **arrested** | ✅ | Yes | ✅ | Correct |
+| 13 | broken arm → **statue**, GPT said "No" | ❌ | ✅ | Correct error detection |
+| 14 | strawberries → **decorated** | ✅ | Yes | ✅ | Good |
+| 15 | binoculars → **watched** | ✅ | Yes | ✅ | Good |
+| 16 | fountain → **park**, GPT said "No" | ❌ | ✅ | GPT caught error |
+| 17 | dirty hands → **child**, GPT said "Yes" | ❌ | ❌ | GPT missed the error |
+| 18 | garage → **fixed** | ✅ | Yes | ✅ | Good |
+| 19 | torn cover → **couch**, GPT said "No" | ❌ | ✅ | Caught the error |
+| 20 | cracked windows → **building**, GPT said "Yes" | ❌ | ❌ | Missed this one |
+
+---
+
+### 📊 Summary
+
+- ✅ **Correctly judged** (agreement with gold label): **16/20**
+- ❌ **Incorrect judgments** (missed or wrong): **4/20**
+  - Missed: #4, #9, #17, #20
+
+---
+
+### 🔎 Observations
+
+- GPT was **very strong at catching obvious noun-modifier mistakes** (e.g., #3, #11, #13).
+- It **struggled when the sentence was ambiguous** or when the parser and prompt interpretation diverged (e.g., #9: *painted the vase with the blue flowers*).
+- It sometimes **gave a wrong "yes"** even when its own parser attached the phrase incorrectly (#4, #17, #20).
+
+---
+
+### ✅ Suggestions to Improve Accuracy
+
+1. **Include the predicted attachment in the prompt** — e.g.:
+   > "According to the parse, the phrase 'with the telescope' is attached to 'saw'. Is this correct?"
+
+   This makes it explicit what ChatGPT is supposed to evaluate, rather than relying on it to infer it from CoNLL.
+
+2. **Ask for binary response first**, like:
+   > "Answer 'yes' or 'no' first, then explain if 'no'."
+
+3. **Use token numbers or highlight the phrase span** — this reduces ambiguity if multiple similar words are in the sentence.
+
+---
+
+Would you like a version of your script that adds the explicit predicted head word to the prompt (as in suggestion 1)?
