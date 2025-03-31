@@ -1,0 +1,88 @@
+INFO:root:Loaded 25 sentences.
+INFO:root:→ Sentence 1: Aesthetic Appreciation and Spanish Art :
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 2: Which elements of specific artworks do they focus on ?
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 3: Do museum labels have an impact on how people look at artworks ?
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 4: The viewing experience of art is a complex one , involving issues of perception , attention , memory , decision - making , affect , and emotion .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 5: Thus , the time it takes and the ways of visually exploring an artwork can inform about its relevance , interestingness , and even its aesthetic appeal .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 6: This paper describes a collaborative pilot project focusing on a unique collection of 17th Century Zurbarán paintings .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 7: The Jacob cycle at Auckland Castle is the only UK example of a continental collection preserved in situ in purpose - built surroundings .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 8: The purpose of this pilot study was to assess the effects of different written interpretation on the visual exploration of artworks .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 9: We will discuss the potential implications of these techniques and our understanding of visual behaviours on museum and gallery practice .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 10: Our experience of art develops from the interaction of several cognitive and affective processes ; the beginning of which is a visual scan of the artwork .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 11: When regarding an artwork , a viewer gathers information through a series fixations , interspersed by rapid movements of the eye called saccades .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 12: It is the only cycle to be preserved in purpose - built surroundings in the UK , and one of very few of its kind in the world .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 13: It has a long history in scholarship ( Baron & Beresford 2014 ) , but many key aspects of its production and significance have not yet been fully understood .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 14: Past studies establish that each of these efforts is strongly and positively influenced through various forms of faculty diversity , including ethnic , racial , and gender diversity .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 15: Despite these positive effects , however , quantifying the impact of diversity in science remains exceedingly difficult , due in large part to a lack of comprehensive data about the scientific workforce .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 16: For many scientific fields , however , there is no central listing of all tenure - track faculty , making it difficult to define a rigorous sample frame for analysis .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 17: Further , rates of adoption of services like GoogleScholar and ResearchGate vary within , and across disciplines .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 18: Although useful , such samples are not representative of the scientific workforce as a whole and thus have limited generalizability .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 19: In some fields , yearly data on faculty numbers and composition are available in aggregate .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 20: Such surveys can provide valuable insight into trends and summary statistics on the scientific workforce but suffer from two key weaknesses .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 21: This system is efficient and accurate , and it can be adapted to any academic discipline and used for continuous collection .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 22: In short , many important research questions will benefit from the availability of accurate and frequently - recollected census data .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 23: Our study is organized as follows .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 24: We begin by detailing the design and implementation of our web crawler framework .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:→ Sentence 25: Next , we present the results of our work in two sections .
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:Saved results to data/output/preliminary/examples25.conllu.ask_chatgpt_oneshot.py.conllu
+WARNING:root:⚠️  Length mismatch, skipping sentence.
+WARNING:root:⚠️  Length mismatch, skipping sentence.
+WARNING:root:⚠️  Length mismatch, skipping sentence.
+WARNING:root:⚠️  Length mismatch, skipping sentence.
+WARNING:root:⚠️  Length mismatch, skipping sentence.
+
+📊 Evaluation Results:
+Total tokens: 408
+POS Accuracy: 95.83%
+UAS: 48.53%
+LAS: 45.83%
