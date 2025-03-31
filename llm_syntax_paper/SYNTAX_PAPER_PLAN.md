@@ -47,10 +47,10 @@ Accuracy of ChatGPT in a zero-shot setting on full dependency parses. Metrics in
 python python/preliminary/ask_chatgpt_tags.py data/input/preliminary/examples25.conllu --live_run --output_file preliminary/examples25.conllu.ask_chatgpt_tags
 
 # 2. Head Prediction (with gold POS)
-python python/preliminary/ask_chatgpt_arcs.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_arcs
+python python/preliminary/ask_chatgpt_arcs.py data/input/preliminary/examples25.conllu --live_run --output_file preliminary/examples25.conllu.ask_chatgpt_arcs
 
 # 3. Dependency Label Prediction (with gold heads)
-python python/preliminary/ask_chatgpt_rels.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_rels
+python python/preliminary/ask_chatgpt_rels.py data/input/preliminary/examples25.conllu --live_run --output_file preliminary/examples25.conllu.ask_chatgpt_rels
 ```
 
 #### 📈 Figure 2: Decomposed Parsing Subtasks Performance
