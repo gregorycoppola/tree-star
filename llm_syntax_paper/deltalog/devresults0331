@@ -1,0 +1,26 @@
+# background
+i am going to do the experiments like this:
+
+1) "sanity part" -- to test things with one example
+
+2) "dev set" -- one set of examples for everything -- to test out the process and do a preliminary analysis
+
+3) "held out set" -- that i will run once and then just do the paper
+
+
+i think the results on the "dev set" are already pretty convincing
+
+because i have done a lot of "variations" on this that i can't document all of in the paper
+
+# this change
+
+fill out the entire dev set in this branch and derivatives
+
+get the results into a doc..
+
+
+# still to do
+
+* make a new "held out set" for everything
+* get those results as well
+* make two columns in each part of the paper
