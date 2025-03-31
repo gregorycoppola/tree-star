@@ -22,9 +22,11 @@ Accuracy of ChatGPT in a zero-shot setting on full dependency parses. Metrics in
 
 | Metric | Accuracy (%) |
 |--------|---------------|
-| POS    | _.__          |
-| UAS    | _.__          |
-| LAS    | _.__          |
+| POS    | 94.04         |
+| UAS    | 50.00         |
+| LAS    | 46.56         |
+| total  tokens | 436    |
+| avg tokens    | 22     |
 
 ---
 
