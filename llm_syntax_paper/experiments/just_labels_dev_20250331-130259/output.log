@@ -1,0 +1,1056 @@
+Running in LIVE mode - will send requests to OpenAI and save to data/output/preliminary/examples25.conllu.ask_chatgpt_rels.py.conllu
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Aesthetic | Head: 2 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Appreciation | Head: 0 | Gold Label: root | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 5 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Spanish | Head: 5 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Art | Head: 2 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: : | Head: 2 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Which | Head: 2 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: elements | Head: 8 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 5 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: specific | Head: 5 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Head: 2 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: do | Head: 8 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: they | Head: 8 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: focus | Head: 0 | Gold Label: root | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 2 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ? | Head: 8 | Gold Label: punct | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Do | Head: 4 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: museum | Head: 3 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: labels | Head: 4 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Head: 6 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: impact | Head: 4 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 8 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: how | Head: 6 | Gold Label: nmod | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: people | Head: 10 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: look | Head: 8 | Gold Label: advcl:relcl | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: at | Head: 12 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Head: 10 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ? | Head: 4 | Gold Label: punct | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Head: 3 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: viewing | Head: 3 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: experience | Head: 9 | Gold Label: nsubj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 5 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: art | Head: 3 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 9 | Gold Label: cop | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 9 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: complex | Head: 9 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: one | Head: 0 | Gold Label: root | ChatGPT: appos
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 11 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: involving | Head: 9 | Gold Label: acl | ChatGPT: acl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: issues | Head: 11 | Gold Label: obj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 14 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: perception | Head: 12 | Gold Label: nmod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 16 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: attention | Head: 14 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 18 | Gold Label: punct | ChatGPT: list
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: memory | Head: 14 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 20 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: decision | Head: 22 | Gold Label: compound | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Head: 20 | Gold Label: punct | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: making | Head: 14 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 24 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: affect | Head: 14 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 27 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 27 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: emotion | Head: 14 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 9 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Thus | Head: 16 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 1 | Gold Label: punct | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 4 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: time | Head: 16 | Gold Label: nsubj | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Head: 6 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: takes | Head: 4 | Gold Label: acl:relcl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 9 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 9 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ways | Head: 4 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 12 | Gold Label: mark | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visually | Head: 12 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exploring | Head: 9 | Gold Label: acl | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Head: 14 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Head: 12 | Gold Label: obj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Head: 16 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: inform | Head: 0 | Gold Label: root | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: about | Head: 19 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Head: 19 | Gold Label: nmod:poss | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: relevance | Head: 16 | Gold Label: obl | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 21 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interestingness | Head: 19 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 27 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 27 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: even | Head: 27 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Head: 27 | Gold Label: nmod:poss | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aesthetic | Head: 27 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: appeal | Head: 19 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 16 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: This | Head: 2 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: paper | Head: 3 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: describes | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 7 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collaborative | Head: 7 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: pilot | Head: 7 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: project | Head: 3 | Gold Label: obj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: focusing | Head: 7 | Gold Label: acl | ChatGPT: acl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 12 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 12 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: unique | Head: 12 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Head: 8 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 17 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: 17th | Head: 15 | Gold Label: amod | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Century | Head: 17 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Zurbarán | Head: 17 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: paintings | Head: 12 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 3 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Head: 3 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Jacob | Head: 3 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cycle | Head: 11 | Gold Label: nsubj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: at | Head: 6 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Auckland | Head: 6 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Castle | Head: 3 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 11 | Gold Label: cop | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 11 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: only | Head: 11 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: UK | Head: 11 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: example | Head: 0 | Gold Label: root | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 15 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 15 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: continental | Head: 15 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Head: 11 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: preserved | Head: 15 | Gold Label: acl | ChatGPT: acl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 18 | Gold Label: case | ChatGPT: case
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: situ | Head: 16 | Gold Label: obl | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 23 | Gold Label: case | ChatGPT: case
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Head: 22 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Head: 20 | Gold Label: punct | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: built | Head: 23 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surroundings | Head: 16 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 11 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Head: 2 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Head: 9 | Gold Label: nsubj:outer | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 6 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: this | Head: 6 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: pilot | Head: 6 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: study | Head: 2 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: was | Head: 9 | Gold Label: cop | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Head: 9 | Gold Label: mark | ChatGPT: xcomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: assess | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 11 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: effects | Head: 9 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 15 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: different | Head: 15 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: written | Head: 15 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interpretation | Head: 11 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 19 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 19 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Head: 19 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exploration | Head: 15 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 21 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Head: 19 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 9 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: We | Head: 3 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: will | Head: 3 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: discuss | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 6 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: potential | Head: 6 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: implications | Head: 3 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 9 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Head: 9 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: techniques | Head: 6 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 12 | Gold Label: cc | ChatGPT: conj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Head: 12 | Gold Label: nmod:poss | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: understanding | Head: 6 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 15 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Head: 15 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: behaviours | Head: 12 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 20 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: museum | Head: 20 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 19 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gallery | Head: 17 | Gold Label: conj | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: practice | Head: 12 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 3 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Our | Head: 2 | Gold Label: nmod:poss | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: experience | Head: 5 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 4 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: art | Head: 2 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: develops | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Head: 8 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 8 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interaction | Head: 5 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 14 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: several | Head: 14 | Gold Label: amod | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cognitive | Head: 14 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 13 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: affective | Head: 11 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: processes | Head: 8 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ; | Head: 23 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 17 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: beginning | Head: 23 | Gold Label: nsubj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 19 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: which | Head: 17 | Gold Label: nmod | ChatGPT: acl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 23 | Gold Label: cop | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 23 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Head: 23 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scan | Head: 14 | Gold Label: acl:relcl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 26 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 26 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Head: 23 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 5 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: When | Head: 2 | Gold Label: advmod | ChatGPT: advcl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: regarding | Head: 8 | Gold Label: advcl | ChatGPT: advcl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Head: 4 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Head: 2 | Gold Label: obj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 2 | Gold Label: punct | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 7 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: viewer | Head: 8 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gathers | Head: 0 | Gold Label: root | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: information | Head: 8 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: through | Head: 13 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 13 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: series | Head: 13 | Gold Label: compound | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fixations | Head: 8 | Gold Label: obl | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 15 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interspersed | Head: 13 | Gold Label: acl | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: by | Head: 18 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: rapid | Head: 18 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: movements | Head: 15 | Gold Label: obl:agent | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 21 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 21 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: eye | Head: 18 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: called | Head: 18 | Gold Label: acl | ChatGPT: appos
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: saccades | Head: 22 | Gold Label: obj | ChatGPT: appos
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 8 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: It | Head: 5 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 5 | Gold Label: cop | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 5 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: only | Head: 5 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cycle | Head: 0 | Gold Label: root | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Head: 8 | Gold Label: mark | ChatGPT: xcomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: be | Head: 8 | Gold Label: aux:pass | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: preserved | Head: 5 | Gold Label: acl | ChatGPT: acl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 13 | Gold Label: case | ChatGPT: case
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Head: 12 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Head: 10 | Gold Label: punct | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: built | Head: 13 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surroundings | Head: 8 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 16 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 16 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: UK | Head: 13 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 19 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 19 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: one | Head: 5 | Gold Label: conj | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 22 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: very | Head: 22 | Gold Label: advmod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: few | Head: 19 | Gold Label: nmod | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 25 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Head: 25 | Gold Label: nmod:poss | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: kind | Head: 22 | Gold Label: obl | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 28 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 28 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: world | Head: 25 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 5 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: It | Head: 2 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: has | Head: 0 | Gold Label: root | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 5 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: long | Head: 5 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: history | Head: 2 | Gold Label: obj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 7 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scholarship | Head: 2 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ( | Head: 9 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Baron | Head: 2 | Gold Label: dep | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: & | Head: 11 | Gold Label: cc | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Beresford | Head: 9 | Gold Label: conj | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: 2014 | Head: 9 | Gold Label: nmod:unmarked | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ) | Head: 9 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 29 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: but | Head: 29 | Gold Label: cc | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: many | Head: 18 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: key | Head: 18 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aspects | Head: 29 | Gold Label: nsubj:pass | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 21 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Head: 21 | Gold Label: nmod:poss | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: production | Head: 18 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 23 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: significance | Head: 21 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Head: 29 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: not | Head: 29 | Gold Label: advmod | ChatGPT: neg
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: yet | Head: 29 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: been | Head: 29 | Gold Label: aux:pass | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fully | Head: 29 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: understood | Head: 2 | Gold Label: conj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 2 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Past | Head: 2 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: studies | Head: 3 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: establish | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: that | Head: 13 | Gold Label: mark | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: each | Head: 13 | Gold Label: nsubj:pass | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 8 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Head: 8 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: efforts | Head: 5 | Gold Label: nmod | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 13 | Gold Label: aux:pass | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: strongly | Head: 13 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 12 | Gold Label: cc | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: positively | Head: 10 | Gold Label: conj | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: influenced | Head: 3 | Gold Label: ccomp | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: through | Head: 16 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: various | Head: 16 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: forms | Head: 13 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 19 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: faculty | Head: 19 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: diversity | Head: 16 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 21 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: including | Head: 28 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ethnic | Head: 28 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 24 | Gold Label: punct | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: racial | Head: 22 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 27 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 27 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gender | Head: 22 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: diversity | Head: 16 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 3 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Despite | Head: 4 | Gold Label: case | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Head: 4 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: positive | Head: 4 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: effects | Head: 15 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 4 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: however | Head: 15 | Gold Label: advmod | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 6 | Gold Label: punct | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: quantifying | Head: 15 | Gold Label: csubj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 10 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: impact | Head: 8 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 12 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: diversity | Head: 10 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 14 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: science | Head: 10 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: remains | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exceedingly | Head: 17 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: difficult | Head: 15 | Gold Label: xcomp | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 25 | Gold Label: punct | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: due | Head: 25 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 22 | Gold Label: case | ChatGPT: case
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: large | Head: 22 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: part | Head: 25 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Head: 19 | Gold Label: fixed | ChatGPT: case
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 25 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: lack | Head: 15 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 28 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: comprehensive | Head: 28 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: data | Head: 25 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: about | Head: 32 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 32 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Head: 32 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: workforce | Head: 28 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 15 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: For | Head: 4 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: many | Head: 4 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Head: 4 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fields | Head: 9 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 4 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: however | Head: 9 | Gold Label: advmod | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 6 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: there | Head: 9 | Gold Label: expl | ChatGPT: expl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: no | Head: 12 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: central | Head: 12 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: listing | Head: 9 | Gold Label: nsubj | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 18 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: all | Head: 18 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: tenure | Head: 17 | Gold Label: compound | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Head: 15 | Gold Label: punct | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: track | Head: 18 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: faculty | Head: 12 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 20 | Gold Label: punct | ChatGPT: advcl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: making | Head: 9 | Gold Label: advcl | ChatGPT: advcl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Head: 20 | Gold Label: obj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: difficult | Head: 20 | Gold Label: xcomp | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Head: 24 | Gold Label: mark | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: define | Head: 22 | Gold Label: xcomp | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 28 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: rigorous | Head: 28 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: sample | Head: 28 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: frame | Head: 24 | Gold Label: obj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: for | Head: 30 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: analysis | Head: 24 | Gold Label: obl | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 9 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Further | Head: 12 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 1 | Gold Label: punct | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: rates | Head: 12 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 5 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: adoption | Head: 3 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 7 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: services | Head: 5 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: like | Head: 9 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: GoogleScholar | Head: 7 | Gold Label: nmod | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 11 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ResearchGate | Head: 9 | Gold Label: conj | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: vary | Head: 0 | Gold Label: root | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: within | Head: 17 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 16 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 16 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: across | Head: 13 | Gold Label: conj | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: disciplines | Head: 12 | Gold Label: obl | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 12 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Although | Head: 2 | Gold Label: mark | ChatGPT: advcl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: useful | Head: 8 | Gold Label: advcl | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 2 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: such | Head: 5 | Gold Label: amod | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: samples | Head: 8 | Gold Label: nsubj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: are | Head: 8 | Gold Label: cop | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: not | Head: 8 | Gold Label: advmod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: representative | Head: 0 | Gold Label: root | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 12 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 12 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Head: 12 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: workforce | Head: 8 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: as | Head: 15 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Head: 15 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: whole | Head: 12 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 18 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: thus | Head: 18 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Head: 8 | Gold Label: conj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: limited | Head: 20 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: generalizability | Head: 18 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 8 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: In | Head: 3 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: some | Head: 3 | Gold Label: det | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fields | Head: 13 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 3 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: yearly | Head: 6 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: data | Head: 13 | Gold Label: nsubj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 9 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: faculty | Head: 9 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: numbers | Head: 6 | Gold Label: nmod | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 11 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: composition | Head: 9 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: are | Head: 13 | Gold Label: cop | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: available | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 15 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aggregate | Head: 13 | Gold Label: obl | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 13 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Such | Head: 2 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surveys | Head: 4 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Head: 4 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: provide | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: valuable | Head: 6 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: insight | Head: 4 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: into | Head: 8 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: trends | Head: 6 | Gold Label: nmod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 11 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: summary | Head: 11 | Gold Label: compound | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: statistics | Head: 8 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Head: 15 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 15 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Head: 15 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: workforce | Head: 11 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: but | Head: 17 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: suffer | Head: 4 | Gold Label: conj | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Head: 21 | Gold Label: case | ChatGPT: case
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: two | Head: 21 | Gold Label: nummod | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: key | Head: 21 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: weaknesses | Head: 17 | Gold Label: obl | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 4 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: This | Head: 2 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: system | Head: 4 | Gold Label: nsubj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 4 | Gold Label: cop | ChatGPT: cop
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: efficient | Head: 0 | Gold Label: root | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 6 | Gold Label: cc | ChatGPT: conj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: accurate | Head: 4 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 12 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 12 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Head: 12 | Gold Label: nsubj:pass | ChatGPT: ccomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Head: 12 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: be | Head: 12 | Gold Label: aux:pass | ChatGPT: xcomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: adapted | Head: 4 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Head: 16 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: any | Head: 16 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: academic | Head: 16 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: discipline | Head: 12 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 18 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: used | Head: 12 | Gold Label: conj | ChatGPT: xcomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: for | Head: 21 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: continuous | Head: 21 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Head: 18 | Gold Label: obl | ChatGPT: xcomp
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 4 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: In | Head: 2 | Gold Label: case | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: short | Head: 9 | Gold Label: obl | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 2 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: many | Head: 7 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: important | Head: 7 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: research | Head: 7 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: questions | Head: 9 | Gold Label: nsubj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: will | Head: 9 | Gold Label: aux | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: benefit | Head: 0 | Gold Label: root | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Head: 12 | Gold Label: case | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 12 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: availability | Head: 9 | Gold Label: obl | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 20 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: accurate | Head: 20 | Gold Label: amod | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 18 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: frequently | Head: 18 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Head: 16 | Gold Label: punct | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: recollected | Head: 14 | Gold Label: conj | ChatGPT: amod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: census | Head: 20 | Gold Label: compound | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: data | Head: 12 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 9 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Our | Head: 2 | Gold Label: nmod:poss | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: study | Head: 4 | Gold Label: nsubj:pass | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Head: 4 | Gold Label: aux:pass | ChatGPT: aux
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: organized | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: as | Head: 6 | Gold Label: mark | ChatGPT: mark
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: follows | Head: 4 | Gold Label: advcl | ChatGPT: obl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 4 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: We | Head: 2 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: begin | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: by | Head: 4 | Gold Label: mark | ChatGPT: mark
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: detailing | Head: 2 | Gold Label: advcl | ChatGPT: advcl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 6 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: design | Head: 4 | Gold Label: obj | ChatGPT: acl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Head: 8 | Gold Label: cc | ChatGPT: cc
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: implementation | Head: 6 | Gold Label: conj | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 13 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Head: 13 | Gold Label: nmod:poss | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: web | Head: 12 | Gold Label: compound | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: crawler | Head: 13 | Gold Label: compound | ChatGPT: compound
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: framework | Head: 6 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 2 | Gold Label: punct | ChatGPT: punct
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Next | Head: 4 | Gold Label: advmod | ChatGPT: advmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Head: 1 | Gold Label: punct | ChatGPT: discourse
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: we | Head: 4 | Gold Label: nsubj | ChatGPT: nsubj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: present | Head: 0 | Gold Label: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Head: 6 | Gold Label: det | ChatGPT: det
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: results | Head: 4 | Gold Label: obj | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Head: 9 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Head: 9 | Gold Label: nmod:poss | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: work | Head: 6 | Gold Label: nmod | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Head: 12 | Gold Label: case | ChatGPT: nmod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: two | Head: 12 | Gold Label: nummod | ChatGPT: nummod
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: sections | Head: 4 | Gold Label: obl | ChatGPT: obj
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Head: 4 | Gold Label: punct | ChatGPT: punct
+Dependency Label Accuracy: 52.18%
