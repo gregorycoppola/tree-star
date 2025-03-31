@@ -13,20 +13,16 @@ def setup_args():
     parser = argparse.ArgumentParser(description='Send sentences to ChatGPT for zero-shot dependency parsing.')
     parser.add_argument('--live_run', action='store_true', help='Actually send requests to OpenAI')
     parser.add_argument('--output_file', help='Where to save the CoNLL-U outputs')
-    parser.add_argument('input_file', help='Input .conllu file')
-    parser.add_argument('--eval', action='store_true', help='Evaluate the predictions against a gold CoNLL-U file')
-    parser.add_argument('--gold_file', help='Path to the gold .conllu file for evaluation (required if --eval is set)')
+    parser.add_argument('gold_file', help='Gold standard .conllu file (used for both input and evaluation)')
+    parser.add_argument('--eval', action='store_true', help='Evaluate the predictions against the gold file')
     args = parser.parse_args()
 
     if args.live_run and not args.output_file:
         parser.error("--output_file is required in live mode")
-    if args.eval and not args.gold_file:
-        parser.error("--gold_file is required when --eval is set")
     return args
 
 def load_conll_sentences(path):
     docs = CoNLL.conll2dict(input_file=path)
-    # return [s for doc in docs for s in doc]
     return docs[0]
 
 def format_as_text(sentence):
@@ -126,7 +122,7 @@ def main():
             sys.exit(1)
         client = openai.OpenAI(api_key=api_key)
 
-    sentences = load_conll_sentences(args.input_file)
+    sentences = load_conll_sentences(args.gold_file)
     logging.info(f"Loaded {len(sentences)} sentences.")
 
     results = []
@@ -147,8 +143,7 @@ def main():
         logging.info(f"Saved results to {args.output_file}")
 
     if args.eval:
-        gold_sentences = load_conll_sentences(args.gold_file)
-        metrics = evaluate_conllu(gold_sentences, results)
+        metrics = evaluate_conllu(sentences, results)
 
 if __name__ == "__main__":
     main()
