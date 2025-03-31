@@ -1,0 +1,102 @@
+[
+  {
+    "sentence": "The scientist examined the artifact with the magnifying glass.",
+    "ambiguous_phrase": "with the magnifying glass",
+    "correct_attachment": "examined"
+  },
+  {
+    "sentence": "The woman hugged the child with the stuffed animal.",
+    "ambiguous_phrase": "with the stuffed animal",
+    "correct_attachment": "child"
+  },
+  {
+    "sentence": "He watched the movie on the big screen.",
+    "ambiguous_phrase": "on the big screen",
+    "correct_attachment": "watched"
+  },
+  {
+    "sentence": "The officer arrested the man with the fake ID.",
+    "ambiguous_phrase": "with the fake ID",
+    "correct_attachment": "man"
+  },
+  {
+    "sentence": "She loaded the truck with the heavy boxes.",
+    "ambiguous_phrase": "with the heavy boxes",
+    "correct_attachment": "loaded"
+  },
+  {
+    "sentence": "The teacher spoke to the student with the red backpack.",
+    "ambiguous_phrase": "with the red backpack",
+    "correct_attachment": "student"
+  },
+  {
+    "sentence": "He cut the bread with the serrated knife.",
+    "ambiguous_phrase": "with the serrated knife",
+    "correct_attachment": "cut"
+  },
+  {
+    "sentence": "They chased the dog with the wagging tail.",
+    "ambiguous_phrase": "with the wagging tail",
+    "correct_attachment": "dog"
+  },
+  {
+    "sentence": "The child drew the picture with the crayons.",
+    "ambiguous_phrase": "with the crayons",
+    "correct_attachment": "drew"
+  },
+  {
+    "sentence": "She spotted the man with the binoculars.",
+    "ambiguous_phrase": "with the binoculars",
+    "correct_attachment": "spotted"
+  },
+  {
+    "sentence": "The photographer captured the model with the elaborate hairstyle.",
+    "ambiguous_phrase": "with the elaborate hairstyle",
+    "correct_attachment": "model"
+  },
+  {
+    "sentence": "The gardener trimmed the bush with the electric shears.",
+    "ambiguous_phrase": "with the electric shears",
+    "correct_attachment": "trimmed"
+  },
+  {
+    "sentence": "He approached the woman with the nervous smile.",
+    "ambiguous_phrase": "with the nervous smile",
+    "correct_attachment": "woman"
+  },
+  {
+    "sentence": "The boy opened the box with the shiny ribbon.",
+    "ambiguous_phrase": "with the shiny ribbon",
+    "correct_attachment": "box"
+  },
+  {
+    "sentence": "The chef plated the dish with the garnishes.",
+    "ambiguous_phrase": "with the garnishes",
+    "correct_attachment": "plated"
+  },
+  {
+    "sentence": "She recognized the singer with the long hair.",
+    "ambiguous_phrase": "with the long hair",
+    "correct_attachment": "singer"
+  },
+  {
+    "sentence": "The soldier saluted the officer with the crisp uniform.",
+    "ambiguous_phrase": "with the crisp uniform",
+    "correct_attachment": "officer"
+  },
+  {
+    "sentence": "They decorated the hall with the colorful streamers.",
+    "ambiguous_phrase": "with the colorful streamers",
+    "correct_attachment": "decorated"
+  },
+  {
+    "sentence": "He interviewed the athlete with the impressive record.",
+    "ambiguous_phrase": "with the impressive record",
+    "correct_attachment": "athlete"
+  },
+  {
+    "sentence": "The girl painted the wall with the roller brush.",
+    "ambiguous_phrase": "with the roller brush",
+    "correct_attachment": "painted"
+  }
+]
