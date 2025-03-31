@@ -1,0 +1,249 @@
+# text = The scientist examined the artifact with the magnifying glass.
+# predicted_head = examined, expected_head = examined
+1	The	the	DET	DT	_	2	det	_	_
+2	scientist	scientist	NOUN	NN	_	3	nsubj	_	_
+3	examined	examine	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	artifact	artifact	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	magnifying	magnify	VERB	VBG	_	9	amod	_	_
+9	glass	glass	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The woman hugged the child with the stuffed animal.
+# predicted_head = hugged, expected_head = child
+1	The	the	DET	DT	_	2	det	_	_
+2	woman	woman	NOUN	NN	_	3	nsubj	_	_
+3	hugged	hugge	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	child	child	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	stuffed	stuff	VERB	VBN	_	9	amod	_	_
+9	animal	animal	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He watched the movie on the big screen.
+# predicted_head = watched, expected_head = watched
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	watched	watch	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	movie	movie	NOUN	NN	_	2	obj	_	_
+5	on	on	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	big	big	ADJ	JJ	_	8	amod	_	_
+8	screen	screen	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The officer arrested the man with the fake ID.
+# predicted_head = arrested, expected_head = man
+1	The	the	DET	DT	_	2	det	_	_
+2	officer	officer	NOUN	NN	_	3	nsubj	_	_
+3	arrested	arrest	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	man	man	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	fake	fake	ADJ	JJ	_	9	amod	_	_
+9	ID	id	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She loaded the truck with the heavy boxes.
+# predicted_head = loaded, expected_head = loaded
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	loaded	load	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	truck	truck	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	heavy	heavy	ADJ	JJ	_	8	amod	_	_
+8	boxes	box	NOUN	NNS	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The teacher spoke to the student with the red backpack.
+# predicted_head = spoke, expected_head = student
+1	The	the	DET	DT	_	2	det	_	_
+2	teacher	teacher	NOUN	NN	_	3	nsubj	_	_
+3	spoke	speak	VERB	VBD	_	0	root	_	_
+4	to	to	ADP	IN	_	6	case	_	_
+5	the	the	DET	DT	_	6	det	_	_
+6	student	student	NOUN	NN	_	3	obl	_	_
+7	with	with	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	_	10	det	_	_
+9	red	red	ADJ	JJ	_	10	amod	_	_
+10	backpack	backpack	NOUN	NN	_	3	obl	_	_
+11	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He cut the bread with the serrated knife.
+# predicted_head = cut, expected_head = cut
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	cut	cut	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	bread	bread	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	serrated	serrate	VERB	VBN	_	8	amod	_	_
+8	knife	knife	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = They chased the dog with the wagging tail.
+# predicted_head = chased, expected_head = dog
+1	They	they	PRON	PRP	_	2	nsubj	_	_
+2	chased	chase	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	dog	dog	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	wagging	wag	VERB	VBG	_	8	amod	_	_
+8	tail	tail	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The child drew the picture with the crayons.
+# predicted_head = drew, expected_head = drew
+1	The	the	DET	DT	_	2	det	_	_
+2	child	child	NOUN	NN	_	3	nsubj	_	_
+3	drew	draw	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	picture	picture	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	crayons	crayon	NOUN	NNS	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She spotted the man with the binoculars.
+# predicted_head = spotted, expected_head = spotted
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	spotted	spot	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	man	man	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	binoculars	binocular	NOUN	NNS	_	2	obl	_	_
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The photographer captured the model with the elaborate hairstyle.
+# predicted_head = captured, expected_head = model
+1	The	the	DET	DT	_	2	det	_	_
+2	photographer	photographer	NOUN	NN	_	3	nsubj	_	_
+3	captured	capture	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	model	model	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	elaborate	elaborate	ADJ	JJ	_	9	amod	_	_
+9	hairstyle	hairstyle	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The gardener trimmed the bush with the electric shears.
+# predicted_head = trimmed, expected_head = trimmed
+1	The	the	DET	DT	_	2	det	_	_
+2	gardener	gardener	NOUN	NN	_	3	nsubj	_	_
+3	trimmed	trim	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	bush	bush	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	electric	electric	ADJ	JJ	_	9	amod	_	_
+9	shears	shear	NOUN	NNS	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He approached the woman with the nervous smile.
+# predicted_head = approached, expected_head = woman
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	approached	approach	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	woman	woman	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	nervous	nervous	ADJ	JJ	_	8	amod	_	_
+8	smile	smile	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The boy opened the box with the shiny ribbon.
+# predicted_head = opened, expected_head = box
+1	The	the	DET	DT	_	2	det	_	_
+2	boy	boy	NOUN	NN	_	3	nsubj	_	_
+3	opened	open	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	box	box	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	shiny	shiny	ADJ	JJ	_	9	amod	_	_
+9	ribbon	ribbon	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The chef plated the dish with the garnishes.
+# predicted_head = plated, expected_head = plated
+1	The	the	DET	DT	_	2	det	_	_
+2	chef	chef	NOUN	NN	_	3	nsubj	_	_
+3	plated	plate	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	dish	dish	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	garnishes	garnish	NOUN	NNS	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She recognized the singer with the long hair.
+# predicted_head = recognized, expected_head = singer
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	recognized	recognize	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	singer	singer	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	long	long	ADJ	JJ	_	8	amod	_	_
+8	hair	hair	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The soldier saluted the officer with the crisp uniform.
+# predicted_head = saluted, expected_head = officer
+1	The	the	DET	DT	_	2	det	_	_
+2	soldier	soldier	NOUN	NN	_	3	nsubj	_	_
+3	saluted	salute	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	officer	officer	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	crisp	crisp	ADJ	JJ	_	9	amod	_	_
+9	uniform	uniform	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = They decorated the hall with the colorful streamers.
+# predicted_head = decorated, expected_head = decorated
+1	They	they	PRON	PRP	_	2	nsubj	_	_
+2	decorated	decorate	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	hall	hall	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	colorful	colorful	ADJ	JJ	_	8	amod	_	_
+8	streamers	streamer	NOUN	NNS	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = He interviewed the athlete with the impressive record.
+# predicted_head = interviewed, expected_head = athlete
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	interviewed	interview	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	athlete	athlete	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	impressive	impressive	ADJ	JJ	_	8	amod	_	_
+8	record	record	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The girl painted the wall with the roller brush.
+# predicted_head = painted, expected_head = painted
+1	The	the	DET	DT	_	2	det	_	_
+2	girl	girl	NOUN	NN	_	3	nsubj	_	_
+3	painted	paint	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	wall	wall	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	roller	roller	NOUN	NN	_	9	compound	_	_
+9	brush	brush	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
