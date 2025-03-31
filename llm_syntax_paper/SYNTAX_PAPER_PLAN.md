@@ -126,6 +126,6 @@ python python/reranker/gptapi_as_reranker.py data/input/systematic_pp/chatgpt_ge
 - Explanation accuracy (manual)
 
 ```bash
-todo
+python python/reranker/gptapi_with_hint.py data/input/systematic_pp/chatgpt_generated_20.json --output_file data/output/reranker/chatgpt_generated_20.hint.json
 ```
 
