@@ -61,7 +61,7 @@ Accuracy of ChatGPT when syntactic analysis is broken into individual tasks: POS
 | Subtask                    | Accuracy (%) | Total Tokens | Correct Tags |
 |---------------------------|--------------|--------------|--------------|
 | POS Tagging               | 91.09        | 202          | 184          |
-| Head Prediction (gold POS)| _.__         | _.__         | _.__         |
+| Head Prediction (gold POS)| 34.91        | 527          | 184          |
 | Dependency Labeling       | _.__         | _.__         | _.__         |
 
 ---
