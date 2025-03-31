@@ -95,7 +95,7 @@ Accuracy of prepositional phrase attachment for ambiguous constructions. Results
 | System           | Accuracy (%) | 95% CI           | Significance |
 |------------------|--------------|------------------|--------------|
 | ChatGPT (zero-shot) | _.__         | [_.__, _.__]     | _           |
-| Stanford Parser     | _.__         | [_.__, _.__]     | _           |
+| Stanford Parser     | 50.00        | [_.__, _.__]     | _           |
 
 ---
 
