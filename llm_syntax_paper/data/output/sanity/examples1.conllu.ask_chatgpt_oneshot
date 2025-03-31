@@ -1,25 +1,24 @@
-To provide the dependency parse of the sentence "How do people look at and experience art?" in CoNLL-U format, we need to break down the sentence into its syntactic components. Here's the parse:
+To provide the dependency parse of the sentence "How do people look at and experience art?" in CoNLL-U format, we need to identify the syntactic structure and relationships between the words. Here's the parse:
 
 ```
 # text = How do people look at and experience art ?
 1	How	how	ADV	WRB	_	5	advmod	_	_
 2	do	do	AUX	VBP	_	5	aux	_	_
 3	people	people	NOUN	NNS	_	5	nsubj	_	_
-4	look	look	VERB	VB	_	5	conj	_	_
+4	look	look	VERB	VB	_	5	compound:prt	_	_
 5	experience	experience	VERB	VB	_	0	root	_	_
-6	at	at	ADP	IN	_	4	compound:prt	_	_
-7	and	and	CCONJ	CC	_	4	cc	_	_
+6	at	at	ADP	IN	_	5	compound:prt	_	_
+7	and	and	CCONJ	CC	_	5	cc	_	_
 8	art	art	NOUN	NN	_	5	obj	_	_
 9	?	?	PUNCT	.	_	5	punct	_	_
 ```
 
-Explanation:
+In this parse:
 - "How" is an adverb modifying the main verb "experience."
-- "do" is an auxiliary verb helping to form the question.
-- "people" is the subject of the verbs "look" and "experience."
-- "look" and "experience" are coordinated verbs, with "experience" being the main verb (root).
-- "at" is a particle associated with "look."
-- "and" is a coordinating conjunction connecting "look" and "experience."
+- "do" is an auxiliary verb supporting the main verb "experience."
+- "people" is the subject of the verb "experience."
+- "look" and "at" form a phrasal verb with "experience," indicating the actions people perform.
+- "and" is a coordinating conjunction connecting "look at" and "experience."
 - "art" is the object of the verb "experience."
-- "?" is the punctuation marking the end of the sentence.
+- "?" is punctuation marking the end of the sentence.
 
