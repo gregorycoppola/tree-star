@@ -5,100 +5,122 @@ import stanza
 import argparse
 import logging
 import sys
-from openai import OpenAI
-
+from typing import List, Dict, Optional
 
 def setup_args():
-    parser = argparse.ArgumentParser(description='Check if ChatGPT finds errors in Stanza parses')
-    parser.add_argument('input_file', help='Input JSON file with sentence examples (list of {"sentence": ...})')
-    parser.add_argument('--output_file', help='If set, will call OpenAI and write results to this file')
-    return parser.parse_args()
+    parser = argparse.ArgumentParser(description='Evaluate Stanza dependency parsing on ambiguous attachments')
+    parser.add_argument('input_file', help='Input JSON file with examples')
+    parser.add_argument('--live_run', action='store_true',
+                        help='If set, download and run Stanza. Otherwise, just print examples')
+    parser.add_argument('--output_file',
+                        help='File to save CoNLL-U output (required for live run)')
+    args = parser.parse_args()
 
+    if args.live_run and not args.output_file:
+        parser.error("--output_file is required when using --live_run")
 
-def stanza_to_conllu(sentence, text):
-    conllu_lines = [f"# text = {text}"]
-    for word in sentence.words:
-        conllu_lines.append(
-            f"{word.id}\t{word.text}\t{word.lemma}\t{word.upos}\t{word.xpos}\t_\t{word.head}\t{word.deprel}\t_\t_"
-        )
-    return "\n".join(conllu_lines)
+    return args
 
+def analyze_phrase_attachment(phrase: str, sentence_tokens: List, full_sentence: str) -> Dict[str, Optional[str]]:
+    phrase = phrase.strip()
+    phrase_start = full_sentence.lower().find(phrase.lower())
+    phrase_end = phrase_start + len(phrase)
 
-def build_prompt(conllu: str) -> str:
-    return (
-        "Here is a dependency parse of a sentence in CoNLL-U format.\n"
-        "Do you see any errors in this parse?\n\n"
-        "1. If no errors, respond only with \"no\".\n"
-        "2. If yes, explain the most important or most obvious error in the sentence.\n\n"
-        f"{conllu}"
+    phrase_tokens = [
+        t for t in sentence_tokens
+        if t.start_char is not None and t.end_char is not None
+        and t.start_char >= phrase_start and t.end_char <= phrase_end
+    ]
+
+    phrase_token_ids = {t.id for t in phrase_tokens}
+
+    if not phrase_tokens:
+        return {"phrase_head": None, "attachment_head": None}
+
+    phrase_head_token = None
+    for t in phrase_tokens:
+        if t.head not in phrase_token_ids:
+            phrase_head_token = t
+            break
+
+    attachment_token = (
+        next((t for t in sentence_tokens if t.id == phrase_head_token.head), None)
+        if phrase_head_token else None
     )
 
+    return {
+        "phrase_head": phrase_head_token.text if phrase_head_token else None,
+        "attachment_head": attachment_token.text if attachment_token else None
+    }
 
-def get_chatgpt_judgment(client: OpenAI, prompt: str) -> str:
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4",
-            messages=[
-                {"role": "system", "content": "You are a linguist helping to analyze syntactic dependency parses."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0,
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        logging.error(f"OpenAI API error: {e}")
-        return "error"
 
+def evaluate_example(nlp: stanza.Pipeline, example: Dict) -> Dict:
+    doc = nlp(example["sentence"])
+    sentence = doc.sentences[0]
+
+    # analysis = analyze_phrase_attachment(example["ambiguous_phrase"], sentence.words)
+    analysis = analyze_phrase_attachment(example["ambiguous_phrase"], sentence.words, example["sentence"])
+    predicted_head = analysis["attachment_head"]
+    expected_head = example["correct_attachment"]
+
+    return {
+        "sentence": example["sentence"],
+        "ambiguous_phrase": example["ambiguous_phrase"],
+        "predicted_head": predicted_head,
+        "expected_head": expected_head,
+        "correct": predicted_head.lower() == expected_head.lower() if predicted_head else False
+    }
 
 def main():
     args = setup_args()
 
-    logging.basicConfig(level=logging.INFO, format='%(message)s', handlers=[logging.StreamHandler(sys.stdout)])
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(message)s',
+        handlers=[logging.StreamHandler(sys.stdout)]
+    )
     logger = logging.getLogger(__name__)
 
+    logger.info(f"Loading examples from {args.input_file}")
     with open(args.input_file) as f:
         examples = json.load(f)
 
-    stanza.download('en')
-    nlp = stanza.Pipeline(lang='en', processors='tokenize,pos,lemma,depparse')
+    if args.live_run:
+        logger.info("Running in LIVE mode - will download and run Stanza")
+        stanza.download('en')
+        nlp = stanza.Pipeline(lang='en', processors='tokenize,pos,lemma,depparse')
 
-    use_live_api = args.output_file is not None
-    client = OpenAI() if use_live_api else None
-    results = []
+        correct = 0
+        total = len(examples)
 
-    for i, example in enumerate(examples, 1):
-        sentence_text = example["sentence"]
-        doc = nlp(sentence_text)
-        sentence = doc.sentences[0]
-        conllu = stanza_to_conllu(sentence, sentence_text)
-        prompt = build_prompt(conllu)
-
-        if use_live_api:
-            chatgpt_response = get_chatgpt_judgment(client, prompt)
-        else:
-            logger.info(f"\nExample {i} (DRY RUN)")
-            logger.info(f"Sentence: {sentence_text}")
-            logger.info("\n----- Prompt to ChatGPT -----\n")
-            logger.info(prompt)
-            logger.info("\n-----------------------------\n")
-            chatgpt_response = "no"
-
-        logger.info(f"ChatGPT response: {chatgpt_response}")
-        logger.info("-" * 50)
-
-        results.append({
-            "index": i,
-            "sentence": sentence_text,
-            "conllu": conllu,
-            "chatgpt_response": chatgpt_response
-        })
-
-    if use_live_api:
         with open(args.output_file, 'w') as f:
-            for r in results:
-                json.dump(r, f)
-                f.write('\n')
+            for i, example in enumerate(examples, 1):
+                result = evaluate_example(nlp, example)
+                if result["correct"]:
+                    correct += 1
 
+                logger.info(f"\nExample {i}/{total}:")
+                logger.info(f"Sentence: {result['sentence']}")
+                logger.info(f"→ Phrase: '{result['ambiguous_phrase']}' → predicted: '{result['predicted_head']}', expected: '{result['expected_head']}'")
+
+                doc = nlp(example["sentence"])
+                for sentence in doc.sentences:
+                    f.write(f"# text = {example['sentence']}\n")
+                    f.write(f"# predicted_head = {result['predicted_head']}, expected_head = {result['expected_head']}\n")
+                    for word in sentence.words:
+                        f.write(f"{word.id}\t{word.text}\t{word.lemma}\t{word.upos}\t{word.xpos}\t_\t{word.head}\t{word.deprel}\t_\t_\n")
+                    f.write("\n")
+
+        accuracy = correct / total
+        logger.info(f"\nFinal Accuracy: {correct}/{total} = {accuracy:.2%}")
+
+    else:
+        logger.info("Running in DRY RUN mode - will only print examples")
+        for i, example in enumerate(examples, 1):
+            logger.info(f"\nExample {i}:")
+            logger.info(f"Sentence: {example['sentence']}")
+            logger.info(f"Ambiguous phrase: {example['ambiguous_phrase']}")
+            logger.info(f"Expected head: {example['correct_attachment']}")
 
 if __name__ == "__main__":
     main()
