@@ -22,9 +22,9 @@ Accuracy of ChatGPT in a zero-shot setting on full dependency parses. Metrics in
 
 | Metric | Accuracy (%) |
 |--------|---------------|
-| POS    | 91.2          |
-| UAS    | 78.5          |
-| LAS    | 72.4          |
+| POS    | _.__          |
+| UAS    | _.__          |
+| LAS    | _.__          |
 
 ---
 
@@ -58,9 +58,9 @@ Accuracy of ChatGPT when syntactic analysis is broken into individual tasks: POS
 
 | Subtask                    | Accuracy (%) |
 |---------------------------|--------------|
-| POS Tagging               | 93.0         |
-| Head Prediction (gold POS)| 81.7         |
-| Dependency Labeling       | 76.2         |
+| POS Tagging               | _.__         |
+| Head Prediction (gold POS)| _.__         |
+| Dependency Labeling       | _.__         |
 
 ---
 
@@ -92,8 +92,8 @@ Accuracy of prepositional phrase attachment for ambiguous constructions. Results
 
 | System           | Accuracy (%) | 95% CI           | Significance |
 |------------------|--------------|------------------|--------------|
-| ChatGPT (zero-shot) | 68.0         | [59.0, 76.0]     | ⭐ (p < 0.05) |
-| Stanford Parser     | 52.0         | [43.0, 61.0]     |              |
+| ChatGPT (zero-shot) | _.__         | [_.__, _.__]     | _           |
+| Stanford Parser     | _.__         | [_.__, _.__]     | _           |
 
 ---
 
@@ -117,8 +117,8 @@ ChatGPT's performance when asked to critique full parses without specific hints.
 
 | Metric                    | Accuracy (%) |
 |---------------------------|--------------|
-| Error Detection Accuracy  | 62.5         |
-| Explanation Plausibility  | 58.0         |
+| Error Detection Accuracy  | _.__         |
+| Explanation Plausibility  | _.__         |
 
 #### 4.4.2 **Targeted Attachment Critique**  
 **Goal:** Evaluate ChatGPT's ability to detect *specific* errors in PP-attachment decisions.
@@ -134,6 +134,6 @@ ChatGPT's accuracy when asked to evaluate a specific ambiguous prepositional phr
 
 | Metric                    | Accuracy (%) |
 |---------------------------|--------------|
-| Error Detection (targeted)| 75.0         |
-| Explanation Plausibility  | 70.0         |
+| Error Detection (targeted)| _.__         |
+| Explanation Plausibility  | _.__         |
 
