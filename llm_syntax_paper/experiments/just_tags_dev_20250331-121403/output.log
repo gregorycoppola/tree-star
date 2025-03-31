@@ -1,0 +1,14 @@
+Running in LIVE mode - will send requests to OpenAI and save to preliminary/examples25.conllu.ask_chatgpt_tags
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Aesthetic | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Appreciation | Gold UPOS: NOUN | ChatGPT: NOUN
+Traceback (most recent call last):
+  File "/Users/greg/Code/tree-star/llm_syntax_paper/python/preliminary/ask_chatgpt_tags.py", line 132, in <module>
+    main()
+  File "/Users/greg/Code/tree-star/llm_syntax_paper/python/preliminary/ask_chatgpt_tags.py", line 126, in main
+    evaluated_sentences = evaluate_sentences(sentences, client, args.live_run)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/greg/Code/tree-star/llm_syntax_paper/python/preliminary/ask_chatgpt_tags.py", line 76, in evaluate_sentences
+    time.sleep(0.5)
+KeyboardInterrupt

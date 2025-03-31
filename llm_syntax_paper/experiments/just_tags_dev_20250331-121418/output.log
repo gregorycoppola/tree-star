@@ -1,0 +1,405 @@
+Running in LIVE mode - will send requests to OpenAI and save to preliminary/examples25.conllu.ask_chatgpt_tags
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Aesthetic | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Appreciation | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Spanish | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Art | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: : | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Which | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: elements | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: specific | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: do | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: they | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: focus | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ? | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Do | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: museum | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: labels | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: impact | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: how | Gold UPOS: ADV | ChatGPT: ADV
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: people | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: look | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: at | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ? | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: viewing | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: experience | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: art | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: complex | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: one | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: involving | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: issues | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: perception | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: attention | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: memory | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: decision | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: making | Gold UPOS: VERB | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: affect | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CCONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: emotion | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Thus | Gold UPOS: ADV | ChatGPT: ADV
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: time | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: takes | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ways | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: SCONJ | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visually | Gold UPOS: ADV | ChatGPT: ADV
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exploring | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: inform | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: about | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: relevance | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interestingness | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: even | Gold UPOS: ADV | ChatGPT: ADV
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aesthetic | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: appeal | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: This | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: paper | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: describes | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collaborative | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: pilot | Gold UPOS: NOUN | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: project | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: focusing | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: unique | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: 17th | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Century | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Zurbarán | Gold UPOS: PROPN | ChatGPT: PROPN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: paintings | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Jacob | Gold UPOS: PROPN | ChatGPT: PROPN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cycle | Gold UPOS: PROPN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: at | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Auckland | Gold UPOS: PROPN | ChatGPT: PROPN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Castle | Gold UPOS: PROPN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: only | Gold UPOS: ADJ | ChatGPT: ADV
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: UK | Gold UPOS: PROPN | ChatGPT: PROPN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: example | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: continental | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: preserved | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold UPOS: X | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: situ | Gold UPOS: X | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: built | Gold UPOS: VERB | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surroundings | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: this | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: pilot | Gold UPOS: NOUN | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: study | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: was | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Gold UPOS: PART | ChatGPT: PART
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: assess | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: effects | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: different | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: written | Gold UPOS: VERB | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interpretation | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exploration | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: We | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: will | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: discuss | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: potential | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: implications | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: techniques | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: understanding | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: behaviours | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: museum | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gallery | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: practice | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Our | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: experience | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: art | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: develops | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interaction | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: several | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cognitive | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold UPOS: CCONJ | ChatGPT: CONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: affective | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: processes | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ; | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: beginning | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: which | Gold UPOS: PRON | ChatGPT: PRON
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold UPOS: AUX | ChatGPT: AUX
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Gold UPOS: ADJ | ChatGPT: ADJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scan | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold UPOS: ADP | ChatGPT: ADP
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold UPOS: PUNCT | ChatGPT: PUNCT
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: When | Gold UPOS: ADV | ChatGPT: SCONJ
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: regarding | Gold UPOS: VERB | ChatGPT: VERB
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Gold UPOS: DET | ChatGPT: DET
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Gold UPOS: NOUN | ChatGPT: NOUN
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold UPOS: PUNCT | ChatGPT: PUNCT
