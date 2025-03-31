@@ -87,6 +87,8 @@ python python/systematic_pp/stanza_against_gpt.py data/input/systematic_pp/chatg
 
 # ask chatgpt api
 python python/systematic_pp/gptapi_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.json --live_run --output_base data/output/systematic_pp/chatgpt_generated_20.gptapi.json
+
+python python/systematic_pp/gptapi_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.heldout1.json --live_run --output_base data/output/systematic_pp/chatgpt_generated_20.heldout1.gptapi.json
 ```
 
 #### 📈 Figure 3: PP Attachment Accuracy — ChatGPT vs. Stanford Parser
