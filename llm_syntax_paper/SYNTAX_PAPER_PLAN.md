@@ -63,7 +63,7 @@ python python/systematic_pp/stanza_against_gpt.py data/input/systematic_pp/chatg
 
 ask chatgpt api
 ```bash
-python measure/gptapi_against_gpt.py open-data/chatgpt_generated/set2_20examples.json --live_run --output_file open-data/chatgpt_generated/set2_predictions_chatgpt.json
+python python/systematic_pp/gptapi_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.json --live_run --output_base data/output/systematic_pp/chatgpt_generated_20.gptapi.json
 ```
 
 
