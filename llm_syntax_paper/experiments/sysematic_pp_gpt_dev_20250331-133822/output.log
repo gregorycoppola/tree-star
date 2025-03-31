@@ -1,0 +1,105 @@
+Loading examples from data/input/systematic_pp/chatgpt_generated_20.json
+Running in LIVE mode - will query OpenAI API
+Will save results to data/output/systematic_pp/chatgpt_generated_20.gptapi.json/chatgpt_generated_20.jsonl
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 1/20:
+Sentence: The boy saw the man with the telescope.
+→ Phrase: 'with the telescope' → predicted: 'saw', expected: 'saw'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 2/20:
+Sentence: She served the guest with the silver tray.
+→ Phrase: 'with the silver tray' → predicted: 'served', expected: 'served'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 3/20:
+Sentence: He admired the painting of the girl with the umbrella.
+→ Phrase: 'with the umbrella' → predicted: 'girl', expected: 'girl'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 4/20:
+Sentence: They filmed the actor in the leather jacket.
+→ Phrase: 'in the leather jacket' → predicted: 'actor', expected: 'actor'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 5/20:
+Sentence: The scientist examined the sample from the cave.
+→ Phrase: 'from the cave' → predicted: 'sample', expected: 'sample'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 6/20:
+Sentence: She greeted the teacher with a smile.
+→ Phrase: 'with a smile' → predicted: 'greeted', expected: 'greeted'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 7/20:
+Sentence: He read the book about the artist in Paris.
+→ Phrase: 'in Paris' → predicted: 'artist', expected: 'artist'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 8/20:
+Sentence: The photographer shot the model on the rooftop.
+→ Phrase: 'on the rooftop' → predicted: 'shot', expected: 'shot'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 9/20:
+Sentence: She painted the vase with the blue flowers.
+→ Phrase: 'with the blue flowers' → predicted: 'painted', expected: 'vase'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 10/20:
+Sentence: The chef cooked the meat in the oven.
+→ Phrase: 'in the oven' → predicted: 'cooked', expected: 'cooked'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 11/20:
+Sentence: He spotted the bird with the red feathers.
+→ Phrase: 'with the red feathers' → predicted: 'bird', expected: 'bird'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 12/20:
+Sentence: They arrested the man in the dark alley.
+→ Phrase: 'in the dark alley' → predicted: 'arrested', expected: 'arrested'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 13/20:
+Sentence: The artist sketched the statue with the broken arm.
+→ Phrase: 'with the broken arm' → predicted: 'statue', expected: 'statue'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 14/20:
+Sentence: She decorated the cake with strawberries.
+→ Phrase: 'with strawberries' → predicted: 'decorated', expected: 'decorated'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 15/20:
+Sentence: The woman watched the dog with binoculars.
+→ Phrase: 'with binoculars' → predicted: 'watched', expected: 'watched'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 16/20:
+Sentence: He chased the thief through the park with the fountain.
+→ Phrase: 'with the fountain' → predicted: 'park', expected: 'park'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 17/20:
+Sentence: She held the child with the dirty hands.
+→ Phrase: 'with the dirty hands' → predicted: 'child', expected: 'child'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 18/20:
+Sentence: The mechanic fixed the car in the garage.
+→ Phrase: 'in the garage' → predicted: 'fixed', expected: 'fixed'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 19/20:
+Sentence: The cat scratched the couch with the torn cover.
+→ Phrase: 'with the torn cover' → predicted: 'couch', expected: 'couch'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+Example 20/20:
+Sentence: They photographed the building with the cracked windows.
+→ Phrase: 'with the cracked windows' → predicted: 'building', expected: 'building'
+
+Final Accuracy: 19/20 = 95.00%
