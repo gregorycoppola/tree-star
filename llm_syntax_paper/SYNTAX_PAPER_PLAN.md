@@ -58,11 +58,11 @@ python python/preliminary/ask_chatgpt_rels.py data/input/sanity/examples1.conllu
 **Description:**  
 Accuracy of ChatGPT when syntactic analysis is broken into individual tasks: POS tagging, head prediction (with gold POS), and dependency label prediction (with gold heads).
 
-| Subtask                    | Accuracy (%) |
-|---------------------------|--------------|
-| POS Tagging               | _.__         |
-| Head Prediction (gold POS)| _.__         |
-| Dependency Labeling       | _.__         |
+| Subtask                    | Accuracy (%) | Total Tokens | Correct Tags |
+|---------------------------|--------------|--------------|--------------|
+| POS Tagging               | 91.09        | 202          | 184          |
+| Head Prediction (gold POS)| _.__         | _.__         | _.__         |
+| Dependency Labeling       | _.__         | _.__         | _.__         |
 
 ---
 
