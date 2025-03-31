@@ -44,7 +44,7 @@ Accuracy of ChatGPT in a zero-shot setting on full dependency parses. Metrics in
 
 ```bash
 # 1. POS Tagging
-python python/preliminary/ask_chatgpt_tags.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_tags
+python python/preliminary/ask_chatgpt_tags.py data/input/preliminary/examples25.conllu --live_run --output_file preliminary/examples25.conllu.ask_chatgpt_tags
 
 # 2. Head Prediction (with gold POS)
 python python/preliminary/ask_chatgpt_arcs.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_arcs
