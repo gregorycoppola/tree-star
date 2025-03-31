@@ -1,0 +1,1056 @@
+Running in LIVE mode - will send requests to OpenAI and save to data/output/preliminary/examples25.conllu.ask_chatgpt_arcs.py.conllu
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Aesthetic | Gold: Appreciation | ChatGPT: Appreciation
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Appreciation | Gold: root | ChatGPT: Aesthetic
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: Art | ChatGPT: Aesthetic
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Spanish | Gold: Art | ChatGPT: Art
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Art | Gold: Appreciation | ChatGPT: Art modifies 'Spanish'.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: : | Gold: Appreciation | ChatGPT: Art
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Which | Gold: elements | ChatGPT: elements
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: elements | Gold: focus | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: artworks | ChatGPT: elements
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: specific | Gold: artworks | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Gold: elements | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: do | Gold: focus | ChatGPT: focus
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: they | Gold: focus | ChatGPT: elements
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: focus | Gold: root | ChatGPT: they
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: elements | ChatGPT: focus
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ? | Gold: focus | ChatGPT: focus
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Do | Gold: have | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: museum | Gold: labels | ChatGPT: labels
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: labels | Gold: have | ChatGPT: museum
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Gold: root | ChatGPT: labels
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Gold: impact | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: impact | Gold: have | ChatGPT: look
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: how | ChatGPT: look
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: how | Gold: impact | ChatGPT: look
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: people | Gold: look | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: look | Gold: how | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: at | Gold: artworks | ChatGPT: look
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Gold: look | ChatGPT: museum
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ? | Gold: have | ChatGPT: look
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Gold: experience | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: viewing | Gold: experience | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: experience | Gold: one | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: art | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: art | Gold: experience | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: one | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: one | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: complex | Gold: one | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: one | Gold: root | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: involving | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: involving | Gold: one | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: issues | Gold: involving | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: perception | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: perception | Gold: issues | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: attention | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: attention | Gold: perception | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: memory | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: memory | Gold: perception | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: decision | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: decision | Gold: making | ChatGPT: making
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold: decision | ChatGPT: making
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: making | Gold: perception | ChatGPT: decision
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: affect | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: affect | Gold: perception | ChatGPT: emotion
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: emotion | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: emotion | ChatGPT: emotion
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: emotion | Gold: perception | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: one | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Thus | Gold: inform | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: Thus | ChatGPT: Thus
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: time | ChatGPT: time
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: time | Gold: inform | ChatGPT: time modifies root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Gold: takes | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: takes | Gold: time | ChatGPT: time
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: ways | ChatGPT: ways
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: ways | ChatGPT: time
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ways | Gold: time | ChatGPT: time
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: exploring | ChatGPT: ways
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visually | Gold: exploring | ChatGPT: exploring
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exploring | Gold: ways | ChatGPT: ways
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Gold: artwork | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Gold: exploring | ChatGPT: relevance
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Gold: inform | ChatGPT: inform
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: inform | Gold: root | ChatGPT: time
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: about | Gold: relevance | ChatGPT: inform
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Gold: relevance | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: relevance | Gold: inform | ChatGPT: interestingness
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: interestingness | ChatGPT: Thus
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interestingness | Gold: relevance | ChatGPT: relevance
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: appeal | ChatGPT: Thus
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: appeal | ChatGPT: ways
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: even | Gold: appeal | ChatGPT: aesthetic
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Gold: appeal | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aesthetic | Gold: appeal | ChatGPT: appeal
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: appeal | Gold: relevance | ChatGPT: appeal modifies interestingness
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: inform | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: This | Gold: paper | ChatGPT: paper
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: paper | Gold: describes | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: describes | Gold: root | ChatGPT: paper
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: project | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collaborative | Gold: project | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: pilot | Gold: project | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: project | Gold: describes | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: focusing | Gold: project | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: collection | ChatGPT: describes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: collection | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: unique | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Gold: focusing | ChatGPT: project
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: paintings | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: 17th | Gold: Century | ChatGPT: Century
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Century | Gold: paintings | ChatGPT: Century
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Zurbarán | Gold: paintings | ChatGPT: paintings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: paintings | Gold: collection | ChatGPT: Zurbarán
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: describes | ChatGPT: paintings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Jacob | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cycle | Gold: example | ChatGPT: Jacob
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: at | Gold: Castle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Auckland | Gold: Castle | ChatGPT: Castle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Castle | Gold: cycle | ChatGPT: Auckland
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: example | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: example | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: only | Gold: example | ChatGPT: example
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: UK | Gold: example | ChatGPT: example
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: example | Gold: root | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: continental | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Gold: example | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: preserved | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: situ | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: situ | Gold: preserved | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: surroundings | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Gold: built | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold: purpose | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: built | Gold: surroundings | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surroundings | Gold: preserved | ChatGPT: surroundings modifies 'built'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: example | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: The | Gold: purpose | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Gold: assess | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: study | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: this | Gold: study | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: pilot | Gold: study | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: study | Gold: purpose | ChatGPT: pilot
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: was | Gold: assess | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Gold: assess | ChatGPT: assess
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: assess | Gold: root | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: effects | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: effects | Gold: assess | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: interpretation | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: different | Gold: interpretation | ChatGPT: interpretation
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: written | Gold: interpretation | ChatGPT: interpretation
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interpretation | Gold: effects | ChatGPT: interpretation
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: exploration | ChatGPT: interpretation
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: exploration | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Gold: exploration | ChatGPT: exploration
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exploration | Gold: interpretation | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: artworks | ChatGPT: purpose
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artworks | Gold: exploration | ChatGPT: visual
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: assess | ChatGPT: artworks
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: We | Gold: discuss | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: will | Gold: discuss | ChatGPT: discuss
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: discuss | Gold: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: implications | ChatGPT: implications
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: potential | Gold: implications | ChatGPT: implications
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: implications | Gold: discuss | ChatGPT: techniques
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: techniques | ChatGPT: implications
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Gold: techniques | ChatGPT: techniques
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: techniques | Gold: implications | ChatGPT: behaviours
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: understanding | ChatGPT: implications
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Gold: understanding | ChatGPT: understanding
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: understanding | Gold: implications | ChatGPT: behaviours
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: behaviours | ChatGPT: implications
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Gold: behaviours | ChatGPT: behaviours
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: behaviours | Gold: understanding | ChatGPT: behaviours
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: practice | ChatGPT: practice
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: museum | Gold: practice | ChatGPT: practice
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: gallery | ChatGPT: implications
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gallery | Gold: museum | ChatGPT: practice
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: practice | Gold: understanding | ChatGPT: practice
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: discuss | ChatGPT: practice
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Our | Gold: experience | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: experience | Gold: develops | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: art | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: art | Gold: experience | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: develops | Gold: root | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Gold: interaction | ChatGPT: develops
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: interaction | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interaction | Gold: develops | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: processes | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: several | Gold: processes | ChatGPT: processes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cognitive | Gold: processes | ChatGPT: processes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: affective | ChatGPT: processes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: affective | Gold: cognitive | ChatGPT: processes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: processes | Gold: interaction | ChatGPT: processes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ; | Gold: scan | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: beginning | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: beginning | Gold: scan | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: which | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: which | Gold: beginning | ChatGPT: processes
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: scan | ChatGPT: beginning
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: scan | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: visual | Gold: scan | ChatGPT: scan
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scan | Gold: processes | ChatGPT: scan
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: artwork | ChatGPT: experience
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: artwork | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Gold: scan | ChatGPT: art
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: develops | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: When | Gold: regarding | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: regarding | Gold: gathers | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: an | Gold: artwork | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: artwork | Gold: regarding | ChatGPT: viewer
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: regarding | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: viewer | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: viewer | Gold: gathers | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gathers | Gold: root | ChatGPT: viewer
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: information | Gold: gathers | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: through | Gold: fixations | ChatGPT: gathers
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: fixations | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: series | Gold: fixations | ChatGPT: fixations
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fixations | Gold: gathers | ChatGPT: series
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: interspersed | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: interspersed | Gold: fixations | ChatGPT: fixations
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: by | Gold: movements | ChatGPT: saccades
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: rapid | Gold: movements | ChatGPT: movements
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: movements | Gold: interspersed | ChatGPT: saccades
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: eye | ChatGPT: saccades
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: eye | ChatGPT: artwork
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: eye | Gold: movements | ChatGPT: saccades
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: called | Gold: movements | ChatGPT: saccades
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: saccades | Gold: called | ChatGPT: fixations
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: gathers | ChatGPT: saccades
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: It | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: only | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: cycle | Gold: root | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Gold: preserved | ChatGPT: preserved
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: be | Gold: preserved | ChatGPT: preserved
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: preserved | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: surroundings | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: purpose | Gold: built | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold: purpose | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: built | Gold: surroundings | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surroundings | Gold: preserved | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: UK | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: UK | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: UK | Gold: surroundings | ChatGPT: surroundings
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: one | ChatGPT: UK
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: one | ChatGPT: very
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: one | Gold: cycle | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: few | ChatGPT: kind
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: very | Gold: few | ChatGPT: few
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: few | Gold: one | ChatGPT: kind
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: kind | ChatGPT: kind
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Gold: kind | ChatGPT: kind
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: kind | Gold: few | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: world | ChatGPT: built
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: world | ChatGPT: cycle
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: world | Gold: kind | ChatGPT: kind
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: cycle | ChatGPT: kind
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: It | Gold: has | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: has | Gold: root | ChatGPT: history
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: history | ChatGPT: history
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: long | Gold: history | ChatGPT: history
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: history | Gold: has | ChatGPT: scholarship
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: scholarship | ChatGPT: scholarship
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scholarship | Gold: has | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ( | Gold: Baron | ChatGPT: scholarship
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Baron | Gold: has | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: & | Gold: Beresford | ChatGPT: Baron
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Beresford | Gold: Baron | ChatGPT: Baron
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: 2014 | Gold: Baron | ChatGPT: Baron
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ) | Gold: Baron | ChatGPT: scholarship
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: understood | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: but | Gold: understood | ChatGPT: has
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: many | Gold: aspects | ChatGPT: aspects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: key | Gold: aspects | ChatGPT: aspects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aspects | Gold: understood | ChatGPT: aspects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: production | ChatGPT: production
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: its | Gold: production | ChatGPT: history
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: production | Gold: aspects | ChatGPT: significance
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: significance | ChatGPT: production
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: significance | Gold: production | ChatGPT: production
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Gold: understood | ChatGPT: aspects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: not | Gold: understood | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: yet | Gold: understood | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: been | Gold: understood | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fully | Gold: understood | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: understood | Gold: has | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: has | ChatGPT: understood
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Past | Gold: studies | ChatGPT: studies
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: studies | Gold: establish | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: establish | Gold: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: that | Gold: influenced | ChatGPT: establish
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: each | Gold: influenced | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: efforts | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Gold: efforts | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: efforts | Gold: each | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: influenced | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: strongly | Gold: influenced | ChatGPT: influenced
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: positively | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: positively | Gold: strongly | ChatGPT: influenced
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: influenced | Gold: establish | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: through | Gold: forms | ChatGPT: influenced
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: various | Gold: forms | ChatGPT: forms
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: forms | Gold: influenced | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: diversity | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: faculty | Gold: diversity | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: diversity | Gold: forms | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: including | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: including | Gold: diversity | ChatGPT: efforts
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ethnic | Gold: diversity | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: racial | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: racial | Gold: ethnic | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: gender | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: gender | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: gender | Gold: ethnic | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: diversity | Gold: forms | ChatGPT: diversity
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: establish | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Despite | Gold: effects | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: these | Gold: effects | ChatGPT: effects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: positive | Gold: effects | ChatGPT: effects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: effects | Gold: remains | ChatGPT: effects
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: effects | ChatGPT: however
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: however | Gold: remains | ChatGPT: Despite
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: however | ChatGPT: however
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: quantifying | Gold: remains | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: impact | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: impact | Gold: quantifying | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: diversity | ChatGPT: impact
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: diversity | Gold: impact | ChatGPT: science
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: science | ChatGPT: part
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: science | Gold: impact | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: remains | Gold: root | ChatGPT: remains
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: exceedingly | Gold: difficult | ChatGPT: difficult
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: difficult | Gold: remains | ChatGPT: impact
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: lack | ChatGPT: however
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: due | Gold: lack | ChatGPT: difficult
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: part | ChatGPT: part
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: large | Gold: part | ChatGPT: part
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: part | Gold: lack | ChatGPT: part
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Gold: due | ChatGPT: lack
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: lack | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: lack | Gold: remains | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: data | ChatGPT: impact
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: comprehensive | Gold: data | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: data | Gold: lack | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: about | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: workforce | Gold: data | ChatGPT: scientific
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: remains | ChatGPT: remains
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: For | Gold: fields | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: many | Gold: fields | ChatGPT: fields
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Gold: fields | ChatGPT: fields
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fields | Gold: is | ChatGPT: scientific
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: fields | ChatGPT: however
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: however | Gold: is | ChatGPT: there
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: however | ChatGPT: however
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: there | Gold: is | ChatGPT: is
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: root | ChatGPT: there
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: no | Gold: listing | ChatGPT: listing
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: central | Gold: listing | ChatGPT: listing
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: listing | Gold: is | ChatGPT: faculty
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: faculty | ChatGPT: listing
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: all | Gold: faculty | ChatGPT: faculty
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: tenure | Gold: track | ChatGPT: track
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold: tenure | ChatGPT: track
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: track | Gold: faculty | ChatGPT: faculty
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: faculty | Gold: listing | ChatGPT: track
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: making | ChatGPT: however
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: making | Gold: is | ChatGPT: there
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Gold: making | ChatGPT: difficult
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: difficult | Gold: making | ChatGPT: define
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Gold: define | ChatGPT: define
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: define | Gold: difficult | ChatGPT: frame
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: frame | ChatGPT: sample
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: rigorous | Gold: frame | ChatGPT: sample
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: sample | Gold: frame | ChatGPT: frame
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: frame | Gold: define | ChatGPT: sample
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: for | Gold: analysis | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: analysis | Gold: define | ChatGPT: frame
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: is | ChatGPT: analysis
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Further | Gold: vary | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: Further | ChatGPT: Further
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: rates | Gold: vary | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: adoption | ChatGPT: adoption
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: adoption | Gold: rates | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: services | ChatGPT: adoption
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: services | Gold: adoption | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: like | Gold: GoogleScholar | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: GoogleScholar | Gold: services | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: ResearchGate | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: ResearchGate | Gold: GoogleScholar | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: vary | Gold: root | ChatGPT: rates
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: within | Gold: disciplines | ChatGPT: disciplines
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: across | ChatGPT: Further
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: across | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: across | Gold: within | ChatGPT: disciplines
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: disciplines | Gold: vary | ChatGPT: services
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: vary | ChatGPT: across
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Although | Gold: useful | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: useful | Gold: representative | ChatGPT: samples
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: useful | ChatGPT: useful
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: such | Gold: samples | ChatGPT: samples
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: samples | Gold: representative | ChatGPT: samples
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: are | Gold: representative | ChatGPT: samples
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: not | Gold: representative | ChatGPT: representative
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: representative | Gold: root | ChatGPT: samples
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: workforce | Gold: representative | ChatGPT: scientific
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: as | Gold: whole | ChatGPT: not
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: a | Gold: whole | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: whole | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: have | ChatGPT: have
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: thus | Gold: have | ChatGPT: have
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: have | Gold: representative | ChatGPT: generalizability
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: limited | Gold: generalizability | ChatGPT: generalizability
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: generalizability | Gold: have | ChatGPT: limited
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: representative | ChatGPT: generalizability
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: In | Gold: fields | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: some | Gold: fields | ChatGPT: fields
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: fields | Gold: available | ChatGPT: fields
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: fields | ChatGPT: fields
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: yearly | Gold: data | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: data | Gold: available | ChatGPT: numbers
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: numbers | ChatGPT: available
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: faculty | Gold: numbers | ChatGPT: numbers
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: numbers | Gold: data | ChatGPT: faculty
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: composition | ChatGPT: composition
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: composition | Gold: numbers | ChatGPT: numbers
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: are | Gold: available | ChatGPT: available
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: available | Gold: root | ChatGPT: are
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: aggregate | ChatGPT: fields
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: aggregate | Gold: available | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: available | ChatGPT: aggregate
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Such | Gold: surveys | ChatGPT: surveys
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: surveys | Gold: provide | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Gold: provide | ChatGPT: surveys
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: provide | Gold: root | ChatGPT: surveys
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: valuable | Gold: insight | ChatGPT: insight
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: insight | Gold: provide | ChatGPT: trends
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: into | Gold: trends | ChatGPT: provide
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: trends | Gold: insight | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: statistics | ChatGPT: trends
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: summary | Gold: statistics | ChatGPT: statistics
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: statistics | Gold: trends | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: on | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: scientific | Gold: workforce | ChatGPT: workforce
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: workforce | Gold: statistics | ChatGPT: scientific
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: but | Gold: suffer | ChatGPT: suffer
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: suffer | Gold: provide | ChatGPT: surveys
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Gold: weaknesses | ChatGPT: suffer
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: two | Gold: weaknesses | ChatGPT: weaknesses
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: key | Gold: weaknesses | ChatGPT: weaknesses
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: weaknesses | Gold: suffer | ChatGPT: surveys
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: provide | ChatGPT: weaknesses
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: This | Gold: system | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: system | Gold: efficient | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: efficient | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: efficient | Gold: root | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: accurate | ChatGPT: efficient
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: accurate | Gold: efficient | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: adapted | ChatGPT: and
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: adapted | ChatGPT: efficient
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: it | Gold: adapted | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: can | Gold: adapted | ChatGPT: be
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: be | Gold: adapted | ChatGPT: is
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: adapted | Gold: efficient | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: to | Gold: discipline | ChatGPT: used
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: any | Gold: discipline | ChatGPT: discipline
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: academic | Gold: discipline | ChatGPT: discipline
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: discipline | Gold: adapted | ChatGPT: system
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: used | ChatGPT: efficient
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: used | Gold: adapted | ChatGPT: can
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: for | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: continuous | Gold: collection | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: collection | Gold: used | ChatGPT: collection modifies 'used'
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: efficient | ChatGPT: collection
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: In | Gold: short | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: short | Gold: benefit | ChatGPT: short modifies root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: short | ChatGPT: In
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: many | Gold: questions | ChatGPT: questions
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: important | Gold: questions | ChatGPT: research
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: research | Gold: questions | ChatGPT: questions
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: questions | Gold: benefit | ChatGPT: research
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: will | Gold: benefit | ChatGPT: benefit
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: benefit | Gold: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: from | Gold: availability | ChatGPT: benefit
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: availability | ChatGPT: census
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: availability | Gold: benefit | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: data | ChatGPT: availability
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: accurate | Gold: data | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: recollected | ChatGPT: frequently
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: frequently | Gold: recollected | ChatGPT: recollected
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: - | Gold: frequently | ChatGPT: recollected
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: recollected | Gold: accurate | ChatGPT: census
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: census | Gold: data | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: data | Gold: availability | ChatGPT: census
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: benefit | ChatGPT: data
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Our | Gold: study | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: study | Gold: organized | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: is | Gold: organized | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: organized | Gold: root | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: as | Gold: follows | ChatGPT: follows
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: follows | Gold: organized | ChatGPT: study
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: organized | ChatGPT: follows
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: We | Gold: begin | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: begin | Gold: root | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: by | Gold: detailing | ChatGPT: begin
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: detailing | Gold: begin | ChatGPT: begin
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: design | ChatGPT: design
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: design | Gold: detailing | ChatGPT: framework
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: and | Gold: implementation | ChatGPT: design
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: implementation | Gold: design | ChatGPT: design
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: framework | ChatGPT: implementation
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Gold: framework | ChatGPT: framework
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: web | Gold: crawler | ChatGPT: crawler
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: crawler | Gold: framework | ChatGPT: framework
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: framework | Gold: design | ChatGPT: crawler
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: begin | ChatGPT: framework
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: Next | Gold: present | ChatGPT: root
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: , | Gold: Next | ChatGPT: Next
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: we | Gold: present | ChatGPT: present
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: present | Gold: root | ChatGPT: we
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: the | Gold: results | ChatGPT: results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: results | Gold: present | ChatGPT: work
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: of | Gold: work | ChatGPT: work
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: our | Gold: work | ChatGPT: work
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: work | Gold: results | ChatGPT: results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: in | Gold: sections | ChatGPT: present
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: two | Gold: sections | ChatGPT: sections
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: sections | Gold: present | ChatGPT: work
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Token: . | Gold: present | ChatGPT: sections
+Accuracy: 34.91%

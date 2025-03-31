@@ -1,0 +1,602 @@
+1	Aesthetic	_	ADJ	JJ	_	2	amod	_	ChatGPTHead=Appreciation
+2	Appreciation	_	NOUN	NN	_	0	root	_	ChatGPTHead=Aesthetic
+3	and	_	CCONJ	CC	_	5	cc	_	ChatGPTHead=Aesthetic
+4	Spanish	_	ADJ	JJ	_	5	amod	_	ChatGPTHead=Art
+5	Art	_	NOUN	NN	_	2	conj	_	ChatGPTHead=Art modifies 'Spanish'.
+6	:	_	PUNCT	:	_	2	punct	_	ChatGPTHead=Art
+
+1	Which	_	DET	WDT	_	2	det	_	ChatGPTHead=elements
+2	elements	_	NOUN	NNS	_	8	obl	_	ChatGPTHead=artworks
+3	of	_	ADP	IN	_	5	case	_	ChatGPTHead=elements
+4	specific	_	ADJ	JJ	_	5	amod	_	ChatGPTHead=artworks
+5	artworks	_	NOUN	NNS	_	2	nmod	_	ChatGPTHead=artworks
+6	do	_	AUX	VBP	_	8	aux	_	ChatGPTHead=focus
+7	they	_	PRON	PRP	_	8	nsubj	_	ChatGPTHead=elements
+8	focus	_	VERB	VB	_	0	root	_	ChatGPTHead=they
+9	on	_	ADP	IN	_	2	case	_	ChatGPTHead=focus
+10	?	_	PUNCT	.	_	8	punct	_	ChatGPTHead=focus
+
+1	Do	_	AUX	VBP	_	4	aux	_	ChatGPTHead=root
+2	museum	_	NOUN	NN	_	3	compound	_	ChatGPTHead=labels
+3	labels	_	NOUN	NNS	_	4	nsubj	_	ChatGPTHead=museum
+4	have	_	VERB	VB	_	0	root	_	ChatGPTHead=labels
+5	an	_	DET	DT	_	6	det	_	ChatGPTHead=artworks
+6	impact	_	NOUN	NN	_	4	obj	_	ChatGPTHead=look
+7	on	_	ADP	IN	_	8	case	_	ChatGPTHead=look
+8	how	_	ADV	WRB	_	6	nmod	_	ChatGPTHead=look
+9	people	_	NOUN	NNS	_	10	nsubj	_	ChatGPTHead=artworks
+10	look	_	VERB	VBP	_	8	advcl:relcl	_	ChatGPTHead=artworks
+11	at	_	ADP	IN	_	12	case	_	ChatGPTHead=look
+12	artworks	_	NOUN	NNS	_	10	obl	_	ChatGPTHead=museum
+13	?	_	PUNCT	.	_	4	punct	_	ChatGPTHead=look
+
+1	The	_	DET	DT	_	3	det	_	ChatGPTHead=experience
+2	viewing	_	NOUN	NN	_	3	compound	_	ChatGPTHead=experience
+3	experience	_	NOUN	NN	_	9	nsubj	_	ChatGPTHead=experience
+4	of	_	ADP	IN	_	5	case	_	ChatGPTHead=experience
+5	art	_	NOUN	NN	_	3	nmod	_	ChatGPTHead=experience
+6	is	_	AUX	VBZ	_	9	cop	_	ChatGPTHead=experience
+7	a	_	DET	DT	_	9	det	_	ChatGPTHead=experience
+8	complex	_	ADJ	JJ	_	9	amod	_	ChatGPTHead=experience
+9	one	_	NOUN	NN	_	0	root	_	ChatGPTHead=experience
+10	,	_	PUNCT	,	_	11	punct	_	ChatGPTHead=experience
+11	involving	_	VERB	VBG	_	9	acl	_	ChatGPTHead=experience
+12	issues	_	NOUN	NNS	_	11	obj	_	ChatGPTHead=experience
+13	of	_	ADP	IN	_	14	case	_	ChatGPTHead=experience
+14	perception	_	NOUN	NN	_	12	nmod	_	ChatGPTHead=experience
+15	,	_	PUNCT	,	_	16	punct	_	ChatGPTHead=experience
+16	attention	_	NOUN	NN	_	14	conj	_	ChatGPTHead=experience
+17	,	_	PUNCT	,	_	18	punct	_	ChatGPTHead=experience
+18	memory	_	NOUN	NN	_	14	conj	_	ChatGPTHead=experience
+19	,	_	PUNCT	,	_	20	punct	_	ChatGPTHead=experience
+20	decision	_	NOUN	NN	_	22	compound	_	ChatGPTHead=making
+21	-	_	PUNCT	HYPH	_	20	punct	_	ChatGPTHead=making
+22	making	_	VERB	VBG	_	14	conj	_	ChatGPTHead=decision
+23	,	_	PUNCT	,	_	24	punct	_	ChatGPTHead=experience
+24	affect	_	NOUN	NN	_	14	conj	_	ChatGPTHead=emotion
+25	,	_	PUNCT	,	_	27	punct	_	ChatGPTHead=experience
+26	and	_	CCONJ	CC	_	27	cc	_	ChatGPTHead=emotion
+27	emotion	_	NOUN	NN	_	14	conj	_	ChatGPTHead=experience
+28	.	_	PUNCT	.	_	9	punct	_	ChatGPTHead=experience
+
+1	Thus	_	ADV	RB	_	16	advmod	_	ChatGPTHead=root
+2	,	_	PUNCT	,	_	1	punct	_	ChatGPTHead=Thus
+3	the	_	DET	DT	_	4	det	_	ChatGPTHead=time
+4	time	_	NOUN	NN	_	16	nsubj	_	ChatGPTHead=time modifies root
+5	it	_	PRON	PRP	_	6	nsubj	_	ChatGPTHead=artwork
+6	takes	_	VERB	VBZ	_	4	acl:relcl	_	ChatGPTHead=time
+7	and	_	CCONJ	CC	_	9	cc	_	ChatGPTHead=ways
+8	the	_	DET	DT	_	9	det	_	ChatGPTHead=time
+9	ways	_	NOUN	NNS	_	4	conj	_	ChatGPTHead=time
+10	of	_	SCONJ	IN	_	12	mark	_	ChatGPTHead=ways
+11	visually	_	ADV	RB	_	12	advmod	_	ChatGPTHead=exploring
+12	exploring	_	VERB	VBG	_	9	acl	_	ChatGPTHead=ways
+13	an	_	DET	DT	_	14	det	_	ChatGPTHead=artwork
+14	artwork	_	NOUN	NN	_	12	obj	_	ChatGPTHead=relevance
+15	can	_	AUX	MD	_	16	aux	_	ChatGPTHead=inform
+16	inform	_	VERB	VB	_	0	root	_	ChatGPTHead=time
+17	about	_	ADP	IN	_	19	case	_	ChatGPTHead=inform
+18	its	_	PRON	PRP$	_	19	nmod:poss	_	ChatGPTHead=artwork
+19	relevance	_	NOUN	NN	_	16	obl	_	ChatGPTHead=interestingness
+20	,	_	PUNCT	,	_	21	punct	_	ChatGPTHead=Thus
+21	interestingness	_	NOUN	NN	_	19	conj	_	ChatGPTHead=relevance
+22	,	_	PUNCT	,	_	27	punct	_	ChatGPTHead=Thus
+23	and	_	CCONJ	CC	_	27	cc	_	ChatGPTHead=ways
+24	even	_	ADV	RB	_	27	advmod	_	ChatGPTHead=aesthetic
+25	its	_	PRON	PRP$	_	27	nmod:poss	_	ChatGPTHead=artwork
+26	aesthetic	_	ADJ	JJ	_	27	amod	_	ChatGPTHead=appeal
+27	appeal	_	NOUN	NN	_	19	conj	_	ChatGPTHead=appeal modifies interestingness
+28	.	_	PUNCT	.	_	16	punct	_	ChatGPTHead=root
+
+1	This	_	DET	DT	_	2	det	_	ChatGPTHead=paper
+2	paper	_	NOUN	NN	_	3	nsubj	_	ChatGPTHead=root
+3	describes	_	VERB	VBZ	_	0	root	_	ChatGPTHead=paper
+4	a	_	DET	DT	_	7	det	_	ChatGPTHead=project
+5	collaborative	_	ADJ	JJ	_	7	amod	_	ChatGPTHead=project
+6	pilot	_	NOUN	NN	_	7	compound	_	ChatGPTHead=project
+7	project	_	NOUN	NN	_	3	obj	_	ChatGPTHead=project
+8	focusing	_	VERB	VBG	_	7	acl	_	ChatGPTHead=project
+9	on	_	ADP	IN	_	12	case	_	ChatGPTHead=describes
+10	a	_	DET	DT	_	12	det	_	ChatGPTHead=project
+11	unique	_	ADJ	JJ	_	12	amod	_	ChatGPTHead=collection
+12	collection	_	NOUN	NN	_	8	obl	_	ChatGPTHead=project
+13	of	_	ADP	IN	_	17	case	_	ChatGPTHead=collection
+14	17th	_	ADJ	JJ	_	15	amod	_	ChatGPTHead=Century
+15	Century	_	NOUN	NN	_	17	compound	_	ChatGPTHead=Century
+16	Zurbarán	_	PROPN	NNP	_	17	compound	_	ChatGPTHead=paintings
+17	paintings	_	NOUN	NNS	_	12	nmod	_	ChatGPTHead=Zurbarán
+18	.	_	PUNCT	.	_	3	punct	_	ChatGPTHead=paintings
+
+1	The	_	DET	DT	_	3	det	_	ChatGPTHead=cycle
+2	Jacob	_	PROPN	NNP	_	3	compound	_	ChatGPTHead=cycle
+3	cycle	_	PROPN	NNP	_	11	nsubj	_	ChatGPTHead=Jacob
+4	at	_	ADP	IN	_	6	case	_	ChatGPTHead=cycle
+5	Auckland	_	PROPN	NNP	_	6	compound	_	ChatGPTHead=Castle
+6	Castle	_	PROPN	NNP	_	3	nmod	_	ChatGPTHead=Auckland
+7	is	_	AUX	VBZ	_	11	cop	_	ChatGPTHead=cycle
+8	the	_	DET	DT	_	11	det	_	ChatGPTHead=cycle
+9	only	_	ADJ	JJ	_	11	amod	_	ChatGPTHead=example
+10	UK	_	PROPN	NNP	_	11	compound	_	ChatGPTHead=example
+11	example	_	NOUN	NN	_	0	root	_	ChatGPTHead=collection
+12	of	_	ADP	IN	_	15	case	_	ChatGPTHead=collection
+13	a	_	DET	DT	_	15	det	_	ChatGPTHead=collection
+14	continental	_	ADJ	JJ	_	15	amod	_	ChatGPTHead=collection
+15	collection	_	NOUN	NN	_	11	nmod	_	ChatGPTHead=cycle
+16	preserved	_	VERB	VBN	_	15	acl	_	ChatGPTHead=collection
+17	in	_	X	FW	_	18	case	_	ChatGPTHead=surroundings
+18	situ	_	X	FW	_	16	obl	_	ChatGPTHead=surroundings
+19	in	_	ADP	IN	_	23	case	_	ChatGPTHead=surroundings
+20	purpose	_	NOUN	NN	_	22	compound	_	ChatGPTHead=built
+21	-	_	PUNCT	HYPH	_	20	punct	_	ChatGPTHead=built
+22	built	_	VERB	VBN	_	23	amod	_	ChatGPTHead=surroundings
+23	surroundings	_	NOUN	NNS	_	16	obl	_	ChatGPTHead=surroundings modifies 'built'
+24	.	_	PUNCT	.	_	11	punct	_	ChatGPTHead=surroundings
+
+1	The	_	DET	DT	_	2	det	_	ChatGPTHead=root
+2	purpose	_	NOUN	NN	_	9	nsubj:outer	_	ChatGPTHead=root
+3	of	_	ADP	IN	_	6	case	_	ChatGPTHead=purpose
+4	this	_	DET	DT	_	6	det	_	ChatGPTHead=study
+5	pilot	_	NOUN	NN	_	6	compound	_	ChatGPTHead=study
+6	study	_	NOUN	NN	_	2	nmod	_	ChatGPTHead=pilot
+7	was	_	AUX	VBD	_	9	cop	_	ChatGPTHead=study
+8	to	_	PART	TO	_	9	mark	_	ChatGPTHead=assess
+9	assess	_	VERB	VB	_	0	root	_	ChatGPTHead=purpose
+10	the	_	DET	DT	_	11	det	_	ChatGPTHead=purpose
+11	effects	_	NOUN	NNS	_	9	obj	_	ChatGPTHead=purpose
+12	of	_	ADP	IN	_	15	case	_	ChatGPTHead=purpose
+13	different	_	ADJ	JJ	_	15	amod	_	ChatGPTHead=interpretation
+14	written	_	VERB	VBN	_	15	amod	_	ChatGPTHead=interpretation
+15	interpretation	_	NOUN	NN	_	11	nmod	_	ChatGPTHead=interpretation
+16	on	_	ADP	IN	_	19	case	_	ChatGPTHead=interpretation
+17	the	_	DET	DT	_	19	det	_	ChatGPTHead=purpose
+18	visual	_	ADJ	JJ	_	19	amod	_	ChatGPTHead=exploration
+19	exploration	_	NOUN	NN	_	15	nmod	_	ChatGPTHead=artworks
+20	of	_	ADP	IN	_	21	case	_	ChatGPTHead=purpose
+21	artworks	_	NOUN	NNS	_	19	nmod	_	ChatGPTHead=visual
+22	.	_	PUNCT	.	_	9	punct	_	ChatGPTHead=artworks
+
+1	We	_	PRON	PRP	_	3	nsubj	_	ChatGPTHead=root
+2	will	_	AUX	MD	_	3	aux	_	ChatGPTHead=discuss
+3	discuss	_	VERB	VB	_	0	root	_	ChatGPTHead=root
+4	the	_	DET	DT	_	6	det	_	ChatGPTHead=implications
+5	potential	_	ADJ	JJ	_	6	amod	_	ChatGPTHead=implications
+6	implications	_	NOUN	NNS	_	3	obj	_	ChatGPTHead=techniques
+7	of	_	ADP	IN	_	9	case	_	ChatGPTHead=implications
+8	these	_	DET	DT	_	9	det	_	ChatGPTHead=techniques
+9	techniques	_	NOUN	NNS	_	6	nmod	_	ChatGPTHead=behaviours
+10	and	_	CCONJ	CC	_	12	cc	_	ChatGPTHead=implications
+11	our	_	PRON	PRP$	_	12	nmod:poss	_	ChatGPTHead=understanding
+12	understanding	_	NOUN	NN	_	6	conj	_	ChatGPTHead=behaviours
+13	of	_	ADP	IN	_	15	case	_	ChatGPTHead=implications
+14	visual	_	ADJ	JJ	_	15	amod	_	ChatGPTHead=behaviours
+15	behaviours	_	NOUN	NNS	_	12	nmod	_	ChatGPTHead=behaviours
+16	on	_	ADP	IN	_	20	case	_	ChatGPTHead=practice
+17	museum	_	NOUN	NN	_	20	compound	_	ChatGPTHead=practice
+18	and	_	CCONJ	CC	_	19	cc	_	ChatGPTHead=implications
+19	gallery	_	NOUN	NN	_	17	conj	_	ChatGPTHead=practice
+20	practice	_	NOUN	NN	_	12	nmod	_	ChatGPTHead=practice
+21	.	_	PUNCT	.	_	3	punct	_	ChatGPTHead=practice
+
+1	Our	_	PRON	PRP$	_	2	nmod:poss	_	ChatGPTHead=root
+2	experience	_	NOUN	NN	_	5	nsubj	_	ChatGPTHead=root
+3	of	_	ADP	IN	_	4	case	_	ChatGPTHead=experience
+4	art	_	NOUN	NN	_	2	nmod	_	ChatGPTHead=experience
+5	develops	_	VERB	VBZ	_	0	root	_	ChatGPTHead=experience
+6	from	_	ADP	IN	_	8	case	_	ChatGPTHead=develops
+7	the	_	DET	DT	_	8	det	_	ChatGPTHead=artwork
+8	interaction	_	NOUN	NN	_	5	obl	_	ChatGPTHead=root
+9	of	_	ADP	IN	_	14	case	_	ChatGPTHead=experience
+10	several	_	ADJ	JJ	_	14	amod	_	ChatGPTHead=processes
+11	cognitive	_	ADJ	JJ	_	14	amod	_	ChatGPTHead=processes
+12	and	_	CCONJ	CC	_	13	cc	_	ChatGPTHead=processes
+13	affective	_	ADJ	JJ	_	11	conj	_	ChatGPTHead=processes
+14	processes	_	NOUN	NNS	_	8	nmod	_	ChatGPTHead=processes
+15	;	_	PUNCT	:	_	23	punct	_	ChatGPTHead=artwork
+16	the	_	DET	DT	_	17	det	_	ChatGPTHead=artwork
+17	beginning	_	NOUN	NN	_	23	nsubj	_	ChatGPTHead=root
+18	of	_	ADP	IN	_	19	case	_	ChatGPTHead=experience
+19	which	_	PRON	WDT	_	17	nmod	_	ChatGPTHead=processes
+20	is	_	AUX	VBZ	_	23	cop	_	ChatGPTHead=beginning
+21	a	_	DET	DT	_	23	det	_	ChatGPTHead=artwork
+22	visual	_	ADJ	JJ	_	23	amod	_	ChatGPTHead=scan
+23	scan	_	NOUN	NN	_	14	acl:relcl	_	ChatGPTHead=scan
+24	of	_	ADP	IN	_	26	case	_	ChatGPTHead=experience
+25	the	_	DET	DT	_	26	det	_	ChatGPTHead=artwork
+26	artwork	_	NOUN	NN	_	23	nmod	_	ChatGPTHead=art
+27	.	_	PUNCT	.	_	5	punct	_	ChatGPTHead=artwork
+
+1	When	_	ADV	WRB	_	2	advmod	_	ChatGPTHead=root
+2	regarding	_	VERB	VBG	_	8	advcl	_	ChatGPTHead=artwork
+3	an	_	DET	DT	_	4	det	_	ChatGPTHead=artwork
+4	artwork	_	NOUN	NN	_	2	obj	_	ChatGPTHead=viewer
+5	,	_	PUNCT	,	_	2	punct	_	ChatGPTHead=artwork
+6	a	_	DET	DT	_	7	det	_	ChatGPTHead=artwork
+7	viewer	_	NOUN	NN	_	8	nsubj	_	ChatGPTHead=artwork
+8	gathers	_	VERB	VBZ	_	0	root	_	ChatGPTHead=viewer
+9	information	_	NOUN	NN	_	8	obj	_	ChatGPTHead=artwork
+10	through	_	ADP	IN	_	13	case	_	ChatGPTHead=gathers
+11	a	_	DET	DT	_	13	det	_	ChatGPTHead=artwork
+12	series	_	NOUN	NN	_	13	compound	_	ChatGPTHead=fixations
+13	fixations	_	NOUN	NNS	_	8	obl	_	ChatGPTHead=series
+14	,	_	PUNCT	,	_	15	punct	_	ChatGPTHead=artwork
+15	interspersed	_	VERB	VBN	_	13	acl	_	ChatGPTHead=fixations
+16	by	_	ADP	IN	_	18	case	_	ChatGPTHead=saccades
+17	rapid	_	ADJ	JJ	_	18	amod	_	ChatGPTHead=movements
+18	movements	_	NOUN	NNS	_	15	obl:agent	_	ChatGPTHead=saccades
+19	of	_	ADP	IN	_	21	case	_	ChatGPTHead=saccades
+20	the	_	DET	DT	_	21	det	_	ChatGPTHead=artwork
+21	eye	_	NOUN	NN	_	18	nmod	_	ChatGPTHead=saccades
+22	called	_	VERB	VBN	_	18	acl	_	ChatGPTHead=saccades
+23	saccades	_	NOUN	NNS	_	22	obj	_	ChatGPTHead=fixations
+24	.	_	PUNCT	.	_	8	punct	_	ChatGPTHead=saccades
+
+1	It	_	PRON	PRP	_	5	nsubj	_	ChatGPTHead=cycle
+2	is	_	AUX	VBZ	_	5	cop	_	ChatGPTHead=cycle
+3	the	_	DET	DT	_	5	det	_	ChatGPTHead=cycle
+4	only	_	ADJ	JJ	_	5	amod	_	ChatGPTHead=cycle
+5	cycle	_	NOUN	NN	_	0	root	_	ChatGPTHead=cycle
+6	to	_	PART	TO	_	8	mark	_	ChatGPTHead=preserved
+7	be	_	AUX	VB	_	8	aux:pass	_	ChatGPTHead=preserved
+8	preserved	_	VERB	VBN	_	5	acl	_	ChatGPTHead=cycle
+9	in	_	ADP	IN	_	13	case	_	ChatGPTHead=built
+10	purpose	_	NOUN	NN	_	12	compound	_	ChatGPTHead=built
+11	-	_	PUNCT	HYPH	_	10	punct	_	ChatGPTHead=built
+12	built	_	VERB	VBN	_	13	amod	_	ChatGPTHead=surroundings
+13	surroundings	_	NOUN	NNS	_	8	obl	_	ChatGPTHead=cycle
+14	in	_	ADP	IN	_	16	case	_	ChatGPTHead=built
+15	the	_	DET	DT	_	16	det	_	ChatGPTHead=cycle
+16	UK	_	PROPN	NNP	_	13	nmod	_	ChatGPTHead=surroundings
+17	,	_	PUNCT	,	_	19	punct	_	ChatGPTHead=UK
+18	and	_	CCONJ	CC	_	19	cc	_	ChatGPTHead=very
+19	one	_	NUM	CD	_	5	conj	_	ChatGPTHead=cycle
+20	of	_	ADP	IN	_	22	case	_	ChatGPTHead=kind
+21	very	_	ADV	RB	_	22	advmod	_	ChatGPTHead=few
+22	few	_	ADJ	JJ	_	19	nmod	_	ChatGPTHead=kind
+23	of	_	ADP	IN	_	25	case	_	ChatGPTHead=kind
+24	its	_	PRON	PRP$	_	25	nmod:poss	_	ChatGPTHead=kind
+25	kind	_	NOUN	NN	_	22	obl	_	ChatGPTHead=cycle
+26	in	_	ADP	IN	_	28	case	_	ChatGPTHead=built
+27	the	_	DET	DT	_	28	det	_	ChatGPTHead=cycle
+28	world	_	NOUN	NN	_	25	nmod	_	ChatGPTHead=kind
+29	.	_	PUNCT	.	_	5	punct	_	ChatGPTHead=kind
+
+1	It	_	PRON	PRP	_	2	nsubj	_	ChatGPTHead=root
+2	has	_	VERB	VBZ	_	0	root	_	ChatGPTHead=history
+3	a	_	DET	DT	_	5	det	_	ChatGPTHead=history
+4	long	_	ADJ	JJ	_	5	amod	_	ChatGPTHead=history
+5	history	_	NOUN	NN	_	2	obj	_	ChatGPTHead=scholarship
+6	in	_	ADP	IN	_	7	case	_	ChatGPTHead=scholarship
+7	scholarship	_	NOUN	NN	_	2	obl	_	ChatGPTHead=root
+8	(	_	PUNCT	-LRB-	_	9	punct	_	ChatGPTHead=scholarship
+9	Baron	_	PROPN	NNP	_	2	dep	_	ChatGPTHead=root
+10	&	_	CCONJ	CC	_	11	cc	_	ChatGPTHead=Baron
+11	Beresford	_	PROPN	NNP	_	9	conj	_	ChatGPTHead=Baron
+12	2014	_	NUM	CD	_	9	nmod:unmarked	_	ChatGPTHead=Baron
+13	)	_	PUNCT	-RRB-	_	9	punct	_	ChatGPTHead=scholarship
+14	,	_	PUNCT	,	_	29	punct	_	ChatGPTHead=understood
+15	but	_	CCONJ	CC	_	29	cc	_	ChatGPTHead=has
+16	many	_	ADJ	JJ	_	18	amod	_	ChatGPTHead=aspects
+17	key	_	ADJ	JJ	_	18	amod	_	ChatGPTHead=aspects
+18	aspects	_	NOUN	NNS	_	29	nsubj:pass	_	ChatGPTHead=aspects
+19	of	_	ADP	IN	_	21	case	_	ChatGPTHead=production
+20	its	_	PRON	PRP$	_	21	nmod:poss	_	ChatGPTHead=history
+21	production	_	NOUN	NN	_	18	nmod	_	ChatGPTHead=significance
+22	and	_	CCONJ	CC	_	23	cc	_	ChatGPTHead=production
+23	significance	_	NOUN	NN	_	21	conj	_	ChatGPTHead=production
+24	have	_	AUX	VBP	_	29	aux	_	ChatGPTHead=aspects
+25	not	_	PART	RB	_	29	advmod	_	ChatGPTHead=understood
+26	yet	_	ADV	RB	_	29	advmod	_	ChatGPTHead=understood
+27	been	_	AUX	VBN	_	29	aux:pass	_	ChatGPTHead=understood
+28	fully	_	ADV	RB	_	29	advmod	_	ChatGPTHead=understood
+29	understood	_	VERB	VBN	_	2	conj	_	ChatGPTHead=understood
+30	.	_	PUNCT	.	_	2	punct	_	ChatGPTHead=understood
+
+1	Past	_	ADJ	JJ	_	2	amod	_	ChatGPTHead=studies
+2	studies	_	NOUN	NNS	_	3	nsubj	_	ChatGPTHead=root
+3	establish	_	VERB	VBP	_	0	root	_	ChatGPTHead=root
+4	that	_	SCONJ	IN	_	13	mark	_	ChatGPTHead=establish
+5	each	_	DET	DT	_	13	nsubj:pass	_	ChatGPTHead=efforts
+6	of	_	ADP	IN	_	8	case	_	ChatGPTHead=efforts
+7	these	_	DET	DT	_	8	det	_	ChatGPTHead=efforts
+8	efforts	_	NOUN	NNS	_	5	nmod	_	ChatGPTHead=root
+9	is	_	AUX	VBZ	_	13	aux:pass	_	ChatGPTHead=efforts
+10	strongly	_	ADV	RB	_	13	advmod	_	ChatGPTHead=influenced
+11	and	_	CCONJ	CC	_	12	cc	_	ChatGPTHead=diversity
+12	positively	_	ADV	RB	_	10	conj	_	ChatGPTHead=influenced
+13	influenced	_	VERB	VBN	_	3	ccomp	_	ChatGPTHead=efforts
+14	through	_	ADP	IN	_	16	case	_	ChatGPTHead=influenced
+15	various	_	ADJ	JJ	_	16	amod	_	ChatGPTHead=forms
+16	forms	_	NOUN	NNS	_	13	obl	_	ChatGPTHead=diversity
+17	of	_	ADP	IN	_	19	case	_	ChatGPTHead=efforts
+18	faculty	_	NOUN	NN	_	19	compound	_	ChatGPTHead=diversity
+19	diversity	_	NOUN	NN	_	16	nmod	_	ChatGPTHead=diversity
+20	,	_	PUNCT	,	_	21	punct	_	ChatGPTHead=diversity
+21	including	_	VERB	VBG	_	28	case	_	ChatGPTHead=efforts
+22	ethnic	_	ADJ	JJ	_	28	amod	_	ChatGPTHead=diversity
+23	,	_	PUNCT	,	_	24	punct	_	ChatGPTHead=diversity
+24	racial	_	ADJ	JJ	_	22	conj	_	ChatGPTHead=diversity
+25	,	_	PUNCT	,	_	27	punct	_	ChatGPTHead=diversity
+26	and	_	CCONJ	CC	_	27	cc	_	ChatGPTHead=diversity
+27	gender	_	NOUN	NN	_	22	conj	_	ChatGPTHead=diversity
+28	diversity	_	NOUN	NN	_	16	nmod	_	ChatGPTHead=diversity
+29	.	_	PUNCT	.	_	3	punct	_	ChatGPTHead=root
+
+1	Despite	_	ADP	IN	_	4	case	_	ChatGPTHead=root
+2	these	_	DET	DT	_	4	det	_	ChatGPTHead=effects
+3	positive	_	ADJ	JJ	_	4	amod	_	ChatGPTHead=effects
+4	effects	_	NOUN	NNS	_	15	obl	_	ChatGPTHead=effects
+5	,	_	PUNCT	,	_	4	punct	_	ChatGPTHead=however
+6	however	_	ADV	RB	_	15	advmod	_	ChatGPTHead=Despite
+7	,	_	PUNCT	,	_	6	punct	_	ChatGPTHead=however
+8	quantifying	_	VERB	VBG	_	15	csubj	_	ChatGPTHead=root
+9	the	_	DET	DT	_	10	det	_	ChatGPTHead=workforce
+10	impact	_	NOUN	NN	_	8	obj	_	ChatGPTHead=root
+11	of	_	ADP	IN	_	12	case	_	ChatGPTHead=impact
+12	diversity	_	NOUN	NN	_	10	nmod	_	ChatGPTHead=science
+13	in	_	ADP	IN	_	14	case	_	ChatGPTHead=part
+14	science	_	NOUN	NN	_	10	nmod	_	ChatGPTHead=workforce
+15	remains	_	VERB	VBZ	_	0	root	_	ChatGPTHead=remains
+16	exceedingly	_	ADV	RB	_	17	advmod	_	ChatGPTHead=difficult
+17	difficult	_	ADJ	JJ	_	15	xcomp	_	ChatGPTHead=impact
+18	,	_	PUNCT	,	_	25	punct	_	ChatGPTHead=however
+19	due	_	ADJ	JJ	_	25	case	_	ChatGPTHead=difficult
+20	in	_	ADP	IN	_	22	case	_	ChatGPTHead=part
+21	large	_	ADJ	JJ	_	22	amod	_	ChatGPTHead=part
+22	part	_	NOUN	NN	_	25	obl	_	ChatGPTHead=part
+23	to	_	ADP	IN	_	19	fixed	_	ChatGPTHead=lack
+24	a	_	DET	DT	_	25	det	_	ChatGPTHead=workforce
+25	lack	_	NOUN	NN	_	15	obl	_	ChatGPTHead=data
+26	of	_	ADP	IN	_	28	case	_	ChatGPTHead=impact
+27	comprehensive	_	ADJ	JJ	_	28	amod	_	ChatGPTHead=data
+28	data	_	NOUN	NNS	_	25	nmod	_	ChatGPTHead=workforce
+29	about	_	ADP	IN	_	32	case	_	ChatGPTHead=workforce
+30	the	_	DET	DT	_	32	det	_	ChatGPTHead=workforce
+31	scientific	_	ADJ	JJ	_	32	amod	_	ChatGPTHead=workforce
+32	workforce	_	NOUN	NN	_	28	nmod	_	ChatGPTHead=scientific
+33	.	_	PUNCT	.	_	15	punct	_	ChatGPTHead=remains
+
+1	For	_	ADP	IN	_	4	case	_	ChatGPTHead=root
+2	many	_	ADJ	JJ	_	4	amod	_	ChatGPTHead=fields
+3	scientific	_	ADJ	JJ	_	4	amod	_	ChatGPTHead=fields
+4	fields	_	NOUN	NNS	_	9	obl	_	ChatGPTHead=scientific
+5	,	_	PUNCT	,	_	4	punct	_	ChatGPTHead=however
+6	however	_	ADV	RB	_	9	advmod	_	ChatGPTHead=there
+7	,	_	PUNCT	,	_	6	punct	_	ChatGPTHead=however
+8	there	_	PRON	EX	_	9	expl	_	ChatGPTHead=is
+9	is	_	VERB	VBZ	_	0	root	_	ChatGPTHead=there
+10	no	_	DET	DT	_	12	det	_	ChatGPTHead=listing
+11	central	_	ADJ	JJ	_	12	amod	_	ChatGPTHead=listing
+12	listing	_	NOUN	NN	_	9	nsubj	_	ChatGPTHead=faculty
+13	of	_	ADP	IN	_	18	case	_	ChatGPTHead=listing
+14	all	_	DET	DT	_	18	det	_	ChatGPTHead=faculty
+15	tenure	_	NOUN	NN	_	17	compound	_	ChatGPTHead=track
+16	-	_	PUNCT	HYPH	_	15	punct	_	ChatGPTHead=track
+17	track	_	NOUN	NN	_	18	compound	_	ChatGPTHead=faculty
+18	faculty	_	NOUN	NN	_	12	nmod	_	ChatGPTHead=track
+19	,	_	PUNCT	,	_	20	punct	_	ChatGPTHead=however
+20	making	_	VERB	VBG	_	9	advcl	_	ChatGPTHead=there
+21	it	_	PRON	PRP	_	20	obj	_	ChatGPTHead=difficult
+22	difficult	_	ADJ	JJ	_	20	xcomp	_	ChatGPTHead=define
+23	to	_	PART	TO	_	24	mark	_	ChatGPTHead=define
+24	define	_	VERB	VB	_	22	xcomp	_	ChatGPTHead=frame
+25	a	_	DET	DT	_	28	det	_	ChatGPTHead=sample
+26	rigorous	_	ADJ	JJ	_	28	amod	_	ChatGPTHead=sample
+27	sample	_	NOUN	NN	_	28	compound	_	ChatGPTHead=frame
+28	frame	_	NOUN	NN	_	24	obj	_	ChatGPTHead=sample
+29	for	_	ADP	IN	_	30	case	_	ChatGPTHead=root
+30	analysis	_	NOUN	NN	_	24	obl	_	ChatGPTHead=frame
+31	.	_	PUNCT	.	_	9	punct	_	ChatGPTHead=analysis
+
+1	Further	_	ADV	RBR	_	12	advmod	_	ChatGPTHead=root
+2	,	_	PUNCT	,	_	1	punct	_	ChatGPTHead=Further
+3	rates	_	NOUN	NNS	_	12	nsubj	_	ChatGPTHead=root
+4	of	_	ADP	IN	_	5	case	_	ChatGPTHead=adoption
+5	adoption	_	NOUN	NN	_	3	nmod	_	ChatGPTHead=services
+6	of	_	ADP	IN	_	7	case	_	ChatGPTHead=adoption
+7	services	_	NOUN	NNS	_	5	nmod	_	ChatGPTHead=services
+8	like	_	ADP	IN	_	9	case	_	ChatGPTHead=services
+9	GoogleScholar	_	PROPN	NNP	_	7	nmod	_	ChatGPTHead=services
+10	and	_	CCONJ	CC	_	11	cc	_	ChatGPTHead=services
+11	ResearchGate	_	PROPN	NNP	_	9	conj	_	ChatGPTHead=services
+12	vary	_	VERB	VBP	_	0	root	_	ChatGPTHead=rates
+13	within	_	ADP	IN	_	17	case	_	ChatGPTHead=disciplines
+14	,	_	PUNCT	,	_	16	punct	_	ChatGPTHead=Further
+15	and	_	CCONJ	CC	_	16	cc	_	ChatGPTHead=services
+16	across	_	ADP	IN	_	13	conj	_	ChatGPTHead=disciplines
+17	disciplines	_	NOUN	NNS	_	12	obl	_	ChatGPTHead=services
+18	.	_	PUNCT	.	_	12	punct	_	ChatGPTHead=across
+
+1	Although	_	SCONJ	IN	_	2	mark	_	ChatGPTHead=root
+2	useful	_	ADJ	JJ	_	8	advcl	_	ChatGPTHead=samples
+3	,	_	PUNCT	,	_	2	punct	_	ChatGPTHead=useful
+4	such	_	ADJ	JJ	_	5	amod	_	ChatGPTHead=samples
+5	samples	_	NOUN	NNS	_	8	nsubj	_	ChatGPTHead=samples
+6	are	_	AUX	VBP	_	8	cop	_	ChatGPTHead=samples
+7	not	_	PART	RB	_	8	advmod	_	ChatGPTHead=representative
+8	representative	_	ADJ	JJ	_	0	root	_	ChatGPTHead=samples
+9	of	_	ADP	IN	_	12	case	_	ChatGPTHead=workforce
+10	the	_	DET	DT	_	12	det	_	ChatGPTHead=workforce
+11	scientific	_	ADJ	JJ	_	12	amod	_	ChatGPTHead=workforce
+12	workforce	_	NOUN	NN	_	8	obl	_	ChatGPTHead=scientific
+13	as	_	ADP	IN	_	15	case	_	ChatGPTHead=not
+14	a	_	DET	DT	_	15	det	_	ChatGPTHead=workforce
+15	whole	_	NOUN	NN	_	12	nmod	_	ChatGPTHead=workforce
+16	and	_	CCONJ	CC	_	18	cc	_	ChatGPTHead=have
+17	thus	_	ADV	RB	_	18	advmod	_	ChatGPTHead=have
+18	have	_	VERB	VB	_	8	conj	_	ChatGPTHead=generalizability
+19	limited	_	ADJ	JJ	_	20	amod	_	ChatGPTHead=generalizability
+20	generalizability	_	NOUN	NN	_	18	obj	_	ChatGPTHead=limited
+21	.	_	PUNCT	.	_	8	punct	_	ChatGPTHead=generalizability
+
+1	In	_	ADP	IN	_	3	case	_	ChatGPTHead=root
+2	some	_	DET	DT	_	3	det	_	ChatGPTHead=fields
+3	fields	_	NOUN	NNS	_	13	obl	_	ChatGPTHead=fields
+4	,	_	PUNCT	,	_	3	punct	_	ChatGPTHead=fields
+5	yearly	_	ADJ	JJ	_	6	amod	_	ChatGPTHead=data
+6	data	_	NOUN	NNS	_	13	nsubj	_	ChatGPTHead=numbers
+7	on	_	ADP	IN	_	9	case	_	ChatGPTHead=available
+8	faculty	_	NOUN	NN	_	9	compound	_	ChatGPTHead=numbers
+9	numbers	_	NOUN	NNS	_	6	nmod	_	ChatGPTHead=faculty
+10	and	_	CCONJ	CC	_	11	cc	_	ChatGPTHead=composition
+11	composition	_	NOUN	NN	_	9	conj	_	ChatGPTHead=numbers
+12	are	_	AUX	VBP	_	13	cop	_	ChatGPTHead=available
+13	available	_	ADJ	JJ	_	0	root	_	ChatGPTHead=are
+14	in	_	ADP	IN	_	15	case	_	ChatGPTHead=fields
+15	aggregate	_	NOUN	NN	_	13	obl	_	ChatGPTHead=data
+16	.	_	PUNCT	.	_	13	punct	_	ChatGPTHead=aggregate
+
+1	Such	_	ADJ	JJ	_	2	amod	_	ChatGPTHead=surveys
+2	surveys	_	NOUN	NNS	_	4	nsubj	_	ChatGPTHead=root
+3	can	_	AUX	MD	_	4	aux	_	ChatGPTHead=surveys
+4	provide	_	VERB	VB	_	0	root	_	ChatGPTHead=surveys
+5	valuable	_	ADJ	JJ	_	6	amod	_	ChatGPTHead=insight
+6	insight	_	NOUN	NN	_	4	obj	_	ChatGPTHead=trends
+7	into	_	ADP	IN	_	8	case	_	ChatGPTHead=provide
+8	trends	_	NOUN	NNS	_	6	nmod	_	ChatGPTHead=workforce
+9	and	_	CCONJ	CC	_	11	cc	_	ChatGPTHead=trends
+10	summary	_	NOUN	NN	_	11	compound	_	ChatGPTHead=statistics
+11	statistics	_	NOUN	NNS	_	8	conj	_	ChatGPTHead=workforce
+12	on	_	ADP	IN	_	15	case	_	ChatGPTHead=workforce
+13	the	_	DET	DT	_	15	det	_	ChatGPTHead=workforce
+14	scientific	_	ADJ	JJ	_	15	amod	_	ChatGPTHead=workforce
+15	workforce	_	NOUN	NN	_	11	nmod	_	ChatGPTHead=scientific
+16	but	_	CCONJ	CC	_	17	cc	_	ChatGPTHead=suffer
+17	suffer	_	VERB	VB	_	4	conj	_	ChatGPTHead=surveys
+18	from	_	ADP	IN	_	21	case	_	ChatGPTHead=suffer
+19	two	_	NUM	CD	_	21	nummod	_	ChatGPTHead=weaknesses
+20	key	_	ADJ	JJ	_	21	amod	_	ChatGPTHead=weaknesses
+21	weaknesses	_	NOUN	NNS	_	17	obl	_	ChatGPTHead=surveys
+22	.	_	PUNCT	.	_	4	punct	_	ChatGPTHead=weaknesses
+
+1	This	_	DET	DT	_	2	det	_	ChatGPTHead=system
+2	system	_	NOUN	NN	_	4	nsubj	_	ChatGPTHead=root
+3	is	_	AUX	VBZ	_	4	cop	_	ChatGPTHead=system
+4	efficient	_	ADJ	JJ	_	0	root	_	ChatGPTHead=system
+5	and	_	CCONJ	CC	_	6	cc	_	ChatGPTHead=efficient
+6	accurate	_	ADJ	JJ	_	4	conj	_	ChatGPTHead=system
+7	,	_	PUNCT	,	_	12	punct	_	ChatGPTHead=and
+8	and	_	CCONJ	CC	_	12	cc	_	ChatGPTHead=efficient
+9	it	_	PRON	PRP	_	12	nsubj:pass	_	ChatGPTHead=system
+10	can	_	AUX	MD	_	12	aux	_	ChatGPTHead=be
+11	be	_	AUX	VB	_	12	aux:pass	_	ChatGPTHead=is
+12	adapted	_	VERB	VBN	_	4	conj	_	ChatGPTHead=system
+13	to	_	ADP	IN	_	16	case	_	ChatGPTHead=used
+14	any	_	DET	DT	_	16	det	_	ChatGPTHead=discipline
+15	academic	_	ADJ	JJ	_	16	amod	_	ChatGPTHead=discipline
+16	discipline	_	NOUN	NN	_	12	obl	_	ChatGPTHead=system
+17	and	_	CCONJ	CC	_	18	cc	_	ChatGPTHead=efficient
+18	used	_	VERB	VBN	_	12	conj	_	ChatGPTHead=can
+19	for	_	ADP	IN	_	21	case	_	ChatGPTHead=collection
+20	continuous	_	ADJ	JJ	_	21	amod	_	ChatGPTHead=collection
+21	collection	_	NOUN	NN	_	18	obl	_	ChatGPTHead=collection modifies 'used'
+22	.	_	PUNCT	.	_	4	punct	_	ChatGPTHead=collection
+
+1	In	_	ADP	IN	_	2	case	_	ChatGPTHead=root
+2	short	_	ADJ	JJ	_	9	obl	_	ChatGPTHead=short modifies root
+3	,	_	PUNCT	,	_	2	punct	_	ChatGPTHead=In
+4	many	_	ADJ	JJ	_	7	amod	_	ChatGPTHead=questions
+5	important	_	ADJ	JJ	_	7	amod	_	ChatGPTHead=research
+6	research	_	NOUN	NN	_	7	compound	_	ChatGPTHead=questions
+7	questions	_	NOUN	NNS	_	9	nsubj	_	ChatGPTHead=research
+8	will	_	AUX	MD	_	9	aux	_	ChatGPTHead=benefit
+9	benefit	_	VERB	VB	_	0	root	_	ChatGPTHead=root
+10	from	_	ADP	IN	_	12	case	_	ChatGPTHead=benefit
+11	the	_	DET	DT	_	12	det	_	ChatGPTHead=census
+12	availability	_	NOUN	NN	_	9	obl	_	ChatGPTHead=data
+13	of	_	ADP	IN	_	20	case	_	ChatGPTHead=availability
+14	accurate	_	ADJ	JJ	_	20	amod	_	ChatGPTHead=data
+15	and	_	CCONJ	CC	_	18	cc	_	ChatGPTHead=frequently
+16	frequently	_	ADV	RB	_	18	advmod	_	ChatGPTHead=recollected
+17	-	_	PUNCT	HYPH	_	16	punct	_	ChatGPTHead=recollected
+18	recollected	_	VERB	VBN	_	14	conj	_	ChatGPTHead=census
+19	census	_	NOUN	NN	_	20	compound	_	ChatGPTHead=data
+20	data	_	NOUN	NNS	_	12	nmod	_	ChatGPTHead=census
+21	.	_	PUNCT	.	_	9	punct	_	ChatGPTHead=data
+
+1	Our	_	PRON	PRP$	_	2	nmod:poss	_	ChatGPTHead=study
+2	study	_	NOUN	NN	_	4	nsubj:pass	_	ChatGPTHead=root
+3	is	_	AUX	VBZ	_	4	aux:pass	_	ChatGPTHead=study
+4	organized	_	VERB	VBN	_	0	root	_	ChatGPTHead=study
+5	as	_	SCONJ	IN	_	6	mark	_	ChatGPTHead=follows
+6	follows	_	VERB	VBZ	_	4	advcl	_	ChatGPTHead=study
+7	.	_	PUNCT	.	_	4	punct	_	ChatGPTHead=follows
+
+1	We	_	PRON	PRP	_	2	nsubj	_	ChatGPTHead=root
+2	begin	_	VERB	VBP	_	0	root	_	ChatGPTHead=root
+3	by	_	SCONJ	IN	_	4	mark	_	ChatGPTHead=begin
+4	detailing	_	VERB	VBG	_	2	advcl	_	ChatGPTHead=begin
+5	the	_	DET	DT	_	6	det	_	ChatGPTHead=design
+6	design	_	NOUN	NN	_	4	obj	_	ChatGPTHead=framework
+7	and	_	CCONJ	CC	_	8	cc	_	ChatGPTHead=design
+8	implementation	_	NOUN	NN	_	6	conj	_	ChatGPTHead=design
+9	of	_	ADP	IN	_	13	case	_	ChatGPTHead=implementation
+10	our	_	PRON	PRP$	_	13	nmod:poss	_	ChatGPTHead=framework
+11	web	_	NOUN	NN	_	12	compound	_	ChatGPTHead=crawler
+12	crawler	_	NOUN	NN	_	13	compound	_	ChatGPTHead=framework
+13	framework	_	NOUN	NN	_	6	nmod	_	ChatGPTHead=crawler
+14	.	_	PUNCT	.	_	2	punct	_	ChatGPTHead=framework
+
+1	Next	_	ADV	RB	_	4	advmod	_	ChatGPTHead=root
+2	,	_	PUNCT	,	_	1	punct	_	ChatGPTHead=Next
+3	we	_	PRON	PRP	_	4	nsubj	_	ChatGPTHead=present
+4	present	_	VERB	VBP	_	0	root	_	ChatGPTHead=we
+5	the	_	DET	DT	_	6	det	_	ChatGPTHead=results
+6	results	_	NOUN	NNS	_	4	obj	_	ChatGPTHead=work
+7	of	_	ADP	IN	_	9	case	_	ChatGPTHead=work
+8	our	_	PRON	PRP$	_	9	nmod:poss	_	ChatGPTHead=work
+9	work	_	NOUN	NN	_	6	nmod	_	ChatGPTHead=results
+10	in	_	ADP	IN	_	12	case	_	ChatGPTHead=present
+11	two	_	NUM	CD	_	12	nummod	_	ChatGPTHead=sections
+12	sections	_	NOUN	NNS	_	4	obl	_	ChatGPTHead=work
+13	.	_	PUNCT	.	_	4	punct	_	ChatGPTHead=sections
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
