@@ -1,9 +1,12 @@
 import json
+import argparse
 
 def main():
-    input_file = "results.jsonl"  # Change if needed
+    parser = argparse.ArgumentParser(description="Review ChatGPT responses for syntactic attachment.")
+    parser.add_argument("input_file", help="Path to the results JSONL file.")
+    args = parser.parse_args()
 
-    with open(input_file) as f:
+    with open(args.input_file) as f:
         results = [json.loads(line) for line in f]
 
     for result in results:
