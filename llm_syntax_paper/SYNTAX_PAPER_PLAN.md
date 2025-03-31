@@ -112,6 +112,12 @@ We conduct two complementary experiments:
 python python/reranker/gptapi_as_reranker.py data/input/systematic_pp/chatgpt_generated_20.json --output_file data/output/reranker/chatgpt_generated_20.reranker.json
 ```
 
+eval:
+
+```bash
+python eval/evluate_chatgpt_as_reranker.py data/output/reranker/chatgpt_generated_20.reranker.json
+```
+
 #### 📈 Figure 4: General Parse Critique — ChatGPT as Error Detector
 
 **Description:**  
