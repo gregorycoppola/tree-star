@@ -1,24 +1,10 @@
-To provide the dependency parse of the sentence "How do people look at and experience art?" in CoNLL-U format, we need to identify the syntactic structure and relationships between the words. Here's the parse:
-
-```
-# text = How do people look at and experience art ?
-1	How	how	ADV	WRB	_	5	advmod	_	_
-2	do	do	AUX	VBP	_	5	aux	_	_
-3	people	people	NOUN	NNS	_	5	nsubj	_	_
-4	look	look	VERB	VB	_	5	compound:prt	_	_
-5	experience	experience	VERB	VB	_	0	root	_	_
-6	at	at	ADP	IN	_	5	compound:prt	_	_
-7	and	and	CCONJ	CC	_	5	cc	_	_
-8	art	art	NOUN	NN	_	5	obj	_	_
-9	?	?	PUNCT	.	_	5	punct	_	_
-```
-
-In this parse:
-- "How" is an adverb modifying the main verb "experience."
-- "do" is an auxiliary verb supporting the main verb "experience."
-- "people" is the subject of the verb "experience."
-- "look" and "at" form a phrasal verb with "experience," indicating the actions people perform.
-- "and" is a coordinating conjunction connecting "look at" and "experience."
-- "art" is the object of the verb "experience."
-- "?" is punctuation marking the end of the sentence.
+1	How	how	ADV	WRB	_	4	advmod	_	_
+2	do	do	AUX	VBP	_	4	aux	_	_
+3	people	people	NOUN	NNS	_	4	nsubj	_	_
+4	look	look	VERB	VB	_	0	root	_	_
+5	at	at	ADP	IN	_	7	case	_	_
+6	and	and	CCONJ	CC	_	7	cc	_	_
+7	experience	experience	VERB	VB	_	4	conj	_	_
+8	art	art	NOUN	NN	_	7	obj	_	_
+9	?	?	PUNCT	.	_	4	punct	_	_
 

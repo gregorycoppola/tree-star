@@ -45,7 +45,8 @@ def send_to_chatgpt(prompt, client, live):
 def query_chatgpt_parse(sentence, client, live):
     text = format_as_text(sentence)
     prompt = (
-        "You are a syntactic parser. Please output the correct dependency parse of the following sentence in CoNLL-U format.\n\n"
+        "You are a syntactic parser. Output only the dependency parse of the sentence below in valid CoNLL-U format.\n"
+        "Do not include any explanations, headers, or formatting (such as triple backticks). Just return the CoNLL-U lines.\n\n"
         f"Sentence: {text}"
     )
     return send_to_chatgpt(prompt, client, live)
