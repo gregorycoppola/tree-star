@@ -50,7 +50,7 @@ python python/preliminary/ask_chatgpt_tags.py data/input/preliminary/examples25.
 python python/preliminary/ask_chatgpt_arcs.py data/input/preliminary/examples25.conllu --live_run --output_file data/output/preliminary/examples25.conllu.ask_chatgpt_arcs.py.conllu
 
 # 3. Dependency Label Prediction (with gold heads)
-python python/preliminary/ask_chatgpt_rels.py data/input/preliminary/examples25.conllu --live_run --output_file preliminary/examples25.conllu.ask_chatgpt_rels
+python python/preliminary/ask_chatgpt_rels.py data/input/preliminary/examples25.conllu --live_run --output_file data/output/preliminary/examples25.conllu.ask_chatgpt_rels.py.conllu
 ```
 
 #### 📈 Figure 2: Decomposed Parsing Subtasks Performance
