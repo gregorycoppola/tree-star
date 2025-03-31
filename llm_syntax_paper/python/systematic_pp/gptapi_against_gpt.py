@@ -56,6 +56,9 @@ def get_llm_attachment_head(client: OpenAI, sentence: str, phrase: str) -> str:
             temperature=0,
         )
         answer = response.choices[0].message.content.strip()
+        print('--------------------------------')
+        print(answer)
+        print("================================================")
         return answer.split()[0].lower()
     except Exception as e:
         logging.error(f"Error calling OpenAI API: {e}")
