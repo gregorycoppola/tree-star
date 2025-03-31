@@ -83,6 +83,8 @@ Accuracy of ChatGPT when syntactic analysis is broken into individual tasks: POS
 # ask stanza parser
 python python/systematic_pp/stanza_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.json --live_run --output_file data/output/systematic_pp/chatgpt_generated_20.stanza.conllu
 
+python python/systematic_pp/stanza_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.heldout1.json --live_run --output_file data/output/systematic_pp/chatgpt_generated_20.heldout1.stanza.conllu
+
 # ask chatgpt api
 python python/systematic_pp/gptapi_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.json --live_run --output_base data/output/systematic_pp/chatgpt_generated_20.gptapi.json
 ```
