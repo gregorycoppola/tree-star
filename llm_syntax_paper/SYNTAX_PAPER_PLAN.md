@@ -126,8 +126,8 @@ ChatGPT's performance when asked to critique full parses without specific hints.
 | Metric                                    | Accuracy (%) |
 |-------------------------------------------|--------------|
 | ChatGPT on Correct Parser Outputs         | 100.00       |
-| ChatGPT on Incorrect Parser Outputs       | 10.00        |
-| Overall ChatGPT Accuracy                  | 55.00        |
+| ChatGPT on Incorrect Parser Outputs       | 0.00        |
+| Overall ChatGPT Accuracy                  | 50.00        |
 | Total Examples Evaluated                  | 20           |
 
 #### 4.4.2 **Targeted Attachment Critique**  
