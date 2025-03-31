@@ -126,6 +126,6 @@ python python/reranker/gptapi_as_reranker.py data/input/systematic_pp/chatgpt_ge
 - Explanation accuracy (manual)
 
 ```bash
-python measure/gptapi_against_gpt.py open-data/chatgpt_generated/set2_20examples.json --live_run --output_base open-data/chatgpt_generated/set2_predictions_chatgpt.json.2
+todo
 ```
 
