@@ -1,0 +1,11 @@
+INFO:root:Loaded 1 sentences.
+INFO:root:→ Sentence 1: How do people look at and experience art ?
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:root:✅ Got response.
+INFO:root:Saved results to data/output/sanity/examples1.conllu.ask_chatgpt_oneshot
+
+📊 Evaluation Results:
+Total tokens: 9
+POS Accuracy: 100.00%
+UAS: 77.78%
+LAS: 77.78%
