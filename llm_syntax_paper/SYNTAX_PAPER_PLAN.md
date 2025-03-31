@@ -123,10 +123,12 @@ python eval/evluate_chatgpt_as_reranker.py data/output/reranker/chatgpt_generate
 **Description:**  
 ChatGPT's performance when asked to critique full parses without specific hints. Manual evaluation measures binary correctness and plausibility of explanations.
 
-| Metric                    | Accuracy (%) |
-|---------------------------|--------------|
-| Error Detection Accuracy  | _.__         |
-| Explanation Plausibility  | _.__         |
+| Metric                                    | Accuracy (%) |
+|-------------------------------------------|--------------|
+| ChatGPT on Correct Parser Outputs         | 100.00       |
+| ChatGPT on Incorrect Parser Outputs       | 10.00        |
+| Overall ChatGPT Accuracy                  | 55.00        |
+| Total Examples Evaluated                  | 20           |
 
 #### 4.4.2 **Targeted Attachment Critique**  
 **Goal:** Evaluate ChatGPT's ability to detect *specific* errors in PP-attachment decisions.
@@ -140,8 +142,10 @@ python python/reranker/gptapi_with_hint.py data/input/systematic_pp/chatgpt_gene
 **Description:**  
 ChatGPT's accuracy when asked to evaluate a specific ambiguous prepositional phrase (e.g., "with the telescope"). Shows improvement over general critique task.
 
-| Metric                    | Accuracy (%) |
-|---------------------------|--------------|
-| Error Detection (targeted)| _.__         |
-| Explanation Plausibility  | _.__         |
+| Metric                                    | Accuracy (%) |
+|-------------------------------------------|--------------|
+| ChatGPT on Correct Parser Outputs         | 100.00       |
+| ChatGPT on Incorrect Parser Outputs       | 10.00        |
+| Overall ChatGPT Accuracy                  | 55.00        |
+| Total Examples Evaluated                  | 20           |
 
