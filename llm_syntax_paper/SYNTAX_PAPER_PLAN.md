@@ -12,7 +12,7 @@
 - Metrics: UAS, LAS, POS accuracy.
 
 ```bash
-python python/preliminary/ask_chatgpt_oneshot.py data/input/sanity/examples1.conllu --live_run --output_file data/output/sanity/examples1.conllu.ask_chatgpt_oneshot
+python python/preliminary/ask_chatgpt_oneshot.py --gold_file data/input/preliminary/examples25.conllu --live_run --output_file data/output/preliminary/examples25.conllu.ask_chatgpt_oneshot.py.conllu
 ```
 
 #### 📈 Figure 1: Zero-Shot Full Parsing Performance
