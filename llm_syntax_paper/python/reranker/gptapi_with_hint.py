@@ -58,12 +58,13 @@ def analyze_attachment(sentence_tokens, phrase: str, full_sentence: str) -> Dict
     }
 
 
-def build_prompt(conllu: str) -> str:
+def build_prompt(conllu: str, phrase: str) -> str:
     return (
         "Here is a dependency parse of a sentence in CoNLL-U format.\n"
-        "Do you see any errors in this parse?\n\n"
-        "1. If no errors, respond only with \"no\".\n"
-        "2. If yes, explain the most important or most obvious error in the sentence.\n\n"
+        f"Focus on the phrase: \"{phrase}\".\n\n"
+        "Is the attachment of this phrase correct in the dependency parse?\n"
+        "1. If the attachment is correct, respond only with \"yes\".\n"
+        "2. If it is incorrect, respond with \"no\" and explain briefly what the correct attachment should be.\n\n"
         f"{conllu}"
     )
 
