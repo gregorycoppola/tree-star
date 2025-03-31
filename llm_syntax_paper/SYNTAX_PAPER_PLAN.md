@@ -58,7 +58,7 @@ python python/preliminary/ask_chatgpt_rels.py data/input/sanity/examples1.conllu
 
 ask stanza parser
 ```bash
-python measure/stanza_against_gpt.py open-data/chatgpt_generated/set2_20examples.json --live_run --output_file open-data/chatgpt_generated/set2_predictions_stanza.conllu
+python python/systematic_pp/stanza_against_gpt.py data/input/systematic_pp/chatgpt_generated_20.json --live_run --output_file data/output/systematic_pp/chatgpt_generated_20.stanza.conllu
 ```
 
 ask chatgpt api
