@@ -14,7 +14,6 @@ def setup_args():
     parser.add_argument('--live_run', action='store_true', help='Actually send requests to OpenAI')
     parser.add_argument('--output_file', help='Where to save the CoNLL-U outputs')
     parser.add_argument('gold_file', help='Gold standard .conllu file (used for both input and evaluation)')
-    parser.add_argument('--eval', action='store_true', help='Evaluate the predictions against the gold file')
     args = parser.parse_args()
 
     if args.live_run and not args.output_file:
@@ -142,8 +141,8 @@ def main():
                 f.write(block.strip() + "\n\n")
         logging.info(f"Saved results to {args.output_file}")
 
-    if args.eval:
-        metrics = evaluate_conllu(sentences, results)
+    # Always evaluate
+    metrics = evaluate_conllu(sentences, results)
 
 if __name__ == "__main__":
     main()
