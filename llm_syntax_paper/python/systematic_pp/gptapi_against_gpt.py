@@ -44,6 +44,8 @@ def get_llm_attachment_head(client: OpenAI, sentence: str, phrase: str) -> str:
         f"Return only the head word."
     )
 
+    print(prompt)
+
     try:
         response = client.chat.completions.create(
             model="gpt-4",
