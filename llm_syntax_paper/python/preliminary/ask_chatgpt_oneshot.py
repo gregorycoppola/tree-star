@@ -13,7 +13,7 @@ def setup_args():
     parser = argparse.ArgumentParser(description='Send sentences to ChatGPT for zero-shot dependency parsing.')
     parser.add_argument('--live_run', action='store_true', help='Actually send requests to OpenAI')
     parser.add_argument('--output_file', help='Where to save the CoNLL-U outputs')
-    parser.add_argument('gold_file', help='Gold standard .conllu file (used for both input and evaluation)')
+    parser.add_argument('--gold_file', required=True, help='Gold standard .conllu file (used for both input and evaluation)')
     args = parser.parse_args()
 
     if args.live_run and not args.output_file:
