@@ -1,0 +1,102 @@
+[
+  {
+    "sentence": "The man lifted the box with the torn label.",
+    "ambiguous_phrase": "with the torn label",
+    "correct_attachment": "box"
+  },
+  {
+    "sentence": "She guided the tourist with the city map.",
+    "ambiguous_phrase": "with the city map",
+    "correct_attachment": "guided"
+  },
+  {
+    "sentence": "The actor recognized the fan with the bright smile.",
+    "ambiguous_phrase": "with the bright smile",
+    "correct_attachment": "fan"
+  },
+  {
+    "sentence": "He reached the building with the locked door.",
+    "ambiguous_phrase": "with the locked door",
+    "correct_attachment": "building"
+  },
+  {
+    "sentence": "The farmer loaded the cart with the hay.",
+    "ambiguous_phrase": "with the hay",
+    "correct_attachment": "loaded"
+  },
+  {
+    "sentence": "The woman spotted the bird with the striped wings.",
+    "ambiguous_phrase": "with the striped wings",
+    "correct_attachment": "bird"
+  },
+  {
+    "sentence": "She marked the page with the colorful sticker.",
+    "ambiguous_phrase": "with the colorful sticker",
+    "correct_attachment": "marked"
+  },
+  {
+    "sentence": "The boy called the dog with the floppy ears.",
+    "ambiguous_phrase": "with the floppy ears",
+    "correct_attachment": "dog"
+  },
+  {
+    "sentence": "They built the fence with the wooden posts.",
+    "ambiguous_phrase": "with the wooden posts",
+    "correct_attachment": "built"
+  },
+  {
+    "sentence": "The singer approached the crowd with the microphone.",
+    "ambiguous_phrase": "with the microphone",
+    "correct_attachment": "approached"
+  },
+  {
+    "sentence": "The teacher noticed the student with the confused look.",
+    "ambiguous_phrase": "with the confused look",
+    "correct_attachment": "student"
+  },
+  {
+    "sentence": "The chef sliced the bread with the serrated knife.",
+    "ambiguous_phrase": "with the serrated knife",
+    "correct_attachment": "sliced"
+  },
+  {
+    "sentence": "The girl hugged the bear with the missing eye.",
+    "ambiguous_phrase": "with the missing eye",
+    "correct_attachment": "bear"
+  },
+  {
+    "sentence": "He cleaned the room with the broom.",
+    "ambiguous_phrase": "with the broom",
+    "correct_attachment": "cleaned"
+  },
+  {
+    "sentence": "The team followed the leader with the compass.",
+    "ambiguous_phrase": "with the compass",
+    "correct_attachment": "leader"
+  },
+  {
+    "sentence": "She painted the mural with the bright colors.",
+    "ambiguous_phrase": "with the bright colors",
+    "correct_attachment": "painted"
+  },
+  {
+    "sentence": "The librarian handed the book to the child with the torn jacket.",
+    "ambiguous_phrase": "with the torn jacket",
+    "correct_attachment": "child"
+  },
+  {
+    "sentence": "The man drove the truck with the dented bumper.",
+    "ambiguous_phrase": "with the dented bumper",
+    "correct_attachment": "truck"
+  },
+  {
+    "sentence": "He mailed the letter with the decorative stamp.",
+    "ambiguous_phrase": "with the decorative stamp",
+    "correct_attachment": "mailed"
+  },
+  {
+    "sentence": "The nurse treated the patient with the broken arm.",
+    "ambiguous_phrase": "with the broken arm",
+    "correct_attachment": "patient"
+  }
+]
