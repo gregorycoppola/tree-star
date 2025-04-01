@@ -1,0 +1,136 @@
+Loading examples from data/input/systematic_pp/chatgpt_generated_20.heldout3.json
+Running in LIVE mode - will download and run Stanza
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/52.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 424kB [00:00, 17.1MB/s]                    
+2025-03-31 20:15:19 INFO: Downloaded file to /Users/greg/stanza_resources/resources.json
+Downloaded file to /Users/greg/stanza_resources/resources.json
+2025-03-31 20:15:19 INFO: Downloading default packages for language: en (English) ...
+Downloading default packages for language: en (English) ...
+2025-03-31 20:15:20 INFO: File exists: /Users/greg/stanza_resources/en/default.zip
+File exists: /Users/greg/stanza_resources/en/default.zip
+2025-03-31 20:15:25 INFO: Finished downloading models and saved to /Users/greg/stanza_resources
+Finished downloading models and saved to /Users/greg/stanza_resources
+2025-03-31 20:15:25 INFO: Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/52.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 131kB [00:00, 1.01MB/s]                    Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 424kB [00:00, 3.26MB/s]
+2025-03-31 20:15:25 INFO: Downloaded file to /Users/greg/stanza_resources/resources.json
+Downloaded file to /Users/greg/stanza_resources/resources.json
+2025-03-31 20:15:25 WARNING: Language en package default expects mwt, which has been added
+Language en package default expects mwt, which has been added
+2025-03-31 20:15:26 INFO: Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+2025-03-31 20:15:26 INFO: Using device: cpu
+Using device: cpu
+2025-03-31 20:15:26 INFO: Loading: tokenize
+Loading: tokenize
+2025-03-31 20:15:26 INFO: Loading: mwt
+Loading: mwt
+2025-03-31 20:15:26 INFO: Loading: pos
+Loading: pos
+2025-03-31 20:15:27 INFO: Loading: lemma
+Loading: lemma
+2025-03-31 20:15:28 INFO: Loading: depparse
+Loading: depparse
+2025-03-31 20:15:28 INFO: Done loading processors!
+Done loading processors!
+
+Example 1/20:
+Sentence: The reporter interviewed the woman with the notepad.
+→ Phrase: 'with the notepad' → predicted: 'interviewed', expected: 'reporter'
+
+Example 2/20:
+Sentence: He repaired the table with the loose leg.
+→ Phrase: 'with the loose leg' → predicted: 'repaired', expected: 'table'
+
+Example 3/20:
+Sentence: The child opened the gift with the red ribbon.
+→ Phrase: 'with the red ribbon' → predicted: 'opened', expected: 'gift'
+
+Example 4/20:
+Sentence: The photographer took a picture of the model with the long scarf.
+→ Phrase: 'with the long scarf' → predicted: 'took', expected: 'model'
+
+Example 5/20:
+Sentence: She held the baby with the warm blanket.
+→ Phrase: 'with the warm blanket' → predicted: 'held', expected: 'baby'
+
+Example 6/20:
+Sentence: The hikers reached the summit with the narrow trail.
+→ Phrase: 'with the narrow trail' → predicted: 'reached', expected: 'reached'
+
+Example 7/20:
+Sentence: The vet examined the dog with the injured paw.
+→ Phrase: 'with the injured paw' → predicted: 'examined', expected: 'dog'
+
+Example 8/20:
+Sentence: He caught the fish with the shiny lure.
+→ Phrase: 'with the shiny lure' → predicted: 'caught', expected: 'caught'
+
+Example 9/20:
+Sentence: They painted the wall with the bold colors.
+→ Phrase: 'with the bold colors' → predicted: 'painted', expected: 'painted'
+
+Example 10/20:
+Sentence: The actor greeted the fan with the autograph book.
+→ Phrase: 'with the autograph book' → predicted: 'greeted', expected: 'fan'
+
+Example 11/20:
+Sentence: The player passed the ball with the red stripe.
+→ Phrase: 'with the red stripe' → predicted: 'passed', expected: 'ball'
+
+Example 12/20:
+Sentence: She chased the cat with the jingling collar.
+→ Phrase: 'with the jingling collar' → predicted: 'chased', expected: 'cat'
+
+Example 13/20:
+Sentence: The carpenter measured the board with the metal ruler.
+→ Phrase: 'with the metal ruler' → predicted: 'measured', expected: 'measured'
+
+Example 14/20:
+Sentence: The student read the book with the torn cover.
+→ Phrase: 'with the torn cover' → predicted: 'read', expected: 'book'
+
+Example 15/20:
+Sentence: The knight struck the dragon with the glowing sword.
+→ Phrase: 'with the glowing sword' → predicted: 'struck', expected: 'struck'
+
+Example 16/20:
+Sentence: The tourist visited the castle with the tall towers.
+→ Phrase: 'with the tall towers' → predicted: 'visited', expected: 'castle'
+
+Example 17/20:
+Sentence: He cleaned the window with the streaks.
+→ Phrase: 'with the streaks' → predicted: 'cleaned', expected: 'window'
+
+Example 18/20:
+Sentence: She observed the painting with the golden frame.
+→ Phrase: 'with the golden frame' → predicted: 'observed', expected: 'painting'
+
+Example 19/20:
+Sentence: The teacher praised the student with the best answer.
+→ Phrase: 'with the best answer' → predicted: 'praised', expected: 'student'
+
+Example 20/20:
+Sentence: The waiter served the dish with the spicy sauce.
+→ Phrase: 'with the spicy sauce' → predicted: 'served', expected: 'served'
+
+Final Accuracy: 6/20 = 30.00%
