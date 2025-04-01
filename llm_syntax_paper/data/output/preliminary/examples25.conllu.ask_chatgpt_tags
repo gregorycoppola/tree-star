@@ -1,0 +1,602 @@
+1	Aesthetic	_	ADJ	JJ	_	2	amod	_	ChatGPTUPOS=ADJ
+2	Appreciation	_	NOUN	NN	_	0	root	_	ChatGPTUPOS=NOUN
+3	and	_	CCONJ	CC	_	5	cc	_	ChatGPTUPOS=CONJ
+4	Spanish	_	ADJ	JJ	_	5	amod	_	ChatGPTUPOS=ADJ
+5	Art	_	NOUN	NN	_	2	conj	_	ChatGPTUPOS=NOUN
+6	:	_	PUNCT	:	_	2	punct	_	ChatGPTUPOS=PUNCT
+
+1	Which	_	DET	WDT	_	2	det	_	ChatGPTUPOS=DET
+2	elements	_	NOUN	NNS	_	8	obl	_	ChatGPTUPOS=NOUN
+3	of	_	ADP	IN	_	5	case	_	ChatGPTUPOS=ADP
+4	specific	_	ADJ	JJ	_	5	amod	_	ChatGPTUPOS=ADJ
+5	artworks	_	NOUN	NNS	_	2	nmod	_	ChatGPTUPOS=NOUN
+6	do	_	AUX	VBP	_	8	aux	_	ChatGPTUPOS=AUX
+7	they	_	PRON	PRP	_	8	nsubj	_	ChatGPTUPOS=PRON
+8	focus	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+9	on	_	ADP	IN	_	2	case	_	ChatGPTUPOS=ADP
+10	?	_	PUNCT	.	_	8	punct	_	ChatGPTUPOS=PUNCT
+
+1	Do	_	AUX	VBP	_	4	aux	_	ChatGPTUPOS=AUX
+2	museum	_	NOUN	NN	_	3	compound	_	ChatGPTUPOS=NOUN
+3	labels	_	NOUN	NNS	_	4	nsubj	_	ChatGPTUPOS=NOUN
+4	have	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+5	an	_	DET	DT	_	6	det	_	ChatGPTUPOS=DET
+6	impact	_	NOUN	NN	_	4	obj	_	ChatGPTUPOS=NOUN
+7	on	_	ADP	IN	_	8	case	_	ChatGPTUPOS=ADP
+8	how	_	ADV	WRB	_	6	nmod	_	ChatGPTUPOS=ADV
+9	people	_	NOUN	NNS	_	10	nsubj	_	ChatGPTUPOS=NOUN
+10	look	_	VERB	VBP	_	8	advcl:relcl	_	ChatGPTUPOS=VERB
+11	at	_	ADP	IN	_	12	case	_	ChatGPTUPOS=ADP
+12	artworks	_	NOUN	NNS	_	10	obl	_	ChatGPTUPOS=NOUN
+13	?	_	PUNCT	.	_	4	punct	_	ChatGPTUPOS=PUNCT
+
+1	The	_	DET	DT	_	3	det	_	ChatGPTUPOS=DET
+2	viewing	_	NOUN	NN	_	3	compound	_	ChatGPTUPOS=NOUN
+3	experience	_	NOUN	NN	_	9	nsubj	_	ChatGPTUPOS=NOUN
+4	of	_	ADP	IN	_	5	case	_	ChatGPTUPOS=ADP
+5	art	_	NOUN	NN	_	3	nmod	_	ChatGPTUPOS=NOUN
+6	is	_	AUX	VBZ	_	9	cop	_	ChatGPTUPOS=AUX
+7	a	_	DET	DT	_	9	det	_	ChatGPTUPOS=DET
+8	complex	_	ADJ	JJ	_	9	amod	_	ChatGPTUPOS=ADJ
+9	one	_	NOUN	NN	_	0	root	_	ChatGPTUPOS=NOUN
+10	,	_	PUNCT	,	_	11	punct	_	ChatGPTUPOS=PUNCT
+11	involving	_	VERB	VBG	_	9	acl	_	ChatGPTUPOS=VERB
+12	issues	_	NOUN	NNS	_	11	obj	_	ChatGPTUPOS=NOUN
+13	of	_	ADP	IN	_	14	case	_	ChatGPTUPOS=ADP
+14	perception	_	NOUN	NN	_	12	nmod	_	ChatGPTUPOS=NOUN
+15	,	_	PUNCT	,	_	16	punct	_	ChatGPTUPOS=PUNCT
+16	attention	_	NOUN	NN	_	14	conj	_	ChatGPTUPOS=NOUN
+17	,	_	PUNCT	,	_	18	punct	_	ChatGPTUPOS=PUNCT
+18	memory	_	NOUN	NN	_	14	conj	_	ChatGPTUPOS=NOUN
+19	,	_	PUNCT	,	_	20	punct	_	ChatGPTUPOS=PUNCT
+20	decision	_	NOUN	NN	_	22	compound	_	ChatGPTUPOS=NOUN
+21	-	_	PUNCT	HYPH	_	20	punct	_	ChatGPTUPOS=PUNCT
+22	making	_	VERB	VBG	_	14	conj	_	ChatGPTUPOS=NOUN
+23	,	_	PUNCT	,	_	24	punct	_	ChatGPTUPOS=PUNCT
+24	affect	_	NOUN	NN	_	14	conj	_	ChatGPTUPOS=NOUN
+25	,	_	PUNCT	,	_	27	punct	_	ChatGPTUPOS=PUNCT
+26	and	_	CCONJ	CC	_	27	cc	_	ChatGPTUPOS=CCONJ
+27	emotion	_	NOUN	NN	_	14	conj	_	ChatGPTUPOS=NOUN
+28	.	_	PUNCT	.	_	9	punct	_	ChatGPTUPOS=PUNCT
+
+1	Thus	_	ADV	RB	_	16	advmod	_	ChatGPTUPOS=ADV
+2	,	_	PUNCT	,	_	1	punct	_	ChatGPTUPOS=PUNCT
+3	the	_	DET	DT	_	4	det	_	ChatGPTUPOS=DET
+4	time	_	NOUN	NN	_	16	nsubj	_	ChatGPTUPOS=NOUN
+5	it	_	PRON	PRP	_	6	nsubj	_	ChatGPTUPOS=PRON
+6	takes	_	VERB	VBZ	_	4	acl:relcl	_	ChatGPTUPOS=VERB
+7	and	_	CCONJ	CC	_	9	cc	_	ChatGPTUPOS=CONJ
+8	the	_	DET	DT	_	9	det	_	ChatGPTUPOS=DET
+9	ways	_	NOUN	NNS	_	4	conj	_	ChatGPTUPOS=NOUN
+10	of	_	SCONJ	IN	_	12	mark	_	ChatGPTUPOS=ADP
+11	visually	_	ADV	RB	_	12	advmod	_	ChatGPTUPOS=ADV
+12	exploring	_	VERB	VBG	_	9	acl	_	ChatGPTUPOS=VERB
+13	an	_	DET	DT	_	14	det	_	ChatGPTUPOS=DET
+14	artwork	_	NOUN	NN	_	12	obj	_	ChatGPTUPOS=NOUN
+15	can	_	AUX	MD	_	16	aux	_	ChatGPTUPOS=AUX
+16	inform	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+17	about	_	ADP	IN	_	19	case	_	ChatGPTUPOS=ADP
+18	its	_	PRON	PRP$	_	19	nmod:poss	_	ChatGPTUPOS=PRON
+19	relevance	_	NOUN	NN	_	16	obl	_	ChatGPTUPOS=NOUN
+20	,	_	PUNCT	,	_	21	punct	_	ChatGPTUPOS=PUNCT
+21	interestingness	_	NOUN	NN	_	19	conj	_	ChatGPTUPOS=NOUN
+22	,	_	PUNCT	,	_	27	punct	_	ChatGPTUPOS=PUNCT
+23	and	_	CCONJ	CC	_	27	cc	_	ChatGPTUPOS=CONJ
+24	even	_	ADV	RB	_	27	advmod	_	ChatGPTUPOS=ADV
+25	its	_	PRON	PRP$	_	27	nmod:poss	_	ChatGPTUPOS=PRON
+26	aesthetic	_	ADJ	JJ	_	27	amod	_	ChatGPTUPOS=ADJ
+27	appeal	_	NOUN	NN	_	19	conj	_	ChatGPTUPOS=NOUN
+28	.	_	PUNCT	.	_	16	punct	_	ChatGPTUPOS=PUNCT
+
+1	This	_	DET	DT	_	2	det	_	ChatGPTUPOS=DET
+2	paper	_	NOUN	NN	_	3	nsubj	_	ChatGPTUPOS=NOUN
+3	describes	_	VERB	VBZ	_	0	root	_	ChatGPTUPOS=VERB
+4	a	_	DET	DT	_	7	det	_	ChatGPTUPOS=DET
+5	collaborative	_	ADJ	JJ	_	7	amod	_	ChatGPTUPOS=ADJ
+6	pilot	_	NOUN	NN	_	7	compound	_	ChatGPTUPOS=ADJ
+7	project	_	NOUN	NN	_	3	obj	_	ChatGPTUPOS=NOUN
+8	focusing	_	VERB	VBG	_	7	acl	_	ChatGPTUPOS=VERB
+9	on	_	ADP	IN	_	12	case	_	ChatGPTUPOS=ADP
+10	a	_	DET	DT	_	12	det	_	ChatGPTUPOS=DET
+11	unique	_	ADJ	JJ	_	12	amod	_	ChatGPTUPOS=ADJ
+12	collection	_	NOUN	NN	_	8	obl	_	ChatGPTUPOS=NOUN
+13	of	_	ADP	IN	_	17	case	_	ChatGPTUPOS=ADP
+14	17th	_	ADJ	JJ	_	15	amod	_	ChatGPTUPOS=ADJ
+15	Century	_	NOUN	NN	_	17	compound	_	ChatGPTUPOS=NOUN
+16	Zurbarán	_	PROPN	NNP	_	17	compound	_	ChatGPTUPOS=PROPN
+17	paintings	_	NOUN	NNS	_	12	nmod	_	ChatGPTUPOS=NOUN
+18	.	_	PUNCT	.	_	3	punct	_	ChatGPTUPOS=PUNCT
+
+1	The	_	DET	DT	_	3	det	_	ChatGPTUPOS=DET
+2	Jacob	_	PROPN	NNP	_	3	compound	_	ChatGPTUPOS=PROPN
+3	cycle	_	PROPN	NNP	_	11	nsubj	_	ChatGPTUPOS=NOUN
+4	at	_	ADP	IN	_	6	case	_	ChatGPTUPOS=ADP
+5	Auckland	_	PROPN	NNP	_	6	compound	_	ChatGPTUPOS=PROPN
+6	Castle	_	PROPN	NNP	_	3	nmod	_	ChatGPTUPOS=NOUN
+7	is	_	AUX	VBZ	_	11	cop	_	ChatGPTUPOS=AUX
+8	the	_	DET	DT	_	11	det	_	ChatGPTUPOS=DET
+9	only	_	ADJ	JJ	_	11	amod	_	ChatGPTUPOS=ADV
+10	UK	_	PROPN	NNP	_	11	compound	_	ChatGPTUPOS=PROPN
+11	example	_	NOUN	NN	_	0	root	_	ChatGPTUPOS=NOUN
+12	of	_	ADP	IN	_	15	case	_	ChatGPTUPOS=ADP
+13	a	_	DET	DT	_	15	det	_	ChatGPTUPOS=DET
+14	continental	_	ADJ	JJ	_	15	amod	_	ChatGPTUPOS=ADJ
+15	collection	_	NOUN	NN	_	11	nmod	_	ChatGPTUPOS=NOUN
+16	preserved	_	VERB	VBN	_	15	acl	_	ChatGPTUPOS=VERB
+17	in	_	X	FW	_	18	case	_	ChatGPTUPOS=ADP
+18	situ	_	X	FW	_	16	obl	_	ChatGPTUPOS=NOUN
+19	in	_	ADP	IN	_	23	case	_	ChatGPTUPOS=ADP
+20	purpose	_	NOUN	NN	_	22	compound	_	ChatGPTUPOS=NOUN
+21	-	_	PUNCT	HYPH	_	20	punct	_	ChatGPTUPOS=PUNCT
+22	built	_	VERB	VBN	_	23	amod	_	ChatGPTUPOS=ADJ
+23	surroundings	_	NOUN	NNS	_	16	obl	_	ChatGPTUPOS=NOUN
+24	.	_	PUNCT	.	_	11	punct	_	ChatGPTUPOS=PUNCT
+
+1	The	_	DET	DT	_	2	det	_	ChatGPTUPOS=DET
+2	purpose	_	NOUN	NN	_	9	nsubj:outer	_	ChatGPTUPOS=NOUN
+3	of	_	ADP	IN	_	6	case	_	ChatGPTUPOS=ADP
+4	this	_	DET	DT	_	6	det	_	ChatGPTUPOS=DET
+5	pilot	_	NOUN	NN	_	6	compound	_	ChatGPTUPOS=ADJ
+6	study	_	NOUN	NN	_	2	nmod	_	ChatGPTUPOS=NOUN
+7	was	_	AUX	VBD	_	9	cop	_	ChatGPTUPOS=AUX
+8	to	_	PART	TO	_	9	mark	_	ChatGPTUPOS=PART
+9	assess	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+10	the	_	DET	DT	_	11	det	_	ChatGPTUPOS=DET
+11	effects	_	NOUN	NNS	_	9	obj	_	ChatGPTUPOS=NOUN
+12	of	_	ADP	IN	_	15	case	_	ChatGPTUPOS=ADP
+13	different	_	ADJ	JJ	_	15	amod	_	ChatGPTUPOS=ADJ
+14	written	_	VERB	VBN	_	15	amod	_	ChatGPTUPOS=ADJ
+15	interpretation	_	NOUN	NN	_	11	nmod	_	ChatGPTUPOS=NOUN
+16	on	_	ADP	IN	_	19	case	_	ChatGPTUPOS=ADP
+17	the	_	DET	DT	_	19	det	_	ChatGPTUPOS=DET
+18	visual	_	ADJ	JJ	_	19	amod	_	ChatGPTUPOS=ADJ
+19	exploration	_	NOUN	NN	_	15	nmod	_	ChatGPTUPOS=NOUN
+20	of	_	ADP	IN	_	21	case	_	ChatGPTUPOS=ADP
+21	artworks	_	NOUN	NNS	_	19	nmod	_	ChatGPTUPOS=NOUN
+22	.	_	PUNCT	.	_	9	punct	_	ChatGPTUPOS=PUNCT
+
+1	We	_	PRON	PRP	_	3	nsubj	_	ChatGPTUPOS=PRON
+2	will	_	AUX	MD	_	3	aux	_	ChatGPTUPOS=AUX
+3	discuss	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+4	the	_	DET	DT	_	6	det	_	ChatGPTUPOS=DET
+5	potential	_	ADJ	JJ	_	6	amod	_	ChatGPTUPOS=ADJ
+6	implications	_	NOUN	NNS	_	3	obj	_	ChatGPTUPOS=NOUN
+7	of	_	ADP	IN	_	9	case	_	ChatGPTUPOS=ADP
+8	these	_	DET	DT	_	9	det	_	ChatGPTUPOS=DET
+9	techniques	_	NOUN	NNS	_	6	nmod	_	ChatGPTUPOS=NOUN
+10	and	_	CCONJ	CC	_	12	cc	_	ChatGPTUPOS=CONJ
+11	our	_	PRON	PRP$	_	12	nmod:poss	_	ChatGPTUPOS=PRON
+12	understanding	_	NOUN	NN	_	6	conj	_	ChatGPTUPOS=NOUN
+13	of	_	ADP	IN	_	15	case	_	ChatGPTUPOS=ADP
+14	visual	_	ADJ	JJ	_	15	amod	_	ChatGPTUPOS=ADJ
+15	behaviours	_	NOUN	NNS	_	12	nmod	_	ChatGPTUPOS=NOUN
+16	on	_	ADP	IN	_	20	case	_	ChatGPTUPOS=ADP
+17	museum	_	NOUN	NN	_	20	compound	_	ChatGPTUPOS=NOUN
+18	and	_	CCONJ	CC	_	19	cc	_	ChatGPTUPOS=CONJ
+19	gallery	_	NOUN	NN	_	17	conj	_	ChatGPTUPOS=NOUN
+20	practice	_	NOUN	NN	_	12	nmod	_	ChatGPTUPOS=NOUN
+21	.	_	PUNCT	.	_	3	punct	_	ChatGPTUPOS=PUNCT
+
+1	Our	_	PRON	PRP$	_	2	nmod:poss	_	ChatGPTUPOS=PRON
+2	experience	_	NOUN	NN	_	5	nsubj	_	ChatGPTUPOS=NOUN
+3	of	_	ADP	IN	_	4	case	_	ChatGPTUPOS=ADP
+4	art	_	NOUN	NN	_	2	nmod	_	ChatGPTUPOS=NOUN
+5	develops	_	VERB	VBZ	_	0	root	_	ChatGPTUPOS=VERB
+6	from	_	ADP	IN	_	8	case	_	ChatGPTUPOS=ADP
+7	the	_	DET	DT	_	8	det	_	ChatGPTUPOS=DET
+8	interaction	_	NOUN	NN	_	5	obl	_	ChatGPTUPOS=NOUN
+9	of	_	ADP	IN	_	14	case	_	ChatGPTUPOS=ADP
+10	several	_	ADJ	JJ	_	14	amod	_	ChatGPTUPOS=ADJ
+11	cognitive	_	ADJ	JJ	_	14	amod	_	ChatGPTUPOS=ADJ
+12	and	_	CCONJ	CC	_	13	cc	_	ChatGPTUPOS=CONJ
+13	affective	_	ADJ	JJ	_	11	conj	_	ChatGPTUPOS=ADJ
+14	processes	_	NOUN	NNS	_	8	nmod	_	ChatGPTUPOS=NOUN
+15	;	_	PUNCT	:	_	23	punct	_	ChatGPTUPOS=PUNCT
+16	the	_	DET	DT	_	17	det	_	ChatGPTUPOS=DET
+17	beginning	_	NOUN	NN	_	23	nsubj	_	ChatGPTUPOS=NOUN
+18	of	_	ADP	IN	_	19	case	_	ChatGPTUPOS=ADP
+19	which	_	PRON	WDT	_	17	nmod	_	ChatGPTUPOS=PRON
+20	is	_	AUX	VBZ	_	23	cop	_	ChatGPTUPOS=AUX
+21	a	_	DET	DT	_	23	det	_	ChatGPTUPOS=DET
+22	visual	_	ADJ	JJ	_	23	amod	_	ChatGPTUPOS=ADJ
+23	scan	_	NOUN	NN	_	14	acl:relcl	_	ChatGPTUPOS=NOUN
+24	of	_	ADP	IN	_	26	case	_	ChatGPTUPOS=ADP
+25	the	_	DET	DT	_	26	det	_	ChatGPTUPOS=DET
+26	artwork	_	NOUN	NN	_	23	nmod	_	ChatGPTUPOS=NOUN
+27	.	_	PUNCT	.	_	5	punct	_	ChatGPTUPOS=PUNCT
+
+1	When	_	ADV	WRB	_	2	advmod	_	ChatGPTUPOS=SCONJ
+2	regarding	_	VERB	VBG	_	8	advcl	_	ChatGPTUPOS=VERB
+3	an	_	DET	DT	_	4	det	_	ChatGPTUPOS=DET
+4	artwork	_	NOUN	NN	_	2	obj	_	ChatGPTUPOS=NOUN
+5	,	_	PUNCT	,	_	2	punct	_	ChatGPTUPOS=PUNCT
+6	a	_	DET	DT	_	7	det	_	ChatGPTUPOS=DET
+7	viewer	_	NOUN	NN	_	8	nsubj	_	ChatGPTUPOS=NOUN
+8	gathers	_	VERB	VBZ	_	0	root	_	ChatGPTUPOS=VERB
+9	information	_	NOUN	NN	_	8	obj	_	ChatGPTUPOS=NOUN
+10	through	_	ADP	IN	_	13	case	_	ChatGPTUPOS=ADP
+11	a	_	DET	DT	_	13	det	_	ChatGPTUPOS=DET
+12	series	_	NOUN	NN	_	13	compound	_	ChatGPTUPOS=NOUN
+13	fixations	_	NOUN	NNS	_	8	obl	_	ChatGPTUPOS=NOUN
+14	,	_	PUNCT	,	_	15	punct	_	ChatGPTUPOS=PUNCT
+15	interspersed	_	VERB	VBN	_	13	acl	_	ChatGPTUPOS=VERB
+16	by	_	ADP	IN	_	18	case	_	ChatGPTUPOS=ADP
+17	rapid	_	ADJ	JJ	_	18	amod	_	ChatGPTUPOS=ADJ
+18	movements	_	NOUN	NNS	_	15	obl:agent	_	ChatGPTUPOS=NOUN
+19	of	_	ADP	IN	_	21	case	_	ChatGPTUPOS=ADP
+20	the	_	DET	DT	_	21	det	_	ChatGPTUPOS=DET
+21	eye	_	NOUN	NN	_	18	nmod	_	ChatGPTUPOS=NOUN
+22	called	_	VERB	VBN	_	18	acl	_	ChatGPTUPOS=VERB
+23	saccades	_	NOUN	NNS	_	22	obj	_	ChatGPTUPOS=NOUN
+24	.	_	PUNCT	.	_	8	punct	_	ChatGPTUPOS=PUNCT
+
+1	It	_	PRON	PRP	_	5	nsubj	_	ChatGPTUPOS=PRON
+2	is	_	AUX	VBZ	_	5	cop	_	ChatGPTUPOS=AUX
+3	the	_	DET	DT	_	5	det	_	ChatGPTUPOS=DET
+4	only	_	ADJ	JJ	_	5	amod	_	ChatGPTUPOS=ADJ
+5	cycle	_	NOUN	NN	_	0	root	_	ChatGPTUPOS=NOUN
+6	to	_	PART	TO	_	8	mark	_	ChatGPTUPOS=PARTICLE
+7	be	_	AUX	VB	_	8	aux:pass	_	ChatGPTUPOS=AUX
+8	preserved	_	VERB	VBN	_	5	acl	_	ChatGPTUPOS=VERB
+9	in	_	ADP	IN	_	13	case	_	ChatGPTUPOS=ADP
+10	purpose	_	NOUN	NN	_	12	compound	_	ChatGPTUPOS=NOUN
+11	-	_	PUNCT	HYPH	_	10	punct	_	ChatGPTUPOS=PUNCT
+12	built	_	VERB	VBN	_	13	amod	_	ChatGPTUPOS=ADJ
+13	surroundings	_	NOUN	NNS	_	8	obl	_	ChatGPTUPOS=NOUN
+14	in	_	ADP	IN	_	16	case	_	ChatGPTUPOS=ADP
+15	the	_	DET	DT	_	16	det	_	ChatGPTUPOS=DET
+16	UK	_	PROPN	NNP	_	13	nmod	_	ChatGPTUPOS=PROPN
+17	,	_	PUNCT	,	_	19	punct	_	ChatGPTUPOS=PUNCT
+18	and	_	CCONJ	CC	_	19	cc	_	ChatGPTUPOS=CONJ
+19	one	_	NUM	CD	_	5	conj	_	ChatGPTUPOS=NUM
+20	of	_	ADP	IN	_	22	case	_	ChatGPTUPOS=ADP
+21	very	_	ADV	RB	_	22	advmod	_	ChatGPTUPOS=ADV
+22	few	_	ADJ	JJ	_	19	nmod	_	ChatGPTUPOS=ADJ
+23	of	_	ADP	IN	_	25	case	_	ChatGPTUPOS=ADP
+24	its	_	PRON	PRP$	_	25	nmod:poss	_	ChatGPTUPOS=PRON
+25	kind	_	NOUN	NN	_	22	obl	_	ChatGPTUPOS=NOUN
+26	in	_	ADP	IN	_	28	case	_	ChatGPTUPOS=ADP
+27	the	_	DET	DT	_	28	det	_	ChatGPTUPOS=DET
+28	world	_	NOUN	NN	_	25	nmod	_	ChatGPTUPOS=NOUN
+29	.	_	PUNCT	.	_	5	punct	_	ChatGPTUPOS=PUNCT
+
+1	It	_	PRON	PRP	_	2	nsubj	_	ChatGPTUPOS=PRON
+2	has	_	VERB	VBZ	_	0	root	_	ChatGPTUPOS=AUX
+3	a	_	DET	DT	_	5	det	_	ChatGPTUPOS=DET
+4	long	_	ADJ	JJ	_	5	amod	_	ChatGPTUPOS=ADJ
+5	history	_	NOUN	NN	_	2	obj	_	ChatGPTUPOS=NOUN
+6	in	_	ADP	IN	_	7	case	_	ChatGPTUPOS=ADP
+7	scholarship	_	NOUN	NN	_	2	obl	_	ChatGPTUPOS=NOUN
+8	(	_	PUNCT	-LRB-	_	9	punct	_	ChatGPTUPOS=PUNCT
+9	Baron	_	PROPN	NNP	_	2	dep	_	ChatGPTUPOS=PROPN
+10	&	_	CCONJ	CC	_	11	cc	_	ChatGPTUPOS=CONJ
+11	Beresford	_	PROPN	NNP	_	9	conj	_	ChatGPTUPOS=PROPN
+12	2014	_	NUM	CD	_	9	nmod:unmarked	_	ChatGPTUPOS=NUM
+13	)	_	PUNCT	-RRB-	_	9	punct	_	ChatGPTUPOS=PUNCT
+14	,	_	PUNCT	,	_	29	punct	_	ChatGPTUPOS=PUNCT
+15	but	_	CCONJ	CC	_	29	cc	_	ChatGPTUPOS=CONJ
+16	many	_	ADJ	JJ	_	18	amod	_	ChatGPTUPOS=DET
+17	key	_	ADJ	JJ	_	18	amod	_	ChatGPTUPOS=ADJ
+18	aspects	_	NOUN	NNS	_	29	nsubj:pass	_	ChatGPTUPOS=NOUN
+19	of	_	ADP	IN	_	21	case	_	ChatGPTUPOS=ADP
+20	its	_	PRON	PRP$	_	21	nmod:poss	_	ChatGPTUPOS=PRON
+21	production	_	NOUN	NN	_	18	nmod	_	ChatGPTUPOS=NOUN
+22	and	_	CCONJ	CC	_	23	cc	_	ChatGPTUPOS=CONJ
+23	significance	_	NOUN	NN	_	21	conj	_	ChatGPTUPOS=NOUN
+24	have	_	AUX	VBP	_	29	aux	_	ChatGPTUPOS=AUX
+25	not	_	PART	RB	_	29	advmod	_	ChatGPTUPOS=PARTICLE
+26	yet	_	ADV	RB	_	29	advmod	_	ChatGPTUPOS=ADV
+27	been	_	AUX	VBN	_	29	aux:pass	_	ChatGPTUPOS=AUX
+28	fully	_	ADV	RB	_	29	advmod	_	ChatGPTUPOS=ADV
+29	understood	_	VERB	VBN	_	2	conj	_	ChatGPTUPOS=VERB
+30	.	_	PUNCT	.	_	2	punct	_	ChatGPTUPOS=PUNCT
+
+1	Past	_	ADJ	JJ	_	2	amod	_	ChatGPTUPOS=ADJ
+2	studies	_	NOUN	NNS	_	3	nsubj	_	ChatGPTUPOS=NOUN
+3	establish	_	VERB	VBP	_	0	root	_	ChatGPTUPOS=VERB
+4	that	_	SCONJ	IN	_	13	mark	_	ChatGPTUPOS=SCONJ
+5	each	_	DET	DT	_	13	nsubj:pass	_	ChatGPTUPOS=DET
+6	of	_	ADP	IN	_	8	case	_	ChatGPTUPOS=ADP
+7	these	_	DET	DT	_	8	det	_	ChatGPTUPOS=DET
+8	efforts	_	NOUN	NNS	_	5	nmod	_	ChatGPTUPOS=NOUN
+9	is	_	AUX	VBZ	_	13	aux:pass	_	ChatGPTUPOS=AUX
+10	strongly	_	ADV	RB	_	13	advmod	_	ChatGPTUPOS=ADV
+11	and	_	CCONJ	CC	_	12	cc	_	ChatGPTUPOS=CONJ
+12	positively	_	ADV	RB	_	10	conj	_	ChatGPTUPOS=ADV
+13	influenced	_	VERB	VBN	_	3	ccomp	_	ChatGPTUPOS=VERB
+14	through	_	ADP	IN	_	16	case	_	ChatGPTUPOS=ADP
+15	various	_	ADJ	JJ	_	16	amod	_	ChatGPTUPOS=ADJ
+16	forms	_	NOUN	NNS	_	13	obl	_	ChatGPTUPOS=NOUN
+17	of	_	ADP	IN	_	19	case	_	ChatGPTUPOS=ADP
+18	faculty	_	NOUN	NN	_	19	compound	_	ChatGPTUPOS=NOUN
+19	diversity	_	NOUN	NN	_	16	nmod	_	ChatGPTUPOS=NOUN
+20	,	_	PUNCT	,	_	21	punct	_	ChatGPTUPOS=PUNCT
+21	including	_	VERB	VBG	_	28	case	_	ChatGPTUPOS=ADP
+22	ethnic	_	ADJ	JJ	_	28	amod	_	ChatGPTUPOS=ADJ
+23	,	_	PUNCT	,	_	24	punct	_	ChatGPTUPOS=PUNCT
+24	racial	_	ADJ	JJ	_	22	conj	_	ChatGPTUPOS=ADJ
+25	,	_	PUNCT	,	_	27	punct	_	ChatGPTUPOS=PUNCT
+26	and	_	CCONJ	CC	_	27	cc	_	ChatGPTUPOS=CONJ
+27	gender	_	NOUN	NN	_	22	conj	_	ChatGPTUPOS=NOUN
+28	diversity	_	NOUN	NN	_	16	nmod	_	ChatGPTUPOS=NOUN
+29	.	_	PUNCT	.	_	3	punct	_	ChatGPTUPOS=PUNCT
+
+1	Despite	_	ADP	IN	_	4	case	_	ChatGPTUPOS=ADP
+2	these	_	DET	DT	_	4	det	_	ChatGPTUPOS=DET
+3	positive	_	ADJ	JJ	_	4	amod	_	ChatGPTUPOS=ADJ
+4	effects	_	NOUN	NNS	_	15	obl	_	ChatGPTUPOS=NOUN
+5	,	_	PUNCT	,	_	4	punct	_	ChatGPTUPOS=PUNCT
+6	however	_	ADV	RB	_	15	advmod	_	ChatGPTUPOS=ADV
+7	,	_	PUNCT	,	_	6	punct	_	ChatGPTUPOS=PUNCT
+8	quantifying	_	VERB	VBG	_	15	csubj	_	ChatGPTUPOS=VERB
+9	the	_	DET	DT	_	10	det	_	ChatGPTUPOS=DET
+10	impact	_	NOUN	NN	_	8	obj	_	ChatGPTUPOS=NOUN
+11	of	_	ADP	IN	_	12	case	_	ChatGPTUPOS=ADP
+12	diversity	_	NOUN	NN	_	10	nmod	_	ChatGPTUPOS=NOUN
+13	in	_	ADP	IN	_	14	case	_	ChatGPTUPOS=ADP
+14	science	_	NOUN	NN	_	10	nmod	_	ChatGPTUPOS=NOUN
+15	remains	_	VERB	VBZ	_	0	root	_	ChatGPTUPOS=VERB
+16	exceedingly	_	ADV	RB	_	17	advmod	_	ChatGPTUPOS=ADV
+17	difficult	_	ADJ	JJ	_	15	xcomp	_	ChatGPTUPOS=ADJ
+18	,	_	PUNCT	,	_	25	punct	_	ChatGPTUPOS=PUNCT
+19	due	_	ADJ	JJ	_	25	case	_	ChatGPTUPOS=ADP
+20	in	_	ADP	IN	_	22	case	_	ChatGPTUPOS=ADP
+21	large	_	ADJ	JJ	_	22	amod	_	ChatGPTUPOS=ADJ
+22	part	_	NOUN	NN	_	25	obl	_	ChatGPTUPOS=NOUN
+23	to	_	ADP	IN	_	19	fixed	_	ChatGPTUPOS=ADP
+24	a	_	DET	DT	_	25	det	_	ChatGPTUPOS=DET
+25	lack	_	NOUN	NN	_	15	obl	_	ChatGPTUPOS=NOUN
+26	of	_	ADP	IN	_	28	case	_	ChatGPTUPOS=ADP
+27	comprehensive	_	ADJ	JJ	_	28	amod	_	ChatGPTUPOS=ADJ
+28	data	_	NOUN	NNS	_	25	nmod	_	ChatGPTUPOS=NOUN
+29	about	_	ADP	IN	_	32	case	_	ChatGPTUPOS=ADP
+30	the	_	DET	DT	_	32	det	_	ChatGPTUPOS=DET
+31	scientific	_	ADJ	JJ	_	32	amod	_	ChatGPTUPOS=ADJ
+32	workforce	_	NOUN	NN	_	28	nmod	_	ChatGPTUPOS=NOUN
+33	.	_	PUNCT	.	_	15	punct	_	ChatGPTUPOS=PUNCT
+
+1	For	_	ADP	IN	_	4	case	_	ChatGPTUPOS=ADP
+2	many	_	ADJ	JJ	_	4	amod	_	ChatGPTUPOS=ADJ
+3	scientific	_	ADJ	JJ	_	4	amod	_	ChatGPTUPOS=ADJ
+4	fields	_	NOUN	NNS	_	9	obl	_	ChatGPTUPOS=NOUN
+5	,	_	PUNCT	,	_	4	punct	_	ChatGPTUPOS=PUNCT
+6	however	_	ADV	RB	_	9	advmod	_	ChatGPTUPOS=ADV
+7	,	_	PUNCT	,	_	6	punct	_	ChatGPTUPOS=PUNCT
+8	there	_	PRON	EX	_	9	expl	_	ChatGPTUPOS=PRON
+9	is	_	VERB	VBZ	_	0	root	_	ChatGPTUPOS=AUX
+10	no	_	DET	DT	_	12	det	_	ChatGPTUPOS=DET
+11	central	_	ADJ	JJ	_	12	amod	_	ChatGPTUPOS=ADJ
+12	listing	_	NOUN	NN	_	9	nsubj	_	ChatGPTUPOS=NOUN
+13	of	_	ADP	IN	_	18	case	_	ChatGPTUPOS=ADP
+14	all	_	DET	DT	_	18	det	_	ChatGPTUPOS=DET
+15	tenure	_	NOUN	NN	_	17	compound	_	ChatGPTUPOS=NOUN
+16	-	_	PUNCT	HYPH	_	15	punct	_	ChatGPTUPOS=PUNCT
+17	track	_	NOUN	NN	_	18	compound	_	ChatGPTUPOS=NOUN
+18	faculty	_	NOUN	NN	_	12	nmod	_	ChatGPTUPOS=NOUN
+19	,	_	PUNCT	,	_	20	punct	_	ChatGPTUPOS=PUNCT
+20	making	_	VERB	VBG	_	9	advcl	_	ChatGPTUPOS=VERB
+21	it	_	PRON	PRP	_	20	obj	_	ChatGPTUPOS=PRON
+22	difficult	_	ADJ	JJ	_	20	xcomp	_	ChatGPTUPOS=ADJ
+23	to	_	PART	TO	_	24	mark	_	ChatGPTUPOS=PART
+24	define	_	VERB	VB	_	22	xcomp	_	ChatGPTUPOS=VERB
+25	a	_	DET	DT	_	28	det	_	ChatGPTUPOS=DET
+26	rigorous	_	ADJ	JJ	_	28	amod	_	ChatGPTUPOS=ADJ
+27	sample	_	NOUN	NN	_	28	compound	_	ChatGPTUPOS=NOUN
+28	frame	_	NOUN	NN	_	24	obj	_	ChatGPTUPOS=NOUN
+29	for	_	ADP	IN	_	30	case	_	ChatGPTUPOS=ADP
+30	analysis	_	NOUN	NN	_	24	obl	_	ChatGPTUPOS=NOUN
+31	.	_	PUNCT	.	_	9	punct	_	ChatGPTUPOS=PUNCT
+
+1	Further	_	ADV	RBR	_	12	advmod	_	ChatGPTUPOS=ADV
+2	,	_	PUNCT	,	_	1	punct	_	ChatGPTUPOS=PUNCT
+3	rates	_	NOUN	NNS	_	12	nsubj	_	ChatGPTUPOS=NOUN
+4	of	_	ADP	IN	_	5	case	_	ChatGPTUPOS=ADP
+5	adoption	_	NOUN	NN	_	3	nmod	_	ChatGPTUPOS=NOUN
+6	of	_	ADP	IN	_	7	case	_	ChatGPTUPOS=ADP
+7	services	_	NOUN	NNS	_	5	nmod	_	ChatGPTUPOS=NOUN
+8	like	_	ADP	IN	_	9	case	_	ChatGPTUPOS=ADP
+9	GoogleScholar	_	PROPN	NNP	_	7	nmod	_	ChatGPTUPOS=PROPN
+10	and	_	CCONJ	CC	_	11	cc	_	ChatGPTUPOS=CONJ
+11	ResearchGate	_	PROPN	NNP	_	9	conj	_	ChatGPTUPOS=PROPN
+12	vary	_	VERB	VBP	_	0	root	_	ChatGPTUPOS=VERB
+13	within	_	ADP	IN	_	17	case	_	ChatGPTUPOS=ADP
+14	,	_	PUNCT	,	_	16	punct	_	ChatGPTUPOS=PUNCT
+15	and	_	CCONJ	CC	_	16	cc	_	ChatGPTUPOS=CONJ
+16	across	_	ADP	IN	_	13	conj	_	ChatGPTUPOS=ADP
+17	disciplines	_	NOUN	NNS	_	12	obl	_	ChatGPTUPOS=NOUN
+18	.	_	PUNCT	.	_	12	punct	_	ChatGPTUPOS=PUNCT
+
+1	Although	_	SCONJ	IN	_	2	mark	_	ChatGPTUPOS=SCONJ
+2	useful	_	ADJ	JJ	_	8	advcl	_	ChatGPTUPOS=ADJ
+3	,	_	PUNCT	,	_	2	punct	_	ChatGPTUPOS=PUNCT
+4	such	_	ADJ	JJ	_	5	amod	_	ChatGPTUPOS=DET
+5	samples	_	NOUN	NNS	_	8	nsubj	_	ChatGPTUPOS=NOUN
+6	are	_	AUX	VBP	_	8	cop	_	ChatGPTUPOS=AUX
+7	not	_	PART	RB	_	8	advmod	_	ChatGPTUPOS=PARTICLE
+8	representative	_	ADJ	JJ	_	0	root	_	ChatGPTUPOS=ADJ
+9	of	_	ADP	IN	_	12	case	_	ChatGPTUPOS=ADP
+10	the	_	DET	DT	_	12	det	_	ChatGPTUPOS=DET
+11	scientific	_	ADJ	JJ	_	12	amod	_	ChatGPTUPOS=ADJ
+12	workforce	_	NOUN	NN	_	8	obl	_	ChatGPTUPOS=NOUN
+13	as	_	ADP	IN	_	15	case	_	ChatGPTUPOS=ADP
+14	a	_	DET	DT	_	15	det	_	ChatGPTUPOS=DET
+15	whole	_	NOUN	NN	_	12	nmod	_	ChatGPTUPOS=NOUN
+16	and	_	CCONJ	CC	_	18	cc	_	ChatGPTUPOS=CONJ
+17	thus	_	ADV	RB	_	18	advmod	_	ChatGPTUPOS=ADV
+18	have	_	VERB	VB	_	8	conj	_	ChatGPTUPOS=VERB
+19	limited	_	ADJ	JJ	_	20	amod	_	ChatGPTUPOS=ADJ
+20	generalizability	_	NOUN	NN	_	18	obj	_	ChatGPTUPOS=NOUN
+21	.	_	PUNCT	.	_	8	punct	_	ChatGPTUPOS=PUNCT
+
+1	In	_	ADP	IN	_	3	case	_	ChatGPTUPOS=ADP
+2	some	_	DET	DT	_	3	det	_	ChatGPTUPOS=DET
+3	fields	_	NOUN	NNS	_	13	obl	_	ChatGPTUPOS=NOUN
+4	,	_	PUNCT	,	_	3	punct	_	ChatGPTUPOS=PUNCT
+5	yearly	_	ADJ	JJ	_	6	amod	_	ChatGPTUPOS=ADJ
+6	data	_	NOUN	NNS	_	13	nsubj	_	ChatGPTUPOS=NOUN
+7	on	_	ADP	IN	_	9	case	_	ChatGPTUPOS=ADP
+8	faculty	_	NOUN	NN	_	9	compound	_	ChatGPTUPOS=NOUN
+9	numbers	_	NOUN	NNS	_	6	nmod	_	ChatGPTUPOS=NOUN
+10	and	_	CCONJ	CC	_	11	cc	_	ChatGPTUPOS=CONJ
+11	composition	_	NOUN	NN	_	9	conj	_	ChatGPTUPOS=NOUN
+12	are	_	AUX	VBP	_	13	cop	_	ChatGPTUPOS=AUX
+13	available	_	ADJ	JJ	_	0	root	_	ChatGPTUPOS=ADJ
+14	in	_	ADP	IN	_	15	case	_	ChatGPTUPOS=ADP
+15	aggregate	_	NOUN	NN	_	13	obl	_	ChatGPTUPOS=NOUN
+16	.	_	PUNCT	.	_	13	punct	_	ChatGPTUPOS=PUNCT
+
+1	Such	_	ADJ	JJ	_	2	amod	_	ChatGPTUPOS=ADJ
+2	surveys	_	NOUN	NNS	_	4	nsubj	_	ChatGPTUPOS=NOUN
+3	can	_	AUX	MD	_	4	aux	_	ChatGPTUPOS=AUX
+4	provide	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+5	valuable	_	ADJ	JJ	_	6	amod	_	ChatGPTUPOS=ADJ
+6	insight	_	NOUN	NN	_	4	obj	_	ChatGPTUPOS=NOUN
+7	into	_	ADP	IN	_	8	case	_	ChatGPTUPOS=ADP
+8	trends	_	NOUN	NNS	_	6	nmod	_	ChatGPTUPOS=NOUN
+9	and	_	CCONJ	CC	_	11	cc	_	ChatGPTUPOS=CONJ
+10	summary	_	NOUN	NN	_	11	compound	_	ChatGPTUPOS=ADJ
+11	statistics	_	NOUN	NNS	_	8	conj	_	ChatGPTUPOS=NOUN
+12	on	_	ADP	IN	_	15	case	_	ChatGPTUPOS=ADP
+13	the	_	DET	DT	_	15	det	_	ChatGPTUPOS=DET
+14	scientific	_	ADJ	JJ	_	15	amod	_	ChatGPTUPOS=ADJ
+15	workforce	_	NOUN	NN	_	11	nmod	_	ChatGPTUPOS=NOUN
+16	but	_	CCONJ	CC	_	17	cc	_	ChatGPTUPOS=CONJ
+17	suffer	_	VERB	VB	_	4	conj	_	ChatGPTUPOS=VERB
+18	from	_	ADP	IN	_	21	case	_	ChatGPTUPOS=ADP
+19	two	_	NUM	CD	_	21	nummod	_	ChatGPTUPOS=NUM
+20	key	_	ADJ	JJ	_	21	amod	_	ChatGPTUPOS=ADJ
+21	weaknesses	_	NOUN	NNS	_	17	obl	_	ChatGPTUPOS=NOUN
+22	.	_	PUNCT	.	_	4	punct	_	ChatGPTUPOS=PUNCT
+
+1	This	_	DET	DT	_	2	det	_	ChatGPTUPOS=DET
+2	system	_	NOUN	NN	_	4	nsubj	_	ChatGPTUPOS=NOUN
+3	is	_	AUX	VBZ	_	4	cop	_	ChatGPTUPOS=AUX
+4	efficient	_	ADJ	JJ	_	0	root	_	ChatGPTUPOS=ADJ
+5	and	_	CCONJ	CC	_	6	cc	_	ChatGPTUPOS=CCONJ
+6	accurate	_	ADJ	JJ	_	4	conj	_	ChatGPTUPOS=ADJ
+7	,	_	PUNCT	,	_	12	punct	_	ChatGPTUPOS=PUNCT
+8	and	_	CCONJ	CC	_	12	cc	_	ChatGPTUPOS=CCONJ
+9	it	_	PRON	PRP	_	12	nsubj:pass	_	ChatGPTUPOS=PRON
+10	can	_	AUX	MD	_	12	aux	_	ChatGPTUPOS=AUX
+11	be	_	AUX	VB	_	12	aux:pass	_	ChatGPTUPOS=AUX
+12	adapted	_	VERB	VBN	_	4	conj	_	ChatGPTUPOS=VERB
+13	to	_	ADP	IN	_	16	case	_	ChatGPTUPOS=ADP
+14	any	_	DET	DT	_	16	det	_	ChatGPTUPOS=DET
+15	academic	_	ADJ	JJ	_	16	amod	_	ChatGPTUPOS=ADJ
+16	discipline	_	NOUN	NN	_	12	obl	_	ChatGPTUPOS=NOUN
+17	and	_	CCONJ	CC	_	18	cc	_	ChatGPTUPOS=CCONJ
+18	used	_	VERB	VBN	_	12	conj	_	ChatGPTUPOS=VERB
+19	for	_	ADP	IN	_	21	case	_	ChatGPTUPOS=ADP
+20	continuous	_	ADJ	JJ	_	21	amod	_	ChatGPTUPOS=ADJ
+21	collection	_	NOUN	NN	_	18	obl	_	ChatGPTUPOS=NOUN
+22	.	_	PUNCT	.	_	4	punct	_	ChatGPTUPOS=PUNCT
+
+1	In	_	ADP	IN	_	2	case	_	ChatGPTUPOS=ADP
+2	short	_	ADJ	JJ	_	9	obl	_	ChatGPTUPOS=ADJ
+3	,	_	PUNCT	,	_	2	punct	_	ChatGPTUPOS=PUNCT
+4	many	_	ADJ	JJ	_	7	amod	_	ChatGPTUPOS=DET
+5	important	_	ADJ	JJ	_	7	amod	_	ChatGPTUPOS=ADJ
+6	research	_	NOUN	NN	_	7	compound	_	ChatGPTUPOS=NOUN
+7	questions	_	NOUN	NNS	_	9	nsubj	_	ChatGPTUPOS=NOUN
+8	will	_	AUX	MD	_	9	aux	_	ChatGPTUPOS=AUX
+9	benefit	_	VERB	VB	_	0	root	_	ChatGPTUPOS=VERB
+10	from	_	ADP	IN	_	12	case	_	ChatGPTUPOS=ADP
+11	the	_	DET	DT	_	12	det	_	ChatGPTUPOS=DET
+12	availability	_	NOUN	NN	_	9	obl	_	ChatGPTUPOS=NOUN
+13	of	_	ADP	IN	_	20	case	_	ChatGPTUPOS=ADP
+14	accurate	_	ADJ	JJ	_	20	amod	_	ChatGPTUPOS=ADJ
+15	and	_	CCONJ	CC	_	18	cc	_	ChatGPTUPOS=CONJ
+16	frequently	_	ADV	RB	_	18	advmod	_	ChatGPTUPOS=ADV
+17	-	_	PUNCT	HYPH	_	16	punct	_	ChatGPTUPOS=PUNCT
+18	recollected	_	VERB	VBN	_	14	conj	_	ChatGPTUPOS=VERB
+19	census	_	NOUN	NN	_	20	compound	_	ChatGPTUPOS=NOUN
+20	data	_	NOUN	NNS	_	12	nmod	_	ChatGPTUPOS=NOUN
+21	.	_	PUNCT	.	_	9	punct	_	ChatGPTUPOS=PUNCT
+
+1	Our	_	PRON	PRP$	_	2	nmod:poss	_	ChatGPTUPOS=PRON
+2	study	_	NOUN	NN	_	4	nsubj:pass	_	ChatGPTUPOS=NOUN
+3	is	_	AUX	VBZ	_	4	aux:pass	_	ChatGPTUPOS=AUX
+4	organized	_	VERB	VBN	_	0	root	_	ChatGPTUPOS=VERB
+5	as	_	SCONJ	IN	_	6	mark	_	ChatGPTUPOS=ADP
+6	follows	_	VERB	VBZ	_	4	advcl	_	ChatGPTUPOS=VERB
+7	.	_	PUNCT	.	_	4	punct	_	ChatGPTUPOS=PUNCT
+
+1	We	_	PRON	PRP	_	2	nsubj	_	ChatGPTUPOS=PRON
+2	begin	_	VERB	VBP	_	0	root	_	ChatGPTUPOS=VERB
+3	by	_	SCONJ	IN	_	4	mark	_	ChatGPTUPOS=ADP
+4	detailing	_	VERB	VBG	_	2	advcl	_	ChatGPTUPOS=VERB
+5	the	_	DET	DT	_	6	det	_	ChatGPTUPOS=DET
+6	design	_	NOUN	NN	_	4	obj	_	ChatGPTUPOS=NOUN
+7	and	_	CCONJ	CC	_	8	cc	_	ChatGPTUPOS=CONJ
+8	implementation	_	NOUN	NN	_	6	conj	_	ChatGPTUPOS=NOUN
+9	of	_	ADP	IN	_	13	case	_	ChatGPTUPOS=ADP
+10	our	_	PRON	PRP$	_	13	nmod:poss	_	ChatGPTUPOS=PRON
+11	web	_	NOUN	NN	_	12	compound	_	ChatGPTUPOS=NOUN
+12	crawler	_	NOUN	NN	_	13	compound	_	ChatGPTUPOS=NOUN
+13	framework	_	NOUN	NN	_	6	nmod	_	ChatGPTUPOS=NOUN
+14	.	_	PUNCT	.	_	2	punct	_	ChatGPTUPOS=PUNCT
+
+1	Next	_	ADV	RB	_	4	advmod	_	ChatGPTUPOS=ADV
+2	,	_	PUNCT	,	_	1	punct	_	ChatGPTUPOS=PUNCT
+3	we	_	PRON	PRP	_	4	nsubj	_	ChatGPTUPOS=PRON
+4	present	_	VERB	VBP	_	0	root	_	ChatGPTUPOS=VERB
+5	the	_	DET	DT	_	6	det	_	ChatGPTUPOS=DET
+6	results	_	NOUN	NNS	_	4	obj	_	ChatGPTUPOS=NOUN
+7	of	_	ADP	IN	_	9	case	_	ChatGPTUPOS=ADP
+8	our	_	PRON	PRP$	_	9	nmod:poss	_	ChatGPTUPOS=PRON
+9	work	_	NOUN	NN	_	6	nmod	_	ChatGPTUPOS=NOUN
+10	in	_	ADP	IN	_	12	case	_	ChatGPTUPOS=ADP
+11	two	_	NUM	CD	_	12	nummod	_	ChatGPTUPOS=NUM
+12	sections	_	NOUN	NNS	_	4	obl	_	ChatGPTUPOS=NOUN
+13	.	_	PUNCT	.	_	4	punct	_	ChatGPTUPOS=PUNCT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
