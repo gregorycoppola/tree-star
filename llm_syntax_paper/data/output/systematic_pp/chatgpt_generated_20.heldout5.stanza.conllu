@@ -1,0 +1,252 @@
+# text = The man lifted the box with the torn label.
+# predicted_head = lifted, expected_head = box
+1	The	the	DET	DT	_	2	det	_	_
+2	man	man	NOUN	NN	_	3	nsubj	_	_
+3	lifted	lift	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	box	box	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	torn	tear	VERB	VBN	_	9	amod	_	_
+9	label	label	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She guided the tourist with the city map.
+# predicted_head = guided, expected_head = guided
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	guided	guide	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	tourist	tourist	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	city	city	NOUN	NN	_	8	compound	_	_
+8	map	map	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The actor recognized the fan with the bright smile.
+# predicted_head = recognized, expected_head = fan
+1	The	the	DET	DT	_	2	det	_	_
+2	actor	actor	NOUN	NN	_	3	nsubj	_	_
+3	recognized	recognize	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	fan	fan	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	bright	bright	ADJ	JJ	_	9	amod	_	_
+9	smile	smile	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He reached the building with the locked door.
+# predicted_head = reached, expected_head = building
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	reached	reach	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	building	building	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	locked	lock	VERB	VBN	_	8	amod	_	_
+8	door	door	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The farmer loaded the cart with the hay.
+# predicted_head = loaded, expected_head = loaded
+1	The	the	DET	DT	_	2	det	_	_
+2	farmer	farmer	NOUN	NN	_	3	nsubj	_	_
+3	loaded	load	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	cart	cart	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	hay	hay	NOUN	NN	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The woman spotted the bird with the striped wings.
+# predicted_head = spotted, expected_head = bird
+1	The	the	DET	DT	_	2	det	_	_
+2	woman	woman	NOUN	NN	_	3	nsubj	_	_
+3	spotted	spot	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	bird	bird	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	striped	stripe	VERB	VBN	_	9	amod	_	_
+9	wings	wing	NOUN	NNS	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She marked the page with the colorful sticker.
+# predicted_head = marked, expected_head = marked
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	marked	mark	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	page	page	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	colorful	colorful	ADJ	JJ	_	8	amod	_	_
+8	sticker	sticker	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The boy called the dog with the floppy ears.
+# predicted_head = called, expected_head = dog
+1	The	the	DET	DT	_	2	det	_	_
+2	boy	boy	NOUN	NN	_	3	nsubj	_	_
+3	called	call	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	dog	dog	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	floppy	floppy	ADJ	JJ	_	9	amod	_	_
+9	ears	ear	NOUN	NNS	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = They built the fence with the wooden posts.
+# predicted_head = built, expected_head = built
+1	They	they	PRON	PRP	_	2	nsubj	_	_
+2	built	build	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	fence	fence	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	wooden	wooden	ADJ	JJ	_	8	amod	_	_
+8	posts	post	NOUN	NNS	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The singer approached the crowd with the microphone.
+# predicted_head = approached, expected_head = approached
+1	The	the	DET	DT	_	2	det	_	_
+2	singer	singer	NOUN	NN	_	3	nsubj	_	_
+3	approached	approach	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	crowd	crowd	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	microphone	microphone	NOUN	NN	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The teacher noticed the student with the confused look.
+# predicted_head = noticed, expected_head = student
+1	The	the	DET	DT	_	2	det	_	_
+2	teacher	teacher	NOUN	NN	_	3	nsubj	_	_
+3	noticed	notice	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	student	student	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	confused	confuse	VERB	VBN	_	9	amod	_	_
+9	look	look	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The chef sliced the bread with the serrated knife.
+# predicted_head = sliced, expected_head = sliced
+1	The	the	DET	DT	_	2	det	_	_
+2	chef	chef	NOUN	NN	_	3	nsubj	_	_
+3	sliced	slice	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	bread	bread	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	serrated	serrate	VERB	VBN	_	9	amod	_	_
+9	knife	knife	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The girl hugged the bear with the missing eye.
+# predicted_head = hugged, expected_head = bear
+1	The	the	DET	DT	_	2	det	_	_
+2	girl	girl	NOUN	NN	_	3	nsubj	_	_
+3	hugged	hugge	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	bear	bear	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	missing	missing	ADJ	JJ	_	9	amod	_	_
+9	eye	eye	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He cleaned the room with the broom.
+# predicted_head = cleaned, expected_head = cleaned
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	cleaned	clean	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	room	room	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	broom	broom	NOUN	NN	_	2	obl	_	_
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The team followed the leader with the compass.
+# predicted_head = followed, expected_head = leader
+1	The	the	DET	DT	_	2	det	_	_
+2	team	team	NOUN	NN	_	3	nsubj	_	_
+3	followed	follow	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	leader	leader	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	compass	compass	NOUN	NN	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She painted the mural with the bright colors.
+# predicted_head = painted, expected_head = painted
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	painted	paint	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	mural	mural	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	bright	bright	ADJ	JJ	_	8	amod	_	_
+8	colors	color	NOUN	NNS	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The librarian handed the book to the child with the torn jacket.
+# predicted_head = handed, expected_head = child
+1	The	the	DET	DT	_	2	det	_	_
+2	librarian	librarian	NOUN	NN	_	3	nsubj	_	_
+3	handed	hand	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	book	book	NOUN	NN	_	3	obj	_	_
+6	to	to	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	child	child	NOUN	NN	_	3	obl	_	_
+9	with	with	ADP	IN	_	12	case	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	torn	tear	VERB	VBN	_	12	amod	_	_
+12	jacket	jacket	NOUN	NN	_	3	obl	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The man drove the truck with the dented bumper.
+# predicted_head = drove, expected_head = truck
+1	The	the	DET	DT	_	2	det	_	_
+2	man	man	NOUN	NN	_	3	nsubj	_	_
+3	drove	drive	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	truck	truck	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	dented	dent	VERB	VBN	_	9	amod	_	_
+9	bumper	bumper	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He mailed the letter with the decorative stamp.
+# predicted_head = mailed, expected_head = mailed
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	mailed	mail	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	letter	letter	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	decorative	decorative	ADJ	JJ	_	8	amod	_	_
+8	stamp	stamp	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The nurse treated the patient with the broken arm.
+# predicted_head = treated, expected_head = patient
+1	The	the	DET	DT	_	2	det	_	_
+2	nurse	nurse	NOUN	NN	_	3	nsubj	_	_
+3	treated	treat	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	patient	patient	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	broken	break	VERB	VBN	_	9	amod	_	_
+9	arm	arm	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
