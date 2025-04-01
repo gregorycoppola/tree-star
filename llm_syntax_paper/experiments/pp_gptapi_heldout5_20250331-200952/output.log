@@ -1,0 +1,225 @@
+Loading examples from data/input/systematic_pp/chatgpt_generated_20.heldout5.json
+Running in LIVE mode - will query OpenAI API
+Will save results to data/output/systematic_pp/chatgpt_generated_20.heldout5.gptapi.json/chatgpt_generated_20.heldout5.jsonl
+In the sentence: "The man lifted the box with the torn label."
+What word does the phrase "with the torn label" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+box
+================================================
+
+Example 1/20:
+Sentence: The man lifted the box with the torn label.
+→ Phrase: 'with the torn label' → predicted: 'box', expected: 'box'
+In the sentence: "She guided the tourist with the city map."
+What word does the phrase "with the city map" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+guided
+================================================
+
+Example 2/20:
+Sentence: She guided the tourist with the city map.
+→ Phrase: 'with the city map' → predicted: 'guided', expected: 'guided'
+In the sentence: "The actor recognized the fan with the bright smile."
+What word does the phrase "with the bright smile" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+fan
+================================================
+
+Example 3/20:
+Sentence: The actor recognized the fan with the bright smile.
+→ Phrase: 'with the bright smile' → predicted: 'fan', expected: 'fan'
+In the sentence: "He reached the building with the locked door."
+What word does the phrase "with the locked door" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+building
+================================================
+
+Example 4/20:
+Sentence: He reached the building with the locked door.
+→ Phrase: 'with the locked door' → predicted: 'building', expected: 'building'
+In the sentence: "The farmer loaded the cart with the hay."
+What word does the phrase "with the hay" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+loaded
+================================================
+
+Example 5/20:
+Sentence: The farmer loaded the cart with the hay.
+→ Phrase: 'with the hay' → predicted: 'loaded', expected: 'loaded'
+In the sentence: "The woman spotted the bird with the striped wings."
+What word does the phrase "with the striped wings" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+bird
+================================================
+
+Example 6/20:
+Sentence: The woman spotted the bird with the striped wings.
+→ Phrase: 'with the striped wings' → predicted: 'bird', expected: 'bird'
+In the sentence: "She marked the page with the colorful sticker."
+What word does the phrase "with the colorful sticker" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+marked
+================================================
+
+Example 7/20:
+Sentence: She marked the page with the colorful sticker.
+→ Phrase: 'with the colorful sticker' → predicted: 'marked', expected: 'marked'
+In the sentence: "The boy called the dog with the floppy ears."
+What word does the phrase "with the floppy ears" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+dog
+================================================
+
+Example 8/20:
+Sentence: The boy called the dog with the floppy ears.
+→ Phrase: 'with the floppy ears' → predicted: 'dog', expected: 'dog'
+In the sentence: "They built the fence with the wooden posts."
+What word does the phrase "with the wooden posts" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+built
+================================================
+
+Example 9/20:
+Sentence: They built the fence with the wooden posts.
+→ Phrase: 'with the wooden posts' → predicted: 'built', expected: 'built'
+In the sentence: "The singer approached the crowd with the microphone."
+What word does the phrase "with the microphone" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+approached
+================================================
+
+Example 10/20:
+Sentence: The singer approached the crowd with the microphone.
+→ Phrase: 'with the microphone' → predicted: 'approached', expected: 'approached'
+In the sentence: "The teacher noticed the student with the confused look."
+What word does the phrase "with the confused look" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+student
+================================================
+
+Example 11/20:
+Sentence: The teacher noticed the student with the confused look.
+→ Phrase: 'with the confused look' → predicted: 'student', expected: 'student'
+In the sentence: "The chef sliced the bread with the serrated knife."
+What word does the phrase "with the serrated knife" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+sliced
+================================================
+
+Example 12/20:
+Sentence: The chef sliced the bread with the serrated knife.
+→ Phrase: 'with the serrated knife' → predicted: 'sliced', expected: 'sliced'
+In the sentence: "The girl hugged the bear with the missing eye."
+What word does the phrase "with the missing eye" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+bear
+================================================
+
+Example 13/20:
+Sentence: The girl hugged the bear with the missing eye.
+→ Phrase: 'with the missing eye' → predicted: 'bear', expected: 'bear'
+In the sentence: "He cleaned the room with the broom."
+What word does the phrase "with the broom" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+cleaned
+================================================
+
+Example 14/20:
+Sentence: He cleaned the room with the broom.
+→ Phrase: 'with the broom' → predicted: 'cleaned', expected: 'cleaned'
+In the sentence: "The team followed the leader with the compass."
+What word does the phrase "with the compass" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+followed
+================================================
+
+Example 15/20:
+Sentence: The team followed the leader with the compass.
+→ Phrase: 'with the compass' → predicted: 'followed', expected: 'leader'
+In the sentence: "She painted the mural with the bright colors."
+What word does the phrase "with the bright colors" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+painted
+================================================
+
+Example 16/20:
+Sentence: She painted the mural with the bright colors.
+→ Phrase: 'with the bright colors' → predicted: 'painted', expected: 'painted'
+In the sentence: "The librarian handed the book to the child with the torn jacket."
+What word does the phrase "with the torn jacket" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+child
+================================================
+
+Example 17/20:
+Sentence: The librarian handed the book to the child with the torn jacket.
+→ Phrase: 'with the torn jacket' → predicted: 'child', expected: 'child'
+In the sentence: "The man drove the truck with the dented bumper."
+What word does the phrase "with the dented bumper" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+truck
+================================================
+
+Example 18/20:
+Sentence: The man drove the truck with the dented bumper.
+→ Phrase: 'with the dented bumper' → predicted: 'truck', expected: 'truck'
+In the sentence: "He mailed the letter with the decorative stamp."
+What word does the phrase "with the decorative stamp" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+mailed
+================================================
+
+Example 19/20:
+Sentence: He mailed the letter with the decorative stamp.
+→ Phrase: 'with the decorative stamp' → predicted: 'mailed', expected: 'mailed'
+In the sentence: "The nurse treated the patient with the broken arm."
+What word does the phrase "with the broken arm" attach to syntactically?
+Return only the head word.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+--------------------------------
+patient
+================================================
+
+Example 20/20:
+Sentence: The nurse treated the patient with the broken arm.
+→ Phrase: 'with the broken arm' → predicted: 'patient', expected: 'patient'
+
+Final Accuracy: 19/20 = 95.00%
