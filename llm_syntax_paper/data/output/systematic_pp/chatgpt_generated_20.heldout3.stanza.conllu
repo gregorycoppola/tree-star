@@ -1,0 +1,254 @@
+# text = The reporter interviewed the woman with the notepad.
+# predicted_head = interviewed, expected_head = reporter
+1	The	the	DET	DT	_	2	det	_	_
+2	reporter	reporter	NOUN	NN	_	3	nsubj	_	_
+3	interviewed	interview	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	woman	woman	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	notepad	notepad	NOUN	NN	_	3	obl	_	_
+9	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He repaired the table with the loose leg.
+# predicted_head = repaired, expected_head = table
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	repaired	repair	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	table	table	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	loose	loose	ADJ	JJ	_	8	amod	_	_
+8	leg	leg	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The child opened the gift with the red ribbon.
+# predicted_head = opened, expected_head = gift
+1	The	the	DET	DT	_	2	det	_	_
+2	child	child	NOUN	NN	_	3	nsubj	_	_
+3	opened	open	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	gift	gift	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	red	red	ADJ	JJ	_	9	amod	_	_
+9	ribbon	ribbon	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The photographer took a picture of the model with the long scarf.
+# predicted_head = took, expected_head = model
+1	The	the	DET	DT	_	2	det	_	_
+2	photographer	photographer	NOUN	NN	_	3	nsubj	_	_
+3	took	take	VERB	VBD	_	0	root	_	_
+4	a	a	DET	DT	_	5	det	_	_
+5	picture	picture	NOUN	NN	_	3	obj	_	_
+6	of	of	ADP	IN	_	8	case	_	_
+7	the	the	DET	DT	_	8	det	_	_
+8	model	model	NOUN	NN	_	5	nmod	_	_
+9	with	with	ADP	IN	_	12	case	_	_
+10	the	the	DET	DT	_	12	det	_	_
+11	long	long	ADJ	JJ	_	12	amod	_	_
+12	scarf	scarf	NOUN	NN	_	3	obl	_	_
+13	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She held the baby with the warm blanket.
+# predicted_head = held, expected_head = baby
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	held	hold	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	baby	baby	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	warm	warm	ADJ	JJ	_	8	amod	_	_
+8	blanket	blanket	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The hikers reached the summit with the narrow trail.
+# predicted_head = reached, expected_head = reached
+1	The	the	DET	DT	_	2	det	_	_
+2	hikers	hiker	NOUN	NNS	_	3	nsubj	_	_
+3	reached	reach	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	summit	summit	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	narrow	narrow	ADJ	JJ	_	9	amod	_	_
+9	trail	trail	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The vet examined the dog with the injured paw.
+# predicted_head = examined, expected_head = dog
+1	The	the	DET	DT	_	2	det	_	_
+2	vet	vet	NOUN	NN	_	3	nsubj	_	_
+3	examined	examine	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	dog	dog	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	injured	injure	VERB	VBN	_	9	amod	_	_
+9	paw	paw	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He caught the fish with the shiny lure.
+# predicted_head = caught, expected_head = caught
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	caught	catch	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	fish	fish	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	shiny	shiny	ADJ	JJ	_	8	amod	_	_
+8	lure	lure	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = They painted the wall with the bold colors.
+# predicted_head = painted, expected_head = painted
+1	They	they	PRON	PRP	_	2	nsubj	_	_
+2	painted	paint	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	wall	wall	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	bold	bold	ADJ	JJ	_	8	amod	_	_
+8	colors	color	NOUN	NNS	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The actor greeted the fan with the autograph book.
+# predicted_head = greeted, expected_head = fan
+1	The	the	DET	DT	_	2	det	_	_
+2	actor	actor	NOUN	NN	_	3	nsubj	_	_
+3	greeted	greet	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	fan	fan	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	autograph	autograph	NOUN	NN	_	9	compound	_	_
+9	book	book	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The player passed the ball with the red stripe.
+# predicted_head = passed, expected_head = ball
+1	The	the	DET	DT	_	2	det	_	_
+2	player	player	NOUN	NN	_	3	nsubj	_	_
+3	passed	pass	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	ball	ball	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	red	red	ADJ	JJ	_	9	amod	_	_
+9	stripe	stripe	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = She chased the cat with the jingling collar.
+# predicted_head = chased, expected_head = cat
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	chased	chase	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	cat	cat	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	jingling	jingling	NOUN	NN	_	8	compound	_	_
+8	collar	collar	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The carpenter measured the board with the metal ruler.
+# predicted_head = measured, expected_head = measured
+1	The	the	DET	DT	_	2	det	_	_
+2	carpenter	carpenter	NOUN	NN	_	3	nsubj	_	_
+3	measured	measure	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	board	board	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	metal	metal	NOUN	NN	_	9	compound	_	_
+9	ruler	ruler	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The student read the book with the torn cover.
+# predicted_head = read, expected_head = book
+1	The	the	DET	DT	_	2	det	_	_
+2	student	student	NOUN	NN	_	3	nsubj	_	_
+3	read	read	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	book	book	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	torn	tear	VERB	VBN	_	9	amod	_	_
+9	cover	cover	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The knight struck the dragon with the glowing sword.
+# predicted_head = struck, expected_head = struck
+1	The	the	DET	DT	_	2	det	_	_
+2	knight	knight	NOUN	NN	_	3	nsubj	_	_
+3	struck	strike	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	dragon	dragon	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	glowing	glow	VERB	VBG	_	9	amod	_	_
+9	sword	sword	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The tourist visited the castle with the tall towers.
+# predicted_head = visited, expected_head = castle
+1	The	the	DET	DT	_	2	det	_	_
+2	tourist	tourist	NOUN	NN	_	3	nsubj	_	_
+3	visited	visit	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	castle	castle	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	tall	tall	ADJ	JJ	_	9	amod	_	_
+9	towers	tower	NOUN	NNS	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = He cleaned the window with the streaks.
+# predicted_head = cleaned, expected_head = window
+1	He	he	PRON	PRP	_	2	nsubj	_	_
+2	cleaned	clean	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	window	window	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	7	case	_	_
+6	the	the	DET	DT	_	7	det	_	_
+7	streaks	streak	NOUN	NNS	_	2	obl	_	_
+8	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = She observed the painting with the golden frame.
+# predicted_head = observed, expected_head = painting
+1	She	she	PRON	PRP	_	2	nsubj	_	_
+2	observed	observe	VERB	VBD	_	0	root	_	_
+3	the	the	DET	DT	_	4	det	_	_
+4	painting	painting	NOUN	NN	_	2	obj	_	_
+5	with	with	ADP	IN	_	8	case	_	_
+6	the	the	DET	DT	_	8	det	_	_
+7	golden	golden	ADJ	JJ	_	8	amod	_	_
+8	frame	frame	NOUN	NN	_	2	obl	_	_
+9	.	.	PUNCT	.	_	2	punct	_	_
+
+# text = The teacher praised the student with the best answer.
+# predicted_head = praised, expected_head = student
+1	The	the	DET	DT	_	2	det	_	_
+2	teacher	teacher	NOUN	NN	_	3	nsubj	_	_
+3	praised	praise	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	student	student	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	best	good	ADJ	JJS	_	9	amod	_	_
+9	answer	answer	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+
+# text = The waiter served the dish with the spicy sauce.
+# predicted_head = served, expected_head = served
+1	The	the	DET	DT	_	2	det	_	_
+2	waiter	waiter	NOUN	NN	_	3	nsubj	_	_
+3	served	serve	VERB	VBD	_	0	root	_	_
+4	the	the	DET	DT	_	5	det	_	_
+5	dish	dish	NOUN	NN	_	3	obj	_	_
+6	with	with	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	_	9	det	_	_
+8	spicy	spicy	ADJ	JJ	_	9	amod	_	_
+9	sauce	sauce	NOUN	NN	_	3	obl	_	_
+10	.	.	PUNCT	.	_	3	punct	_	_
+

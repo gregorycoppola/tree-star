@@ -1,0 +1,102 @@
+[
+  {
+    "sentence": "The reporter interviewed the woman with the notepad.",
+    "ambiguous_phrase": "with the notepad",
+    "correct_attachment": "reporter"
+  },
+  {
+    "sentence": "He repaired the table with the loose leg.",
+    "ambiguous_phrase": "with the loose leg",
+    "correct_attachment": "table"
+  },
+  {
+    "sentence": "The child opened the gift with the red ribbon.",
+    "ambiguous_phrase": "with the red ribbon",
+    "correct_attachment": "gift"
+  },
+  {
+    "sentence": "The photographer took a picture of the model with the long scarf.",
+    "ambiguous_phrase": "with the long scarf",
+    "correct_attachment": "model"
+  },
+  {
+    "sentence": "She held the baby with the warm blanket.",
+    "ambiguous_phrase": "with the warm blanket",
+    "correct_attachment": "baby"
+  },
+  {
+    "sentence": "The hikers reached the summit with the narrow trail.",
+    "ambiguous_phrase": "with the narrow trail",
+    "correct_attachment": "reached"
+  },
+  {
+    "sentence": "The vet examined the dog with the injured paw.",
+    "ambiguous_phrase": "with the injured paw",
+    "correct_attachment": "dog"
+  },
+  {
+    "sentence": "He caught the fish with the shiny lure.",
+    "ambiguous_phrase": "with the shiny lure",
+    "correct_attachment": "caught"
+  },
+  {
+    "sentence": "They painted the wall with the bold colors.",
+    "ambiguous_phrase": "with the bold colors",
+    "correct_attachment": "painted"
+  },
+  {
+    "sentence": "The actor greeted the fan with the autograph book.",
+    "ambiguous_phrase": "with the autograph book",
+    "correct_attachment": "fan"
+  },
+  {
+    "sentence": "The player passed the ball with the red stripe.",
+    "ambiguous_phrase": "with the red stripe",
+    "correct_attachment": "ball"
+  },
+  {
+    "sentence": "She chased the cat with the jingling collar.",
+    "ambiguous_phrase": "with the jingling collar",
+    "correct_attachment": "cat"
+  },
+  {
+    "sentence": "The carpenter measured the board with the metal ruler.",
+    "ambiguous_phrase": "with the metal ruler",
+    "correct_attachment": "measured"
+  },
+  {
+    "sentence": "The student read the book with the torn cover.",
+    "ambiguous_phrase": "with the torn cover",
+    "correct_attachment": "book"
+  },
+  {
+    "sentence": "The knight struck the dragon with the glowing sword.",
+    "ambiguous_phrase": "with the glowing sword",
+    "correct_attachment": "struck"
+  },
+  {
+    "sentence": "The tourist visited the castle with the tall towers.",
+    "ambiguous_phrase": "with the tall towers",
+    "correct_attachment": "castle"
+  },
+  {
+    "sentence": "He cleaned the window with the streaks.",
+    "ambiguous_phrase": "with the streaks",
+    "correct_attachment": "window"
+  },
+  {
+    "sentence": "She observed the painting with the golden frame.",
+    "ambiguous_phrase": "with the golden frame",
+    "correct_attachment": "painting"
+  },
+  {
+    "sentence": "The teacher praised the student with the best answer.",
+    "ambiguous_phrase": "with the best answer",
+    "correct_attachment": "student"
+  },
+  {
+    "sentence": "The waiter served the dish with the spicy sauce.",
+    "ambiguous_phrase": "with the spicy sauce",
+    "correct_attachment": "served"
+  }
+]
