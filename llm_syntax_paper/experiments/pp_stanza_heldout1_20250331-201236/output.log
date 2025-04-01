@@ -1,0 +1,136 @@
+Loading examples from data/input/systematic_pp/chatgpt_generated_20.heldout1.json
+Running in LIVE mode - will download and run Stanza
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/52.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 424kB [00:00, 18.9MB/s]                    
+2025-03-31 20:12:38 INFO: Downloaded file to /Users/greg/stanza_resources/resources.json
+Downloaded file to /Users/greg/stanza_resources/resources.json
+2025-03-31 20:12:38 INFO: Downloading default packages for language: en (English) ...
+Downloading default packages for language: en (English) ...
+2025-03-31 20:12:39 INFO: File exists: /Users/greg/stanza_resources/en/default.zip
+File exists: /Users/greg/stanza_resources/en/default.zip
+2025-03-31 20:12:44 INFO: Finished downloading models and saved to /Users/greg/stanza_resources
+Finished downloading models and saved to /Users/greg/stanza_resources
+2025-03-31 20:12:44 INFO: Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json:   0%|          | 0.00/52.6k [00:00<?, ?B/s]Downloading https://raw.githubusercontent.com/stanfordnlp/stanza-resources/main/resources_1.10.0.json: 424kB [00:00, 7.46MB/s]                    
+2025-03-31 20:12:44 INFO: Downloaded file to /Users/greg/stanza_resources/resources.json
+Downloaded file to /Users/greg/stanza_resources/resources.json
+2025-03-31 20:12:44 WARNING: Language en package default expects mwt, which has been added
+Language en package default expects mwt, which has been added
+2025-03-31 20:12:45 INFO: Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+Loading these models for language: en (English):
+=================================
+| Processor | Package           |
+---------------------------------
+| tokenize  | combined          |
+| mwt       | combined          |
+| pos       | combined_charlm   |
+| lemma     | combined_nocharlm |
+| depparse  | combined_charlm   |
+=================================
+
+2025-03-31 20:12:45 INFO: Using device: cpu
+Using device: cpu
+2025-03-31 20:12:45 INFO: Loading: tokenize
+Loading: tokenize
+2025-03-31 20:12:46 INFO: Loading: mwt
+Loading: mwt
+2025-03-31 20:12:46 INFO: Loading: pos
+Loading: pos
+2025-03-31 20:12:46 INFO: Loading: lemma
+Loading: lemma
+2025-03-31 20:12:47 INFO: Loading: depparse
+Loading: depparse
+2025-03-31 20:12:47 INFO: Done loading processors!
+Done loading processors!
+
+Example 1/20:
+Sentence: The scientist examined the artifact with the magnifying glass.
+→ Phrase: 'with the magnifying glass' → predicted: 'examined', expected: 'examined'
+
+Example 2/20:
+Sentence: The woman hugged the child with the stuffed animal.
+→ Phrase: 'with the stuffed animal' → predicted: 'hugged', expected: 'child'
+
+Example 3/20:
+Sentence: He watched the movie on the big screen.
+→ Phrase: 'on the big screen' → predicted: 'watched', expected: 'watched'
+
+Example 4/20:
+Sentence: The officer arrested the man with the fake ID.
+→ Phrase: 'with the fake ID' → predicted: 'arrested', expected: 'man'
+
+Example 5/20:
+Sentence: She loaded the truck with the heavy boxes.
+→ Phrase: 'with the heavy boxes' → predicted: 'loaded', expected: 'loaded'
+
+Example 6/20:
+Sentence: The teacher spoke to the student with the red backpack.
+→ Phrase: 'with the red backpack' → predicted: 'spoke', expected: 'student'
+
+Example 7/20:
+Sentence: He cut the bread with the serrated knife.
+→ Phrase: 'with the serrated knife' → predicted: 'cut', expected: 'cut'
+
+Example 8/20:
+Sentence: They chased the dog with the wagging tail.
+→ Phrase: 'with the wagging tail' → predicted: 'chased', expected: 'dog'
+
+Example 9/20:
+Sentence: The child drew the picture with the crayons.
+→ Phrase: 'with the crayons' → predicted: 'drew', expected: 'drew'
+
+Example 10/20:
+Sentence: She spotted the man with the binoculars.
+→ Phrase: 'with the binoculars' → predicted: 'spotted', expected: 'spotted'
+
+Example 11/20:
+Sentence: The photographer captured the model with the elaborate hairstyle.
+→ Phrase: 'with the elaborate hairstyle' → predicted: 'captured', expected: 'model'
+
+Example 12/20:
+Sentence: The gardener trimmed the bush with the electric shears.
+→ Phrase: 'with the electric shears' → predicted: 'trimmed', expected: 'trimmed'
+
+Example 13/20:
+Sentence: He approached the woman with the nervous smile.
+→ Phrase: 'with the nervous smile' → predicted: 'approached', expected: 'woman'
+
+Example 14/20:
+Sentence: The boy opened the box with the shiny ribbon.
+→ Phrase: 'with the shiny ribbon' → predicted: 'opened', expected: 'box'
+
+Example 15/20:
+Sentence: The chef plated the dish with the garnishes.
+→ Phrase: 'with the garnishes' → predicted: 'plated', expected: 'plated'
+
+Example 16/20:
+Sentence: She recognized the singer with the long hair.
+→ Phrase: 'with the long hair' → predicted: 'recognized', expected: 'singer'
+
+Example 17/20:
+Sentence: The soldier saluted the officer with the crisp uniform.
+→ Phrase: 'with the crisp uniform' → predicted: 'saluted', expected: 'officer'
+
+Example 18/20:
+Sentence: They decorated the hall with the colorful streamers.
+→ Phrase: 'with the colorful streamers' → predicted: 'decorated', expected: 'decorated'
+
+Example 19/20:
+Sentence: He interviewed the athlete with the impressive record.
+→ Phrase: 'with the impressive record' → predicted: 'interviewed', expected: 'athlete'
+
+Example 20/20:
+Sentence: The girl painted the wall with the roller brush.
+→ Phrase: 'with the roller brush' → predicted: 'painted', expected: 'painted'
+
+Final Accuracy: 10/20 = 50.00%
