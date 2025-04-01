@@ -1,0 +1,20 @@
+{"sentence": "The detective observed the suspect with the binoculars.", "ambiguous_phrase": "with the binoculars", "predicted_head": "observed", "expected_head": "observed", "correct": true}
+{"sentence": "She admired the sculpture of the woman with the veil.", "ambiguous_phrase": "with the veil", "predicted_head": "woman", "expected_head": "woman", "correct": true}
+{"sentence": "The guard escorted the prisoner with the handcuffs.", "ambiguous_phrase": "with the handcuffs", "predicted_head": "escorted", "expected_head": "prisoner", "correct": false}
+{"sentence": "He painted the house with the peeling shutters.", "ambiguous_phrase": "with the peeling shutters", "predicted_head": "house", "expected_head": "house", "correct": true}
+{"sentence": "They reached the island with the small boat.", "ambiguous_phrase": "with the small boat", "predicted_head": "reached", "expected_head": "reached", "correct": true}
+{"sentence": "The woman watched the child with the telescope.", "ambiguous_phrase": "with the telescope", "predicted_head": "watched", "expected_head": "watched", "correct": true}
+{"sentence": "He approached the statue with the raised arm.", "ambiguous_phrase": "with the raised arm", "predicted_head": "statue", "expected_head": "statue", "correct": true}
+{"sentence": "The mechanic repaired the car with the broken bumper.", "ambiguous_phrase": "with the broken bumper", "predicted_head": "car", "expected_head": "car", "correct": true}
+{"sentence": "She contacted the witness with the encrypted phone.", "ambiguous_phrase": "with the encrypted phone", "predicted_head": "contacted", "expected_head": "contacted", "correct": true}
+{"sentence": "He greeted the man with the firm handshake.", "ambiguous_phrase": "with the firm handshake", "predicted_head": "greeted", "expected_head": "greeted", "correct": true}
+{"sentence": "The artist drew the girl with the feathered hat.", "ambiguous_phrase": "with the feathered hat", "predicted_head": "girl", "expected_head": "girl", "correct": true}
+{"sentence": "The explorer found the cave with the ancient paintings.", "ambiguous_phrase": "with the ancient paintings", "predicted_head": "cave", "expected_head": "cave", "correct": true}
+{"sentence": "The teacher called the student with the loud voice.", "ambiguous_phrase": "with the loud voice", "predicted_head": "student", "expected_head": "student", "correct": true}
+{"sentence": "The man built the shelter with the wooden beams.", "ambiguous_phrase": "with the wooden beams", "predicted_head": "built", "expected_head": "built", "correct": true}
+{"sentence": "The scientist tested the sample with the radioactive coating.", "ambiguous_phrase": "with the radioactive coating", "predicted_head": "sample", "expected_head": "sample", "correct": true}
+{"sentence": "The chef seasoned the meat with the spicy rub.", "ambiguous_phrase": "with the spicy rub", "predicted_head": "seasoned", "expected_head": "seasoned", "correct": true}
+{"sentence": "She photographed the dancer with the flowing dress.", "ambiguous_phrase": "with the flowing dress", "predicted_head": "dancer", "expected_head": "dancer", "correct": true}
+{"sentence": "He examined the patient with the skin rash.", "ambiguous_phrase": "with the skin rash", "predicted_head": "patient", "expected_head": "patient", "correct": true}
+{"sentence": "They approached the cabin with the lantern.", "ambiguous_phrase": "with the lantern", "predicted_head": "approached", "expected_head": "approached", "correct": true}
+{"sentence": "The boy played the game with the glowing tokens.", "ambiguous_phrase": "with the glowing tokens", "predicted_head": "played", "expected_head": "played", "correct": true}
