@@ -58,7 +58,7 @@ def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI
     prompt = (
         f"What word does the word '{focus_token['text']}' modify in the sentence "
         f"'{sentence_text}'? Respond with only the word it modifies. "
-        "If it doesn’t modify any word and is the root, just reply 'root'."
+        "If it doesn't modify any word and is the root, just reply 'root'."
     )
     print(prompt)
     return send_to_openai(prompt, client, live_run)
@@ -83,6 +83,7 @@ def evaluate_sentences(sentences: List[List[Dict]], client: openai.OpenAI, live_
                 total += 1
 
                 logger.info(f"Token: {token['text']} | Gold: {gold_head_word} | ChatGPT: {chatgpt_prediction}")
+                logger.info(f"Correct: {correct} | Total: {total} | Accuracy: {(correct/total)*100:.2f}%")
 
                 time.sleep(0.5)  # Rate limit
 
