@@ -1,0 +1,20 @@
+{"sentence": "The reporter interviewed the woman with the notepad.", "ambiguous_phrase": "with the notepad", "predicted_head": "woman", "expected_head": "reporter", "correct": false}
+{"sentence": "He repaired the table with the loose leg.", "ambiguous_phrase": "with the loose leg", "predicted_head": "table", "expected_head": "table", "correct": true}
+{"sentence": "The child opened the gift with the red ribbon.", "ambiguous_phrase": "with the red ribbon", "predicted_head": "gift", "expected_head": "gift", "correct": true}
+{"sentence": "The photographer took a picture of the model with the long scarf.", "ambiguous_phrase": "with the long scarf", "predicted_head": "model", "expected_head": "model", "correct": true}
+{"sentence": "She held the baby with the warm blanket.", "ambiguous_phrase": "with the warm blanket", "predicted_head": "held", "expected_head": "baby", "correct": false}
+{"sentence": "The hikers reached the summit with the narrow trail.", "ambiguous_phrase": "with the narrow trail", "predicted_head": "reached", "expected_head": "reached", "correct": true}
+{"sentence": "The vet examined the dog with the injured paw.", "ambiguous_phrase": "with the injured paw", "predicted_head": "dog", "expected_head": "dog", "correct": true}
+{"sentence": "He caught the fish with the shiny lure.", "ambiguous_phrase": "with the shiny lure", "predicted_head": "caught", "expected_head": "caught", "correct": true}
+{"sentence": "They painted the wall with the bold colors.", "ambiguous_phrase": "with the bold colors", "predicted_head": "painted", "expected_head": "painted", "correct": true}
+{"sentence": "The actor greeted the fan with the autograph book.", "ambiguous_phrase": "with the autograph book", "predicted_head": "greeted", "expected_head": "fan", "correct": false}
+{"sentence": "The player passed the ball with the red stripe.", "ambiguous_phrase": "with the red stripe", "predicted_head": "ball", "expected_head": "ball", "correct": true}
+{"sentence": "She chased the cat with the jingling collar.", "ambiguous_phrase": "with the jingling collar", "predicted_head": "cat", "expected_head": "cat", "correct": true}
+{"sentence": "The carpenter measured the board with the metal ruler.", "ambiguous_phrase": "with the metal ruler", "predicted_head": "measured", "expected_head": "measured", "correct": true}
+{"sentence": "The student read the book with the torn cover.", "ambiguous_phrase": "with the torn cover", "predicted_head": "book", "expected_head": "book", "correct": true}
+{"sentence": "The knight struck the dragon with the glowing sword.", "ambiguous_phrase": "with the glowing sword", "predicted_head": "struck", "expected_head": "struck", "correct": true}
+{"sentence": "The tourist visited the castle with the tall towers.", "ambiguous_phrase": "with the tall towers", "predicted_head": "castle", "expected_head": "castle", "correct": true}
+{"sentence": "He cleaned the window with the streaks.", "ambiguous_phrase": "with the streaks", "predicted_head": "window", "expected_head": "window", "correct": true}
+{"sentence": "She observed the painting with the golden frame.", "ambiguous_phrase": "with the golden frame", "predicted_head": "painting", "expected_head": "painting", "correct": true}
+{"sentence": "The teacher praised the student with the best answer.", "ambiguous_phrase": "with the best answer", "predicted_head": "student", "expected_head": "student", "correct": true}
+{"sentence": "The waiter served the dish with the spicy sauce.", "ambiguous_phrase": "with the spicy sauce", "predicted_head": "served", "expected_head": "served", "correct": true}
