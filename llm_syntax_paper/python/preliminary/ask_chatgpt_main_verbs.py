@@ -36,8 +36,8 @@ def send_to_openai(prompt: str, client: openai.OpenAI, live_run: bool) -> str:
 
 def load_conll_file(file_path: str) -> List[List[Dict]]:
     doc = CoNLL.conll2dict(input_file=file_path)
-    return [sentence for doc_sentences in doc for sentence in doc_sentences]
-
+    # return [sentence for doc_sentences in doc for sentence in doc_sentences]
+    return doc[0]
 def identify_main_verbs(sentence: List[Dict], client: openai.OpenAI, live_run: bool):
     sentence_text = " ".join(token['text'] for token in sentence)
     prompt = (
