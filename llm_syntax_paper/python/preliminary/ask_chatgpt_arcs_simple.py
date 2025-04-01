@@ -34,6 +34,7 @@ def send_to_openai(prompt: str, client: openai.OpenAI, live_run: bool) -> str:
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0
             )
+            print(response.choices[0].message.content.strip())
             return response.choices[0].message.content.strip()
         except Exception as e:
             logger.error(f"Error calling OpenAI API: {e}")
@@ -52,15 +53,15 @@ def load_conll_file(file_path: str) -> List[List[Dict]]:
 
 
 def query_chatgpt(sentence: List[Dict], focus_token: Dict, client: openai.OpenAI, live_run: bool) -> str:
-    """Send a request to ChatGPT asking about token dependencies without explicit indexing."""
+    """Ask ChatGPT which word a specific token modifies, using natural language style."""
     sentence_text = " ".join(token['text'] for token in sentence)
     prompt = (
-        f"Given the sentence '{sentence_text}', "
-        f"according to CoNLL guidelines, which word does '{focus_token['text']}' modify? "
-        "Respond with only the word it modifies. If it's the root, reply 'root'."
+        f"What word does the word '{focus_token['text']}' modify in the sentence "
+        f"'{sentence_text}'? Respond with only the word it modifies. "
+        "If it doesn’t modify any word and is the root, just reply 'root'."
     )
+    print(prompt)
     return send_to_openai(prompt, client, live_run)
-
 
 
 def evaluate_sentences(sentences: List[List[Dict]], client: openai.OpenAI, live_run: bool) -> List[List[Dict]]:
