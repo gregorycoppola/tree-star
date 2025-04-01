@@ -1,0 +1,200 @@
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Aesthetic Appreciation and Spanish Art :', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+There are no main verbs in the sentence provided.
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Which elements of specific artworks do they focus on ?', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+focus
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Do museum labels have an impact on how people look at artworks ?', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+have, look
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'The viewing experience of art is a complex one , involving issues of perception , attention , memory , decision - making , affect , and emotion .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+is, involving
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Thus , the time it takes and the ways of visually exploring an artwork can inform about its relevance , interestingness , and even its aesthetic appeal .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+takes, can inform
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'This paper describes a collaborative pilot project focusing on a unique collection of 17th Century Zurbarán paintings .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+describes
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'The Jacob cycle at Auckland Castle is the only UK example of a continental collection preserved in situ in purpose - built surroundings .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+is
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'The purpose of this pilot study was to assess the effects of different written interpretation on the visual exploration of artworks .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+was, assess
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'We will discuss the potential implications of these techniques and our understanding of visual behaviours on museum and gallery practice .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+discuss
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Our experience of art develops from the interaction of several cognitive and affective processes ; the beginning of which is a visual scan of the artwork .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+develops
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'When regarding an artwork , a viewer gathers information through a series fixations , interspersed by rapid movements of the eye called saccades .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+gathers
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'It is the only cycle to be preserved in purpose - built surroundings in the UK , and one of very few of its kind in the world .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+is, preserved
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'It has a long history in scholarship ( Baron & Beresford 2014 ) , but many key aspects of its production and significance have not yet been fully understood .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+has, have
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Past studies establish that each of these efforts is strongly and positively influenced through various forms of faculty diversity , including ethnic , racial , and gender diversity .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+establish, is, influenced
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Despite these positive effects , however , quantifying the impact of diversity in science remains exceedingly difficult , due in large part to a lack of comprehensive data about the scientific workforce .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+remains
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'For many scientific fields , however , there is no central listing of all tenure - track faculty , making it difficult to define a rigorous sample frame for analysis .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+is, making
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Further , rates of adoption of services like GoogleScholar and ResearchGate vary within , and across disciplines .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+vary
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Although useful , such samples are not representative of the scientific workforce as a whole and thus have limited generalizability .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+are, have
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'In some fields , yearly data on faculty numbers and composition are available in aggregate .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+are
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Such surveys can provide valuable insight into trends and summary statistics on the scientific workforce but suffer from two key weaknesses .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+can provide, suffer
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'This system is efficient and accurate , and it can be adapted to any academic discipline and used for continuous collection .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+is, can be adapted, used
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'In short , many important research questions will benefit from the availability of accurate and frequently - recollected census data .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+will benefit
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Our study is organized as follows .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+is
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'We begin by detailing the design and implementation of our web crawler framework .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+begin, detailing
+=== END ===
+
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+
+=== PROMPT ===
+In the sentence: 'Next , we present the results of our work in two sections .', identify the main verb or verbs. Only list the main verbs, nothing else.
+=== RESPONSE ===
+present
+=== END ===
+
