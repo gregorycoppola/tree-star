@@ -41,8 +41,8 @@ def load_conll_file(file_path: str) -> List[List[Dict]]:
 def identify_main_verbs(sentence: List[Dict], client: openai.OpenAI, live_run: bool):
     sentence_text = " ".join(token['text'] for token in sentence)
     prompt = (
-        f"In the sentence: '{sentence_text}', identify the main verb or verbs. "
-        "Only list the main verbs, nothing else."
+        f"In the sentence: '{sentence_text}', identify the main verb or verbs, and each argument to each verb. "
+        "For each main verb, identify it, and identify each of its arguments."
     )
     response = send_to_openai(prompt, client, live_run)
     if live_run and response:
